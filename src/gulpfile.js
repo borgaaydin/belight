@@ -10,6 +10,36 @@ var cssnano = require('cssnano');
 const nunjucks = require('gulp-nunjucks');
 var rename = require("gulp-rename");
 
+var gutil = require( 'gulp-util' );
+var ftp = require( 'vinyl-ftp' );
+
+gulp.task( 'deploy', function () {
+
+    var conn = ftp.create( {
+        host:     'ftp.borga.fr',
+        user:     'borga',
+        password: 'kQec7IIo',
+        parallel: 10,
+        log:      gutil.log
+    } );
+
+    var globs = [
+        'src/**',
+        'css/**',
+        'js/**',
+        'fonts/**',
+        'index.html'
+    ];
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src( globs, { base: '.', buffer: false } )
+        .pipe( conn.newer( '/www/belight' ) ) // only upload newer files
+        .pipe( conn.dest( '/www/belight' ) );
+
+} );
+
 var sassOptions = {
     errLogToConsole: true,
     outputStyle: 'compressed'
@@ -91,5 +121,9 @@ gulp.task('copyJs', function () {
 });
 
 gulp.task('default', ['css', 'copyImages', 'copyJs'], function() {
+
+});
+
+gulp.task('build&deploy', ['css', 'copyImages', 'copyJs', 'deploy'], function() {
 
 });
