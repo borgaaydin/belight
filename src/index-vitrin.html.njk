@@ -5,11 +5,19 @@
 {% endblock %}
 
 {% block content %}
-<div class="slider">
-    <div><img src="img/slider.png"></div>
-    <div><img src="img/slider.png"></div>
-    <div><img src="img/slider.png"></div>
-</div>
+    <div class="slider">
+        <div><img src="img/slider.png"></div>
+        <div><img src="img/slider.png"></div>
+        <div><img src="img/slider.png"></div>
+    </div>
+    <div class="container">
+        <h2>HAFİFLETEN SEÇENEKLER</h2>
+        <div class="home-products">
+        {% for i in [1,2,3] %}
+            {% include "partials/home-vitrin-product.html.njk" %}
+        {% endfor %}
+        </div>
+    </div>
 {% endblock %}
 
 {% block script %}

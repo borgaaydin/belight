@@ -1,2 +1,23 @@
 @import "variables";
 
+.home-products {
+  display: flex;
+  padding:0 25px;
+  margin-top: 18px;
+  .home-product {
+    width: 315px;
+    border: solid 1px #e7e7e7;
+    background: #f8f8f8;
+    &:nth-child(2n) {
+      margin: 0 86px;
+    }
+  }
+  .home-product-image {
+    img {
+      width: 100%;
+    }
+  }
+  .home-product-info {
+    padding: 8px 12px;
+  }
+}
