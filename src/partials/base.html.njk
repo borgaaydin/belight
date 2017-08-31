@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+{% block navigation %}
+    {% include "partials/navigation.html.njk" %}
+{% endblock %}
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+<script src="js/jquery.min.js"></script>
+{% block scripts %}
+{% endblock %}
+</body>
+</html>
