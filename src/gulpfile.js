@@ -18,7 +18,7 @@ gulp.task( 'deploy', function () {
     var conn = ftp.create( {
         host:     'ftp.borga.fr',
         user:     'borga',
-        password: 'kQec7IIo',
+        password: 'mypass',
         parallel: 10,
         log:      gutil.log
     } );
