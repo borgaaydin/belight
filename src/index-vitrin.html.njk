@@ -1,0 +1,25 @@
+{% extends "partials/base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+<div class="slider">
+    <div><img src="img/slider.png"></div>
+    <div><img src="img/slider.png"></div>
+    <div><img src="img/slider.png"></div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="js/slick.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".slider").slick({
+            arrows: false,
+            dots: true
+        });
+    });
+</script>
+{% endblock %}

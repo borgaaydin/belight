@@ -1,1 +1,35 @@
 @import "variables";
+
+.slick-dots {
+  text-align: center;
+  margin-top: 10px;
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 3px;
+    &:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: relative;
+      display: inline-block;
+      background: white;
+      border-radius: 50%;
+      border: solid 1px $blue;
+    }
+    &.slick-active:after {
+      background: $blue;
+    }
+  }
+  button {
+    display: none;
+  }
+}
+.slick-slide {
+  outline: none;
+  height: 350px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}

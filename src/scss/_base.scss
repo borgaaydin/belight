@@ -29,6 +29,9 @@
 .button--green {
   background: $green;
 }
+.button--bordered {
+  border: solid 1px $light-gray;
+}
 .button--radius {
   border-radius: 3px;
 }

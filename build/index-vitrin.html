@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="css/style.css" rel="stylesheet">
+    
+
+
 </head>
 <body>
 
@@ -29,11 +32,24 @@
 
 <div class="content">
     
-
+<div class="slider">
+    <div><img src="img/slider.png"></div>
+    <div><img src="img/slider.png"></div>
+    <div><img src="img/slider.png"></div>
+</div>
 
 </div>
 <script src="js/jquery.min.js"></script>
 
+<script src="js/slick.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".slider").slick({
+            arrows: false,
+            dots: true
+        });
+    });
+</script>
 
 </body>
 </html>
