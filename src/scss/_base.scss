@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #fff !important;
 }
 .button--large {
   width: 300px;
@@ -31,4 +31,9 @@
 }
 .button--radius {
   border-radius: 3px;
+}
+
+// Helper
+.lang-active {
+  color: $blue !important;
 }
