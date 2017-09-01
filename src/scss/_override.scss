@@ -41,12 +41,13 @@ h3 {
       border-radius: 50%;
       border: solid 1px $blue;
 
-    &.slick-active:after {
-      background: $blue;
+      &.slick-active:after {
+        background: $blue;
+      }
     }
-  }
-  button {
-    display: none;
+    button {
+      display: none;
+    }
   }
 }
 .slick-slide {
