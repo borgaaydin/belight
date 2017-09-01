@@ -28,13 +28,13 @@ gulp.task( 'deploy', function () {
         'css/**',
         'js/**',
         'fonts/**',
-        '*.html'
+        'index.html'
     ];
 
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
 
-    return gulp.src( globs, { base: '.', buffer: false } )
+    return gulp.src( '../build/**', { buffer: false } )
         .pipe( conn.newer( '/www/belight' ) ) // only upload newer files
         .pipe( conn.dest( '/www/belight' ) );
 
