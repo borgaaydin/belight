@@ -95,7 +95,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('nunjucks:watch', function () {
-    gulp.watch(['*.html.njk', 'partials/*.html.njk'], ['nunjucks']);
+    gulp.watch(['*.html.njk', 'partials/*.html.njk'], ['css']);
 });
 
 gulp.task('nunjucks', function () {

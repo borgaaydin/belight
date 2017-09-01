@@ -1,0 +1,41 @@
+
+// Buttons
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+}
+.button--large {
+  width: 300px;
+  height: 54px;
+  font-size: 24px;
+}
+.button--small {
+  width: 170px;
+  height: 34px;
+  font-size: 14px;
+}
+.button--orange {
+  background: $orange;
+}
+.button--blue {
+  background: $blue;
+}
+.button--dark-blue {
+  background: $dark-blue;
+}
+.button--green {
+  background: $green;
+}
+.button--bordered {
+  border: solid 1px $light-gray;
+}
+.button--radius {
+  border-radius: 3px;
+}
+
+// Helper
+.lang-active {
+  color: $blue !important;
+}

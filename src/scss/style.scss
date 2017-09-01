@@ -52,9 +52,14 @@
 // Slick
 @import "../bower_components/slick-carousel/slick/slick.scss";
 
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600&subset=latin-ext');
+
 // Custom css
 @import "mixins";
+
 @import "base";
+@import "buttons";
+@import "headings";
 @import "header";
-@import "custom";
+@import "home-page";
 @import "override";

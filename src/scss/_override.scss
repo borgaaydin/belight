@@ -1,28 +1,5 @@
 @import "variables";
 
-h2 {
-  color: $blue;
-  letter-spacing: -1.2px;
-  font-size: 32px;
-  font-weight: 600;
-  margin-top: 5px;
-  margin-bottom: 0;
-  display: inline-block;
-  &:after {
-    width: 120%;
-    height: 2px;
-    content: "";
-    display: block;
-    background: linear-gradient(to left, rgba(250, 217, 97, 0.0), #ff8c00);
-  }
-}
-h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  line-height: 1.4;
-}
 .slick-dots {
   text-align: center;
   margin-top: 10px;
@@ -40,11 +17,13 @@ h3 {
       background: white;
       border-radius: 50%;
       border: solid 1px $blue;
-
-      &.slick-active:after {
-        background: $blue;
-      }
+      cursor: pointer;
     }
+
+    &.slick-active:after {
+      background: $blue;
+    }
+
     button {
       display: none;
     }
