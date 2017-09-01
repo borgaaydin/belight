@@ -28,7 +28,7 @@ gulp.task( 'deploy', function () {
         'css/**',
         'js/**',
         'fonts/**',
-        'index.html'
+        '*.html'
     ];
 
     // using base = '.' will transfer everything to /public_html correctly
