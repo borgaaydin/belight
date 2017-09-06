@@ -5,34 +5,36 @@
   align-items: center;
   justify-content: center;
   color: #fff !important;
+  border-radius: 3px;
 }
-.button--large {
+.button__large {
   width: 300px;
   height: 54px;
   font-size: 24px;
 }
-.button--small {
+.button__small {
   width: 170px;
   height: 34px;
   font-size: 14px;
 }
-.button--orange {
+.button__orange {
   background: $orange;
 }
-.button--blue {
+.button__blue {
   background: $blue;
 }
-.button--dark-blue {
+.button__dark-blue {
   background: $dark-blue;
 }
-.button--green {
+.button__green {
   background: $green;
 }
-.button--bordered {
+.button__bordered {
   border: solid 1px $light-gray;
 }
-.button--radius {
-  border-radius: 3px;
+
+.button-ecommerce {
+  font-weight: 600;
 }
 
 // Helper

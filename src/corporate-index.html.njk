@@ -1,0 +1,58 @@
+{% extends "partials/base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="slider coporate-index__slider">
+        <div><img src="img/slider1.jpg" class="img-responsive"></div>
+        <div><img src="img/slider2.jpg" class="img-responsive"></div>
+        <div><img src="img/slider3.jpg" class="img-responsive"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2>HAFİFLETEN SEÇENEKLER</h2>
+            <div class="home-products">
+            {% for i in [1,2,3] %}
+                {% include "partials/corporate-index__product.html.njk" %}
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="skew-widget container">
+        <div class="row">
+            <div class="skew-widget__item orange">
+                <div class="skew-widget__content">
+                    <img src="img/widgets/soguk-sikma.png" alt="Soğuk Sıkma">
+                </div>
+            </div>
+            <div class="skew-widget__item">
+                <div class="skew-widget__content">
+                    <img src="img/widgets/soguk-sikma.png" alt="Soğuk Sıkma">
+                </div>
+            </div>
+            <div class="skew-widget__item">
+                <div class="skew-widget__content">
+                    <img src="img/widgets/soguk-sikma.png" alt="Soğuk Sıkma">
+                </div>
+            </div>
+            <div class="skew-widget__item">
+                <div class="skew-widget__content">
+                    <img src="img/widgets/soguk-sikma.png" alt="Soğuk Sıkma">
+                </div>
+            </div>
+            <div class="skew-widget__item">
+                <div class="skew-widget__content">
+                    <img src="img/widgets/soguk-sikma.png" alt="Soğuk Sıkma">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script src="js/slick.min.js"></script>
+<script src="js/corporate-index.js"></script>
+
+{% endblock %}

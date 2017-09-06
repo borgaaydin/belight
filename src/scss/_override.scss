@@ -37,3 +37,9 @@
     width: 100%;
   }
 }
+
+a {
+  &:focus {
+    text-decoration: none;
+  }
+}

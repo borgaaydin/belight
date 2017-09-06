@@ -18,7 +18,7 @@ gulp.task( 'deploy', function () {
     var conn = ftp.create( {
         host:     'ftp.borga.fr',
         user:     'borga',
-        password: 'mypass',
+        password: 'pKFT2yej3NvzvUFb',
         parallel: 10,
         log:      gutil.log
     } );
@@ -35,7 +35,6 @@ gulp.task( 'deploy', function () {
     // turn off buffering in gulp.src for best performance
 
     return gulp.src( '../build/**', { buffer: false } )
-        .pipe( conn.newer( '/www/belight' ) ) // only upload newer files
         .pipe( conn.dest( '/www/belight' ) );
 
 } );
@@ -108,7 +107,7 @@ gulp.task('nunjucks', function () {
 });
 
 gulp.task('copyImages', function () {
-    return gulp.src('img/*.png')
+    return gulp.src('img/**')
         .pipe(gulp.dest('../build/img'));
 });
 

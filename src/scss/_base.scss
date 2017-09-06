@@ -3,4 +3,11 @@
 html,
 body {
   font-family: 'Muli', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  margin-top: 69px;
 }

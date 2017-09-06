@@ -1,0 +1,76 @@
+@import "variables";
+
+// Products List on corporate home page
+.home-products {
+  display: flex;
+  padding:0 25px;
+  margin-top: 18px;
+  justify-content: space-around;
+
+  a {
+    h3 {
+      color: $blue;
+    }
+    &:hover,
+    &:focus{
+      text-decoration: none;
+    }
+  }
+
+  .home-products__item {
+    width: 315px;
+    background: #f8f8f8;
+  }
+
+  .home-products_item_image {
+
+    img {
+      @include img-responsive();
+    }
+  }
+
+  .home-products__item__content {
+    padding: 8px 12px;
+    height: 90px;
+    color: $dark-gray;
+  }
+}
+
+.skew-widget {
+  margin: 50px auto 20px;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // Skew widget items on home page
+  .skew-widget__item {
+    @include vendorize(transform, skew(-20deg));
+    background: $blue;
+    color: white;
+    width: 190px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .skew-widget__content {
+      @include vendorize(transform, skew(20deg));
+
+      img {
+        @include img-responsive();
+      }
+    }
+
+    &.blue {
+      background-color: $blue;
+      color: white;
+    }
+    &.orange {
+      background-color: $orange;
+      color: white;
+    }
+  }
+}
