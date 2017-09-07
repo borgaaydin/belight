@@ -7,10 +7,10 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <h2 class="page-title">ETKİNLİKLER</h2>
-            <div class="events">
+            <h2 class="page-title">SIKÇA SORULAN SORULAR</h2>
+            <div class="faq">
             {% for i in [1,2,3,4,5,6] %}
-                {% include "partials/corporate-events__event.html.njk" %}
+                {% include "partials/corporate-faq__item.html.njk" %}
             {% endfor %}
             </div>
         </div>
