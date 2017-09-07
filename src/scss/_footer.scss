@@ -23,12 +23,64 @@
     text-align: center;
     font-size: 20px;
     margin-bottom: 6px;
+
+    span {
+      font-weight: 700;
+    }
   }
 }
 
 .footer__social {
+  @include make-xs-column(12, 0);
+  @include make-sm-column(4, 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70px;
 
   .footer__social__icon {
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    margin-left: 16px;
 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    i {
+      font-size: 32px;
+    }
+
+    &.fsi_facebook:hover {
+      i {
+        color: white;
+      }
+      background-color: #3b5998;
+    }
+
+    &.fsi_twitter:hover {
+      i {
+        color: white;
+      }
+      background-color: #1DA1F2;
+    }
+
+    &.fsi_instagram:hover {
+      i {
+        color: white;
+      }
+      background-color: #000000;
+    }
+
+    &.fsi_youtube:hover {
+      i {
+        color: white;
+      }
+      background-color: #FF0000;
+    }
   }
 }
