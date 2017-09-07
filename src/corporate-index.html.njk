@@ -49,6 +49,16 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <h2>LOREM IPSUM</h2>
+            <div class="home-products">
+                {% for i in [1,2,3] %}
+                    {% include "partials/corporate-index__product.html.njk" %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block script %}

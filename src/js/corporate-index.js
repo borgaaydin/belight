@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $(".slider").slick({
         arrows: false,
-        dots: true
+        dots: true,
+        autoplay: true
     });
 });
