@@ -1,0 +1,29 @@
+// Events
+.events {
+  display: flex;
+  padding:0 25px;
+  margin-top: 18px;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  a {
+    margin-bottom: 40px;
+    h3 {
+      color: $blue;
+    }
+    &:hover,
+    &:focus{
+      text-decoration: none;
+    }
+  }
+
+  .events-event__item {
+    width: 315px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
