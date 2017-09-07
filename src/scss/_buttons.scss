@@ -36,6 +36,18 @@
 .button-ecommerce {
   font-weight: 600;
 }
+.button__green_bordered {
+  border: solid 3px $light-green;
+  color: $light-green !important;
+}
+.button__orange_bordered {
+  border: solid 3px $orange;
+  color: $orange !important;
+}
+.button__pink_bordered {
+  border: solid 3px $pink;
+  color: $pink !important;
+}
 
 // Helper
 .lang-active {

@@ -14,3 +14,17 @@ body {
 .page-title {
   margin-top: 20px;
 }
+a {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+.color-light-green {
+  color: $light-green;
+}
+.color-orange {
+  color: $orange;
+}
+.color-pink {
+  color: $pink;
+}
