@@ -51,6 +51,8 @@
 
     cursor: pointer;
 
+    @include vendorize(transition, all .5s);
+
     i {
       font-size: 32px;
     }
