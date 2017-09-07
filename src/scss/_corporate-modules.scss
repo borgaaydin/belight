@@ -74,3 +74,34 @@
     }
   }
 }
+
+.video-banner {
+  height: 392px;
+  background-image: url("../img/video-bg.jpg");
+  margin-top: 20px;
+
+  .row {
+    height: 100%;
+  }
+
+  a {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      @include img-responsive();
+      @include vendorize(transition, all .5s);
+      opacity: 0.57;
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
