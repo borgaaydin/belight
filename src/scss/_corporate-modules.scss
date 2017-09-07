@@ -78,6 +78,9 @@
 .video-banner {
   height: 392px;
   background-image: url("../img/video-bg.jpg");
+  background-position: center;
+  background-size: cover;
+
   margin-top: 20px;
 
   .row {
