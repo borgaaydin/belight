@@ -48,6 +48,9 @@
   border: solid 3px $pink;
   color: $pink !important;
 }
+.button__centered {
+  margin: 0 auto;
+}
 
 // Helper
 .lang-active {

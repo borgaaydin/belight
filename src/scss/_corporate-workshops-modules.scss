@@ -42,4 +42,52 @@
     color: $blue;
     margin: 20px 0 10px;
   }
+  .workshop__info {
+    margin-left: 25px;
+    font-size: 36px;
+    color: $dark-gray;
+    display: flex;
+    justify-content: flex-start;
+    .workshop__info__item {
+      margin-right: 60px;
+    }
+    .workshop__info__item-right {
+      display: flex;
+      align-items:center;
+      justify-content:flex-start;
+      height: 51px;
+    }
+  }
+  .workshop__buy {
+    text-align: center;
+    .workshop__buy__price {
+      font-size: 32px;
+      font-weight: 500;
+      color: $orange;
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+  .workshop__body {
+    margin-top: 50px;
+    font-size: 18px;
+    color: $dark-gray;
+    p {
+      text-indent:20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.workshop__info__item-left-item {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  margin-bottom: 18px;
+}
+.workshop__info__item__text {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 20px;
+  display: inline;
 }
