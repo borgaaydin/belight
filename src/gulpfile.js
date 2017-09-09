@@ -120,6 +120,7 @@ gulp.task('copyJs', function () {
     return gulp.src([
         'bower_components/jquery/dist/jquery.min.js',
         'bower_components/photoswipe/dist/photoswipe.min.js',
+        'bower_components/photoswipe/dist/photoswipe-ui-default.min.js',
         'js/*.js'
     ])
         .pipe(gulp.dest('../build/js'));

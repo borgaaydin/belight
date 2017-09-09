@@ -91,3 +91,14 @@
   margin-left: 20px;
   display: inline;
 }
+.workshop__gallery {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  img {
+    padding: 0 15px;
+  }
+  .pswp__counter {
+    color: #fff;
+  }
+}
