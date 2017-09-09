@@ -68,3 +68,16 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .event {
+    .event__intro {
+      display: block;
+      .event__intro__image {
+        margin: 0 auto;
+      }
+      .event__intro__content {
+        margin: 0;
+      }
+    }
+  }
+}
