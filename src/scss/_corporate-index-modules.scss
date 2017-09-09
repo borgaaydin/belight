@@ -224,3 +224,56 @@
     }
   }
 }
+
+.clients__list {
+
+}
+
+.clients__item {
+  width: 250px;
+  height: 250px;
+
+  .clients__image {
+    position: relative;
+
+
+    >img {
+      z-index: 12;
+      position: relative;
+    }
+  }
+
+  .circles {
+    height: 100%;
+    width:100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    >div {
+      height: 100%;
+      width:100%;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .circle-green {
+      background-color: #7ED321;
+      right: -3px;
+      bottom: -6px;
+      z-index: 9;
+    }
+    .circle-orange {
+      background-color: $orange;
+      right: -9px;
+      top: -6px;
+      z-index: 8;
+    }
+    .circle-blue {
+      background-color: #67D3EE;
+      right: -18px;
+      z-index: 7;
+    }
+  }
+}
