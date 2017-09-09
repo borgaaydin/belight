@@ -111,9 +111,16 @@ gulp.task('copyImages', function () {
         .pipe(gulp.dest('../build/img'));
 });
 
+gulp.task('copyFonts', function () {
+    return gulp.src('bower_components/components-font-awesome/fonts/**')
+        .pipe(gulp.dest('../build/fonts'));
+});
+
 gulp.task('copyJs', function () {
     return gulp.src([
         'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/photoswipe/dist/photoswipe.min.js',
+        'bower_components/photoswipe/dist/photoswipe-ui-default.min.js',
         'js/*.js'
     ])
         .pipe(gulp.dest('../build/js'));

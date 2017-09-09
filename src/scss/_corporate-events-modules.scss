@@ -1,4 +1,4 @@
-// Events
+// Events Page
 .events {
   display: flex;
   padding:0 25px;
@@ -25,5 +25,57 @@
     img {
       max-width: 100%;
     }
+  }
+}
+// Event Details
+.event {
+  margin-top: 42px;
+  .event__intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .event__intro__image {
+      width: 315px;
+      img {
+        width: 315px;
+      }
+    }
+    .event__intro__content {
+      margin-left: 30px;
+      font-size: 18px;
+      color: $dark-gray;
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: $blue;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .event__body {
+    img.float__left {
+      margin-right: 30px;
+    }
+    img.float__right {
+      margin-left: 30px;
+    }
+      p {
+      clear: both;
+      margin-top: 20px;
+      font-size: 18px;
+      color: $dark-gray;
+    }
+  }
+}
+.event__more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 40px 0 100px;
+
+  img {
+    max-width: 100%;
+    padding: 0 10px;
   }
 }
