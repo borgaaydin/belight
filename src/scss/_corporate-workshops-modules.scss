@@ -1,3 +1,4 @@
+// Workshops
 .workshops {
   display: flex;
   margin-top: 18px;
@@ -30,5 +31,15 @@
       color: $blue;
       margin-top: 10px;
     }
+  }
+}
+
+// Workshop Details
+.workshop {
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: $blue;
+    margin: 20px 0 10px;
   }
 }
