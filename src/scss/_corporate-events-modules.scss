@@ -36,6 +36,7 @@
     align-items: flex-start;
     .event__intro__image {
       width: 315px;
+      min-width: 315px;
       img {
         width: 315px;
       }
