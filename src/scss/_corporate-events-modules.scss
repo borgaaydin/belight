@@ -24,6 +24,7 @@
 
     img {
       max-width: 100%;
+      border: solid 1px #dbdbdb;
     }
   }
 }
@@ -78,6 +79,11 @@
       .event__intro__content {
         margin: 0;
       }
+    }
+  }
+  .events {
+    .events-event__item {
+      max-width: 100%;
     }
   }
 }

@@ -43,3 +43,27 @@ a {
     text-decoration: none;
   }
 }
+.slick-next,
+.slick-prev {
+  height: 32px;
+  width: 32px;
+  z-index: 2;
+}
+.slick-next {
+  text-shadow: 0 2px 12px rgba(0,0,0,.32);
+  right: 40px;
+}
+.slick-prev {
+  text-shadow: 0 2px 12px rgba(0,0,0,.32);
+  left: 40px;
+}
+.slick-next:before {
+  font-size: 32px;
+  content: "\f054";
+  font-family: 'FontAwesome';
+}
+.slick-prev:before {
+  font-size: 32px;
+  content: "\f053";
+  font-family: 'FontAwesome';
+}

@@ -8,9 +8,9 @@ $(document).ready(function(){
             {
                 breakpoint: 400,
                 settings: {
+                    arrows: true,
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    settings: "slick"
+                    slidesToScroll: 1
                 }
             }
         ]
