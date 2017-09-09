@@ -1,40 +1,20 @@
-// Events
-.contact {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: 15px;
-}
-.contact-info {
-  font-size: 18px;
-  line-height: 1.67;
-  color: $dark-gray;
-  padding-right: 50px;
-  width: 50%;
-  .contact-info__phone {
-    font-size: 24px;
-    line-height: 0.88;
-    color: $dark-gray;
-  }
-  a {
-    font-size: 18px;
-    line-height: 1.17;
-    color: $blue;
-  }
-  .contact-info__working-hours {
-    font-size: 24px;
-    line-height: 0.88;
-    color: $dark-gray;
-    margin-top: 40px;
-    h3 {
-      margin-bottom: 10px;
+// FAQ
+.faq {
+  margin-top: 20px;
+  .faq__item {
+    margin-top: 30px;
+
+    .faq__item__question h3 {
       font-size: 18px;
       font-weight: 500;
       line-height: 1.17;
+      margin-bottom: 15px;
       color: $blue;
     }
+    .faq__item__answer {
+      font-size: 15px;
+      line-height: 1.4;
+      color: $dark-gray;
+    }
   }
-}
-.contact-map {
-  width: 50%;
 }

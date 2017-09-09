@@ -207,3 +207,20 @@
     font-size: 24px;
   }
 }
+@media (max-width: 768px) {
+  .quality-cert {
+    .row {
+      display: block;
+      text-align: center;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .quality-cert__item {
+    display: block;
+    span {
+      display: block;
+    }
+  }
+}
