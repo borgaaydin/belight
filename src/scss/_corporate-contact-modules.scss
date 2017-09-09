@@ -1,16 +1,13 @@
 // Contact
 .contact {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   margin-top: 15px;
 }
 .contact-info {
   font-size: 18px;
   line-height: 1.67;
   color: $dark-gray;
-  padding-right: 50px;
-  width: 50%;
+  @include make-xs-column(12,0);
+  @include make-sm-column(6,0);
   .contact-info__phone {
     font-size: 24px;
     line-height: 0.88;
@@ -36,5 +33,6 @@
   }
 }
 .contact-map {
-  width: 50%;
+  @include make-xs-column(12,0);
+  @include make-sm-column(6,0);
 }
