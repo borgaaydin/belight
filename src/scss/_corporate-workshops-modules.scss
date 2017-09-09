@@ -110,5 +110,18 @@
       display: block;
     }
   }
-
+  .workshops {
+    .workshops__workshop__item {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .slick-prev {
+      left: 20px;
+    }
+    .slick-next {
+      right: 20px;
+    }
+  }
 }
