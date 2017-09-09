@@ -104,3 +104,11 @@
 .pswp__counter {
   color: #fff;
 }
+@media (max-width: 768px) {
+  .workshop {
+    .workshop__info {
+      display: block;
+    }
+  }
+
+}
