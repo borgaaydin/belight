@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".events").slick({
+    $(".workshops").slick({
         responsive: [
             {
                 breakpoint: 3000,
@@ -9,7 +9,7 @@ $(document).ready(function(){
                 breakpoint: 400,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             }
         ]

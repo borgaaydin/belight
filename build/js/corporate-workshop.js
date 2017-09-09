@@ -1,9 +1,11 @@
 $(document).ready(function(){
-    $(".events").slick({
+    $(".workshops").slick({
         responsive: [
             {
-                breakpoint: 3000,
-                settings: "unslick"
+                breakpoint: 10000,
+                settings: {
+                    unslick: true
+                }
             },
             {
                 breakpoint: 400,
