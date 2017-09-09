@@ -2,8 +2,7 @@
 .workshops {
   display: flex;
   margin-top: 18px;
-  padding: 0 25px;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -94,11 +93,14 @@
 .workshop__gallery {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
+  a {
+    width: calc(25% - 20px);
+  }
   img {
-    padding: 0 15px;
+    max-width: 100%;
   }
-  .pswp__counter {
-    color: #fff;
-  }
+}
+.pswp__counter {
+  color: #fff;
 }
