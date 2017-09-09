@@ -34,3 +34,17 @@ a {
 .float__right {
   float: right;
 }
+.gallery {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  a {
+    width: calc(25% - 20px);
+  }
+  img {
+    max-width: 100%;
+  }
+}
+.pswp__counter {
+  color: #fff;
+}
