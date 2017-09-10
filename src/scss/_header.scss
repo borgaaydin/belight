@@ -102,10 +102,24 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .header-nav {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      margin: 0;
+
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     height: 40px;
     min-height: 40px;
     padding: 0;
   }
+
+
 }

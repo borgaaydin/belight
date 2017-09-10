@@ -11,7 +11,7 @@ $(document).ready(function(){
                 settings: "unslick"
             },
             {
-                breakpoint: 400,
+                breakpoint: 768,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
@@ -27,7 +27,7 @@ $(document).ready(function(){
                 settings: "unslick"
             },
             {
-                breakpoint: 400,
+                breakpoint: 768,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
@@ -43,7 +43,7 @@ $(document).ready(function(){
                 settings: "unslick"
             },
             {
-                breakpoint: 400,
+                breakpoint: 768,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
