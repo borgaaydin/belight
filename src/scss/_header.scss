@@ -56,6 +56,7 @@
   .mobile-menu__icon {
     font-size: 28px;
     color: $blue;
+    min-width: 40px;
     &:hover {
       cursor: pointer;
     }

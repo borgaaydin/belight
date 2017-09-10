@@ -72,6 +72,14 @@
       background-color: $orange;
       color: white;
     }
+    &.green {
+      background-color: $green;
+      color: white;
+    }
+    &.pink {
+      background-color: $pink;
+      color: white;
+    }
   }
 }
 
@@ -336,6 +344,7 @@
   .home-products {
     padding:0;
     .home-products__item {
+      max-width: 300px;
       margin: 0 auto;
     }
     .slick-prev {
