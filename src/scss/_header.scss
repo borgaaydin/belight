@@ -45,3 +45,48 @@
 .header-separator {
   margin: 0 10px;
 }
+
+.mobile-nav {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+  }
+  img {
+    max-height: 26px;
+  }
+  .mobile-menu__icon {
+    font-size: 20px;
+    color: $blue;
+  }
+  .mobile-basket {
+    font-size: 28px;
+    color: $orange;
+  }
+  .mobile-logo {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .mobile-menu__list {
+    background: white;
+    width: 280px;
+    margin-left: -280px;
+    position: absolute;
+    height: 100%;
+    left:0;
+    top: 40px;
+    a {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+  }
+}

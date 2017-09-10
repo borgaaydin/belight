@@ -10,6 +10,7 @@
     {% endblock %}
 </head>
 <body>
+<div class="bg-overlay"></div>
 {% block navigation %}
     {% include "partials/corporate-nav.html.njk" %}
 {% endblock %}
@@ -21,6 +22,7 @@
     {% include "partials/corporate-footer.html.njk" %}
 {% endblock %}
 <script src="js/jquery.min.js"></script>
+<script src="js/corporate-nav.js"></script>
 {% block script %}
 {% endblock %}
 </body>
