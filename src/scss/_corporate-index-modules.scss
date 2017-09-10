@@ -301,3 +301,33 @@
     }
   }
 }
+
+.client-detail__item {
+  @include clearfix();
+
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #DBDBDB;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.client-detail__info {
+  @include make-sm-column(4,0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .clients__item {
+    text-align: center;
+  }
+}
+
+.client-detail__text {
+  @include make-sm-column(8,0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
