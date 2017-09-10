@@ -6,7 +6,15 @@ $(document).ready(function(){
                 settings: "unslick"
             },
             {
-                breakpoint: 400,
+                breakpoint: 992,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 630,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
