@@ -173,8 +173,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-
   }
 }
 
@@ -225,16 +223,42 @@
   }
 }
 
-.clients__list {
+.clients {
+  margin-top: 30px;
+}
 
+.clients__list {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
 }
 
 .clients__item {
-  width: 250px;
-  height: 250px;
+  width: 270px;
+
+  h3 {
+    font-size: 24px;
+    color: $blue;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .clients__short-story {
+    padding-left: 20px;
+  }
+
+  .clients__readmore {
+    font-size: 20px;
+    font-weight: 400;
+    color: $blue;
+    text-align: right;
+  }
 
   .clients__image {
     position: relative;
+    width: 250px;
+    height: 250px;
 
 
     >img {

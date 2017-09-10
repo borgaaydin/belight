@@ -71,3 +71,14 @@ a {
 .pswp__counter {
   color: #fff;
 }
+
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 40px;
+  }
+
+  .row {
+    margin: 0;
+  }
+}

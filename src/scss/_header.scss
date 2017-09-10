@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 12;
+  z-index: 99;
 
   min-height: 70px;
   width: 100%;
@@ -47,13 +47,12 @@
 }
 
 .mobile-nav {
-  z-index: 4;
+  z-index: 99;
   .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    padding: 0 10px;
   }
   img {
     max-height: 26px;
