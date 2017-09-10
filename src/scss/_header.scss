@@ -72,13 +72,29 @@
   .mobile-menu__list {
     background: white;
     width: 280px;
+    padding: 15px 30px;
     margin-left: -280px;
     position: absolute;
     height: 100%;
     left:0;
     top: 40px;
+    ul {
+      padding: 0;
+    }
+    li {
+      color: $orange;
+      font-size: 18px;
+      margin: 5px 0;
+      a {
+        display: block;
+        color: $blue;
+      }
+    }
+  }
+  .header-controls {
+    text-align: left;
     a {
-      display: block;
+      display: inline;
     }
   }
 }
