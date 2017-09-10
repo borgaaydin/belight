@@ -69,7 +69,7 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .event {
     .event__intro {
       display: block;
@@ -84,6 +84,7 @@
   .events {
     .events-event__item {
       max-width: 100%;
+      min-width: 300px;
     }
   }
 }
