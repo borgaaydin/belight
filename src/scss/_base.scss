@@ -38,8 +38,10 @@ body {
   margin-top: 20px;
 }
 a {
+  outline: none;
   &:hover, &:focus {
     text-decoration: none;
+    outline: none;
   }
 }
 .color-light-green {
@@ -72,12 +74,10 @@ a {
   color: #fff;
 }
 
-
 @media (max-width: 768px) {
   .content {
     margin-top: 40px;
   }
-
   .row {
     margin: 0;
   }
