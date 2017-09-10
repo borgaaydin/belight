@@ -11,7 +11,15 @@ $(document).ready(function(){
                 settings: "unslick"
             },
             {
-                breakpoint: 768,
+                breakpoint: 992,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 630,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
@@ -27,7 +35,15 @@ $(document).ready(function(){
                 settings: "unslick"
             },
             {
-                breakpoint: 768,
+                breakpoint: 992,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 630,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
@@ -43,7 +59,15 @@ $(document).ready(function(){
                 settings: "unslick"
             },
             {
-                breakpoint: 768,
+                breakpoint: 992,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 630,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,

@@ -15,10 +15,6 @@
     align-items: flex-end;
   }
 }
-
-.header-logo {
-}
-
 .header-nav {
   flex-shrink: 10;
   flex-grow: 1;
@@ -114,12 +110,10 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header {
     height: 40px;
     min-height: 40px;
     padding: 0;
   }
-
-
 }
