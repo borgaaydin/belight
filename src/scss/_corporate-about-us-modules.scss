@@ -72,6 +72,7 @@
 .about-us__mekan-arge {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #2c2c2c);
   min-height: 440px;
+  padding-bottom: 20px;
   .about-us_mekan,
   .about-us_arge {
     @include make-xs-column(12,0);
@@ -109,7 +110,7 @@
   margin-bottom: 14px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .about-us {
     padding:0;
     .about-us__intro {
@@ -117,6 +118,7 @@
     }
     .about-us__section {
       display: block;
+      margin-bottom: 20px;
       .about-us__section__title {
         margin: 0 auto;
         text-align: center;
