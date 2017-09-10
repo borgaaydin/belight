@@ -47,6 +47,7 @@
 }
 
 .mobile-nav {
+  z-index: 4;
   .row {
     display: flex;
     justify-content: space-between;
@@ -58,8 +59,11 @@
     max-height: 26px;
   }
   .mobile-menu__icon {
-    font-size: 20px;
+    font-size: 28px;
     color: $blue;
+    &:hover {
+      cursor: pointer;
+    }
   }
   .mobile-basket {
     font-size: 28px;
