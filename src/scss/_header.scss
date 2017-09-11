@@ -62,8 +62,16 @@
     }
   }
   .mobile-basket {
-    font-size: 28px;
-    color: $orange;
+    a {
+      font-size: 28px;
+      color: $orange;
+
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
   }
   .mobile-logo {
     flex-grow: 1;

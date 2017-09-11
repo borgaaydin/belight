@@ -176,6 +176,13 @@
   }
 }
 
+.steps-showcase__image {
+  min-height: 70px;
+  display: flex;
+  align-items: end;
+  max-height: 70px;
+}
+
 .sponsors {
   .row {
     display: flex;
@@ -233,6 +240,10 @@
 
 .clients {
   margin-top: 30px;
+
+  .button__blue {
+    margin: 0 auto 30px;
+  }
 }
 
 .clients__list {
@@ -244,6 +255,7 @@
 
 .clients__item {
   width: 270px;
+  outline: 0;
 
   h3 {
     font-size: 24px;
@@ -260,7 +272,7 @@
     font-size: 20px;
     font-weight: 400;
     color: $blue;
-    text-align: right;
+    float: right;
   }
 
   .clients__image {
@@ -273,6 +285,22 @@
       z-index: 12;
       position: relative;
     }
+  }
+
+  .clients__video-button {
+    position: absolute;
+    z-index: 15;
+
+    right: 0;
+    bottom: 0;
+
+    @include vendorize(text-shadow, 1px 0px 10px rgba(153, 153, 153, 0.76));
+
+    a {
+      font-size: 48px;
+      color: white;
+    }
+
   }
 
   .circles {
@@ -316,6 +344,7 @@
   margin-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #DBDBDB;
+  text-align: center;
 
   &:last-child {
     border-bottom: 0;
@@ -338,6 +367,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
+  text-align: left;
 }
 
 @media (max-width: 992px) {
@@ -370,11 +400,6 @@
       top: 140px;
     }
   }
-  .clients__item {
-    .clients__image {
-      margin: 7px auto 0;
-    }
-  }
   .steps-showcase__list {
     .slick-prev:before,
     .slick-next:before {
@@ -394,5 +419,32 @@
     .steps-showcase__item .step-count {
       top: 0;
     }
+  }
+
+  .skew-widget__content {
+    padding: 10px;
+  }
+
+  .steps-showcase__item {
+    p {
+      padding: 0 16px;
+    }
+  }
+
+  .client-detail__text {
+    padding-left: 36px;
+  }
+
+  .clients__item {
+    padding-top: 6px !important;
+    .clients__image {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .client-detail__text {
+    padding-left: 0;
   }
 }
