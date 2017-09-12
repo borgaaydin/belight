@@ -22,3 +22,88 @@
     margin: 0 10px;
   }
 }
+.ecommerce-home-products {
+  display: flex;
+  padding:0 25px;
+  margin-top: 18px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  a {
+    margin-bottom: 40px;
+    h3 {
+      color: $blue;
+      font-size: 24px;
+    }
+    &:hover,
+    &:focus{
+      text-decoration: none;
+    }
+  }
+
+  .ecommerce-home-products__item {
+    width: 315px;
+    background: #f8f8f8;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  .ecommerce-home-products_item_image {
+    img {
+      @include img-responsive();
+    }
+  }
+
+  .ecommerce-home-products__item__content {
+    padding: 8px 12px;
+    height: 90px;
+    color: $dark-gray;
+  }
+}
+.ecommerce-home-products__item__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 12px 8px;
+  .ecommerce-home-products__item__icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+  }
+}
+.ecommerce-home-products__item__icons__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  padding: 5px;
+  background: $green;
+  color: #fff;
+  @include vendorize(border-radius, 3px);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-right: 10px;
+  i {
+    margin-right: 3px;
+    font-size: 18px;
+  }
+}
+.ecommerce-home-products__item__icons__price {
+  flex-grow: 1;
+  text-align: right;
+  .ecommerce-home-products__item__icons__price-old {
+    color: #c1c1c1;
+    text-decoration: line-through;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .ecommerce-home-products__item__icons__price-new {
+    font-size: 36px;
+    font-weight: 600;
+    color: $orange;
+    span {
+      font-size: 24px;
+    }
+  }
+}
