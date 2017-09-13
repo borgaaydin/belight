@@ -1,10 +1,12 @@
 .header-controls__phone {
-  font-size: 18px;
-  color: $green;
-  font-weight: 600;
-  padding-bottom: 10px;
-  i {
-    padding-right: 7px;
+  margin-bottom: 10px;
+  a {
+    font-size: 18px;
+    color: $green;
+    font-weight: 600;
+    i {
+      padding-right: 7px;
+    }
   }
 }
 .header-controls__user {
