@@ -121,3 +121,52 @@
     margin-right: 5px;
   }
 }
+.hesabim__siparislerim {
+  @include make-row();
+  font-size: 18px;
+  .hesabim__siparislerim__urun {
+    @include make-md-column(3);
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    .hesabim__siparislerim__urun__img {
+      min-width: 70px;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+  .hesabim__siparislerim__siparis-kodu {
+    @include make-md-column(2);
+    color: $blue;
+  }
+  .hesabim__siparislerim__miktar {
+    @include make-md-column(2);
+  }
+  .hesabim__siparislerim__tutar {
+    @include make-md-column(2);
+    font-weight: 600;
+    color: $orange;
+  }
+  .hesabim__siparislerim__durum {
+    @include make-md-column(3);
+    color: #9b9b9b;
+  }
+}
+.hesabim__siparislerim__header {
+  font-size: 18px;
+  color: $blue;
+  margin: 20px 0 10px;
+  font-weight: 400;
+  > div {
+    color: $blue !important;
+    font-weight: 400 !important;
+  }
+}
+.hesabim__siparislerim__item {
+  border: solid 1px #9b9b9b;
+  padding: 15px 0;
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
