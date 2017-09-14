@@ -97,10 +97,16 @@
   li {
     width: 100%;
     padding: 15px 10px;
+    margin-bottom: 10px;
     border: 1px solid #dbdbdb;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     img {
       @include img-responsive();
@@ -118,18 +124,24 @@
     text-align: left;
     color: #54585c;
   }
+
+  .basket__product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .basket__summary-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
 
   border: 1px solid #dbdbdb;
 
   li {
     border-bottom: 1px solid #dbdbdb;
-    padding: 12px 10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -139,12 +151,93 @@
       border-bottom: 0;
     }
   }
+
+  .basket__summary-price {
+    span {
+      color: $orange;
+      font-weight: 600;
+    }
+
+    span:first-child {
+      font-size: 20px;
+    }
+
+    span:last-child {
+      font-size: 12px;
+    }
+  }
 }
 
 .product-counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  input {
+    width: 64px;
+    height: 36px;
+    padding: 0;
+
+    text-align: center;
+    border: 1px solid #00B5E2;
+    border-radius: 3px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
   .product-counter-minus {
+    padding: 4px 8px;
+    background-color: #73D6EF;
     i {
       color: white;
     }
+  }
+
+  .product-counter-plus {
+    padding: 4px 8px;
+    background-color: #52CDEB;
+    i {
+      color: white;
+    }
+  }
+}
+
+.basket__product-price {
+  .basket__product-cost {
+    color: $orange;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .basket__product-currency {
+    color: $orange;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .basket__product-kdv {
+    font-size: 12px;
+    text-align: left;
+    color: #9b9b9b;
+  }
+}
+
+.basket__delete-button {
+  margin: 0 10px;
+  a {
+    padding-top: 4px;
+    i {
+      color:#9b9b9b;
+      font-size: 18px;
+    }
+  }
+}
+
+.basket__buttons {
+  .button {
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
