@@ -1,0 +1,31 @@
+input {
+  border: solid 1px #9b9b9b;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #54585C;
+  width: 100%;
+  &::placeholder {
+    color: #999;
+  }
+  &[type="text"],
+  &[type="email"],
+  &[type="password"]{
+    padding: 15px 24px;
+  }
+  &[type="checkbox"] {
+    display: inline;
+    width: auto;
+  }
+  &:focus {
+    outline:none;
+  }
+  &.error {
+    border: solid 1px rgba(208,2,27,0.4);
+  }
+}
+label {
+  display: inline;
+  font-weight: 400;
+  font-size: 16px;
+  color: $dark-gray;
+}

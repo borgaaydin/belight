@@ -1,0 +1,23 @@
+.container__login {
+  @include make-sm-column(6);
+  @include make-sm-column-offset(3);
+  margin-top: 20px;
+  display: flex;
+  align-items:flex-end;
+  margin-bottom: -20px;
+}
+.container__login__form {
+  padding: 30px;
+  width: 360px;
+}
+.container__login__form__item {
+  margin-bottom: 30px;
+}
+.form__item__checkbox {
+  display: flex;
+  align-items:center;
+  margin-bottom: 10px;
+  div {
+    margin: 0 5px;
+  }
+}
