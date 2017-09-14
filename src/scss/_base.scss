@@ -78,6 +78,12 @@ a {
   margin-top: 20px;
 }
 
+.pretty {
+  .fa-check {
+    color: $green;
+  }
+}
+
 @media (max-width: 768px) {
   .corporate-index__slider {
     .slick-slide {

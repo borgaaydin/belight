@@ -20,7 +20,8 @@
     "jquery": "^3.2.1",
     "slick-carousel": "^1.7.1",
     "components-font-awesome": "^4.7.0",
-    "photoswipe": "^4.1.2"
+    "photoswipe": "^4.1.2",
+    "pretty-checkbox": "^2.2.1"
   },
   "resolutions": {
     "jquery": "~1.11.3"
