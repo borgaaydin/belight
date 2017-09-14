@@ -362,3 +362,67 @@
     margin: 20px auto;
   }
 }
+.odeme-secenkleri__container {
+  border: solid 1px #9b9b9b;
+  margin-top: 20px;
+  .nav-tabs {
+    li {
+      background: #eeeeee;
+      a {
+        border: none;
+        padding: 20px 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #54585c;
+        @include vendorize(border-radius, 0);
+        i {
+          margin-right: 10px;
+        }
+      }
+      &.active {
+        a {
+          border:none !important;
+          @include vendorize(border-radius, 0);
+        }
+      }
+    }
+  }
+}
+.kredi-karti__bilgileri {
+  @include make-row();
+  padding: 0 25px;
+}
+.kredi-karti__bilgileri__item__container {
+  @include make-md-column(7);
+}
+.kredi-karti__bilgileri__item {
+  position: relative;
+  margin-top: 30px;
+}
+.kredi-karti__taksit-secenekleri {
+  @include make-md-column(5);
+}
+.kredi-karti__bilgileri__item-row {
+  @include make-row();
+  display: flex;
+  align-items: flex-end;
+}
+.kredi-karti__bilgileri__skt {
+  @include make-md-column(8);
+}
+.kredi-karti__bilgileri__skt__options {
+  display: flex;
+  .nice-select {
+    margin-right: 30px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.kredi-karti__bilgileri__guvenlik-kodu
+{
+  @include make-md-column(4);
+}
+.kredi-karti__bilgileri {
+  padding-bottom: 30px;
+}

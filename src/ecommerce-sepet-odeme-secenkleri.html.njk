@@ -1,0 +1,183 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="basket__navigation teslimat">
+                <a href="" class="completed">
+                    <i class="fa fa-shopping-basket"></i>
+                    <h3>Sepetim</h3>
+                    <i class="fa fa-check hidden-check"></i>
+                </a>
+                <a href="" class="completed">
+                    <i class="fa fa-truck"></i>
+                    <h3>
+                        <span>Teslimat</span>
+                        <span class="small">Bilgilerim</span>
+                    </h3>
+                    <i class="fa fa-check hidden-check"></i>
+                </a>
+                <a href="" class="active">
+                    <i class="fa fa-credit-card"></i>
+                    <h3>
+                        <span>Ödeme</span>
+                        <span class="small">Seçenekleri</span>
+                    </h3>
+                    <i class="fa fa-check hidden-check"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-check"></i>
+                    <h3>
+                        <span>Sipariş</span>
+                        <span class="small">Onayı</span>
+                    </h3>
+                    <i class="fa fa-check hidden-check"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="basket__left">
+                <div class="odeme-secenkleri__container">
+                    <div class="odeme-secenkleri__tab-bar">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#kredi-karti" aria-controls="kredi-karti" role="tab" data-toggle="tab"><i class="fa fa-credit-card"></i>Kredi veya Banka Kartı ile Öde</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#havale" aria-controls="havale" role="tab" data-toggle="tab"><i class="fa fa-exchange"></i>Havale ile Öde</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="kredi-karti">
+                            <div class="kredi-karti__bilgileri">
+                                <div class="kredi-karti__bilgileri__item__container">
+                                    <div class="kredi-karti__bilgileri__item">
+                                        <input type="text" id="input-kredi-karti-no">
+                                        <label class="float" for="input-kredi-karti-no">
+                                            Kredi Kartı Numarası
+                                        </label>
+                                    </div>
+                                    <div class="kredi-karti__bilgileri__item">
+                                        <input type="text" id="input-kredi-kart-sahibi">
+                                        <label class="float" for="input-kredi-kart-sahibi">
+                                            Kart Sahibinin İsmi
+                                        </label>
+                                    </div>
+                                    <div class="kredi-karti__bilgileri__item kredi-karti__bilgileri__item-row">
+                                    <div class="kredi-karti__bilgileri__skt">
+                                        <label>Son Kullanma Tarihi</label>
+                                        <div class="kredi-karti__bilgileri__skt__options">
+                                            <select class="wide">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <select class="wide">
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="kredi-karti__bilgileri__guvenlik-kodu">
+                                        <label class="" for="input-kredi-kart-sahibi">
+                                            Güvenlik Kodu
+                                        </label>
+                                        <input type="text" id="input-kredi-kart-sahibi">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="kredi-karti__taksit-secenekleri">
+TAKSİT SEÇENEKLERİ
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="havale">
+                            HAVALE BİLGİLERİ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__right">
+                <ul class="basket__summary-list">
+                    <li>
+                        <div>
+                            Ara Toplam
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                280
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Kargo Ücreti
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                0
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            TOPLAM
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                280
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="basket__buttons">
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="js/all-input.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+            $('.odeme-secenkleri-tab-bar ul a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        });
+    </script>
+{% endblock %}
