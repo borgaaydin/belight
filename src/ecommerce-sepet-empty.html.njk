@@ -1,0 +1,49 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="basket__navigation sepetim">
+                <a href="" class="active">
+                    <i class="fa fa-shopping-basket"></i>
+                    <h3>Sepetim</h3>
+                </a>
+                <a href="">
+                    <i class="fa fa-truck"></i>
+                    <h3>
+                        <span>Teslimat</span>
+                        <span class="small">Bilgilerim</span>
+                    </h3>
+                </a>
+                <a href="">
+                    <i class="fa fa-credit-card"></i>
+                    <h3>
+                        <span>Ödeme</span>
+                        <span class="small">Seçenekleri</span>
+                    </h3>
+                </a>
+                <a href="">
+                    <i class="fa fa-check"></i>
+                    <h3>
+                        <span>Sipariş</span>
+                        <span class="small">Onayı</span>
+                    </h3>
+                </a>
+            </div>
+            <div class="basket-empty">
+                <h4>
+                    Sepetinizde ürün bulunmamaktadır.
+                </h4>
+                <a class="button button__green button__large" href="#">Alışverişe Dön</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="js/all-input.js"></script>
+{% endblock %}
