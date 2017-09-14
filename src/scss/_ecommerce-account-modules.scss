@@ -1,0 +1,54 @@
+.hesabim__navigation {
+  display: flex;
+  height: 73px;
+  flex-direction:row;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: solid 1px #dbdbdb;
+  & > a {
+    flex-grow: 1;
+    height: 73px;
+    border-right: solid 1px #dbdbdb;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+    color: #9b9b9b;
+  }
+  .hesabim__navigation__icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeeee;
+    position: absolute;
+    right: -8px;
+    bottom: -8px;
+    @include vendorize(border-radius, 50%);
+    i {
+      font-size: 24px;
+      color: #9b9b9b;
+    }
+  }
+  .active {
+    .hesabim__navigation__icon {
+      background: $orange;
+      i {
+        color: #fff;
+      }
+    }
+    h3 {
+      color: $blue;
+    }
+  }
+}
