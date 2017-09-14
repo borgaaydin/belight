@@ -67,6 +67,17 @@
     color: #9b9b9b;
     margin-right: 20px;
   }
+  .hidden-check {
+    display: none;
+    color: $green;
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+  }
+
+  .completed .hidden-check {
+    display: block;
+  }
   .active {
     i {
       color: $orange;
@@ -304,4 +315,36 @@
   font-weight: 600;
   color: $orange;
   margin-left: 50px;
+}
+
+.basket-onay {
+  position: relative;
+}
+
+.basket-onay__text {
+  position: absolute;
+  top: 80px;
+  text-align: center;
+
+  width: 440px;
+  left: calc(50% - 220px);
+
+  h3 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #54585C;
+  }
+
+  h4 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #54585C;
+
+  }
+
+  p {
+    font-size: 16px;
+    color: #54585C;
+
+  }
 }

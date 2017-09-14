@@ -1,0 +1,61 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="basket__navigation onay">
+                <a href="" class="completed">
+                    <i class="fa fa-shopping-basket"></i>
+                    <h3>Sepetim</h3>
+                    <i class="fa fa-check hidden-check"></i>
+                </a>
+                <a href="" class="completed">
+                    <i class="fa fa-truck"></i>
+                    <h3>
+                        <span>Teslimat</span>
+                        <span class="small">Bilgilerim</span>
+                    </h3>
+                    <i class="fa fa-check hidden-check"></i>
+                </a>
+                <a href="" class="completed">
+                    <i class="fa fa-credit-card"></i>
+                    <h3>
+                        <span>Ödeme</span>
+                        <span class="small">Seçenekleri</span>
+                    </h3>
+                    <i class="fa fa-check hidden-check"></i>
+                </a>
+                <a href="" class="active">
+                    <i class="fa fa-check"></i>
+                    <h3>
+                        <span>Sipariş</span>
+                        <span class="small">Onayı</span>
+                    </h3>
+                </a>
+            </div>
+            <div class="basket-onay">
+                <img src="img/siparistesekkur.png" alt="Sipariş Teşekkür Arkaplanı">
+                <div class="basket-onay__text">
+                    <h3>
+                        Teşekkür Ederiz
+                    </h3>
+                    <h4>
+                        Siparişiniz bize ulaşmıştır.
+                    </h4>
+                    <p>
+                        Siparişiniz banka havalesi onaylandıktan sonra işleme alınacak.
+                        Banka dekontunuza sipariş numaranızı eklemeyi unutmayın.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="js/all-input.js"></script>
+{% endblock %}
