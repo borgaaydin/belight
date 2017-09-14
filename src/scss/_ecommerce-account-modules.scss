@@ -52,3 +52,15 @@
     }
   }
 }
+.hesabim__form {
+  margin-top: 45px;
+  @include make-sm-column(6);
+}
+.hesabim__form__item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.hesabim__form__button__container {
+  display: flex;
+  justify-content: flex-end;
+}
