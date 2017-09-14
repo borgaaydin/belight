@@ -1,0 +1,69 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h2>HESABIM</h2>
+            <div class="hesabim__navigation">
+                <a href="">
+                    <div>
+                        <h3>Üyelik Bilgilerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-address-card"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="active">
+                        <h3>Şifre İşlemleri</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <h3>Adres Bilgilerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-address-card"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <h3>Siparişlerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-list-ul"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="hesabim__form">
+                <div class="hesabim__form__item">
+                    <input type="text" id="input-eski-sifre">
+                    <label class="float" for="input-eski-sifre">
+                        Eski Şifreniz
+                    </label>
+                </div>
+                <div class="hesabim__form__item">
+                    <input type="text" id="input-yeni-sifre1">
+                    <label class="float" for="input-yeni-sifre1">
+                        Yeni Şifrenizi Giriniz
+                    </label>
+                </div>
+                <div class="hesabim__form__item">
+                    <input type="text" id="input-yeni-sifre2">
+                    <label class="float" for="input-yeni-sifre2">
+                        Yeni Şifrenizi Giriniz (Tekrar)
+                    </label>
+                </div>
+                <div class="hesabim__form__item hesabim__form__button__container">
+                    <a href="#" class="button button__large button__blue">Güncelle</a>
+                </div>
+            </div>
+        </div>
+{% endblock %}
