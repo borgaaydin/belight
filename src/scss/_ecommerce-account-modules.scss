@@ -122,7 +122,6 @@
   }
 }
 .hesabim__siparislerim {
-  @include make-row();
   font-size: 18px;
   .hesabim__siparislerim__urun {
     @include make-md-column(3);
