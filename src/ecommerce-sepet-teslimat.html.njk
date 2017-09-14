@@ -1,0 +1,245 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="basket__navigation teslimat">
+                <a href="">
+                    <i class="fa fa-shopping-basket"></i>
+                    <h3>Sepetim</h3>
+                </a>
+                <a href="" class="active">
+                    <i class="fa fa-truck"></i>
+                    <h3>
+                        <span>Teslimat</span>
+                        <span class="small">Bilgilerim</span>
+                    </h3>
+                </a>
+                <a href="">
+                    <i class="fa fa-credit-card"></i>
+                    <h3>
+                        <span>Ödeme</span>
+                        <span class="small">Seçenekleri</span>
+                    </h3>
+                </a>
+                <a href="">
+                    <i class="fa fa-check"></i>
+                    <h3>
+                        <span>Sipariş</span>
+                        <span class="small">Onayı</span>
+                    </h3>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="basket__left">
+                <div class="basket__left__teslimat__adresi__container">
+                    <div class="basket__left__teslimat__adresi">
+                        <div class="basket__left__teslimat__adresi__item">
+                            <input type="text" id="input-teslimat-adresi">
+                            <label class="float" for="input-teslimat-adresi">
+                                Teslimat Adresi
+                            </label>
+                        </div>
+                    </div>
+                    <div class="basket__left__teslimat__adresi">
+                        <div class="basket__left__teslimat__adresi__item">
+                            <input type="text" id="input-teslimat-isim">
+                            <label class="float" for="input-teslimat-isim">
+                                İsim
+                            </label>
+                        </div>
+                    </div>
+                    <div class="basket__left__teslimat__adresi basket__left__teslimat__adresi2">
+                        <div class="basket__left__teslimat__adresi__item">
+                            <input type="text" id="input-teslimat-eposta">
+                            <label class="float" for="input-teslimat-eposta">
+                                E-posta
+                            </label>
+                        </div>
+                        <div class="basket__left__teslimat__adresi__item">
+                            <input type="text" id="input-teslimat-telefon">
+                            <label class="float" for="input-teslimat-telefon">
+                                Telefon
+                            </label>
+                        </div>
+                    </div>
+                    <div class="basket__left__teslimat__adresi basket__left__teslimat__adresi2">
+                        <div class="basket__left__teslimat__adresi__item basket__left__teslimat__adresi__select">
+                            <label>İl</label>
+                            <select class="wide">
+                                <option value="istanbul">İstanbul</option>
+                                <option value="ankara">Ankara</option>
+                                <option value="izmir">İzmir</option>
+                            </select>
+                        </div>
+                        <div class="basket__left__teslimat__adresi__item basket__left__teslimat__adresi__select">
+                            <label>İlçe</label>
+                            <select class="wide">
+                                <option value="atasehir">Ataşehir</option>
+                                <option value="kadikoy">Kadıköy</option>
+                                <option value="uskudar">Üsküdar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="basket__left__teslimat__adresi">
+                        <div class="basket__left__teslimat__adresi__item">
+                            <textarea id="input-detayli-adres"></textarea>
+                            <label class="float" for="input-detayli-adres">
+                                Detaylı Adres
+                            </label>
+                        </div>
+                    </div>
+                    <div class="basket__left__checkbox">
+                        <input type="checkbox" id="checkbox-teslimat-fatura-ayni">
+                        <label for="checkbox-teslimat-fatura-ayni">Farklı fatura adresi girmek istiyorum.</label>
+                    </div>
+                    <div class="basket__left__teslimat-saati">
+                        <div class="basket__left__teslimat-saati__title">
+                            TESLİMAT SAATİ
+                        </div>
+                        <select class="wide">
+                            <option value="10.00 - 16.00">10.00 - 16.00</option>
+                            <option value="16.00 - 22.00">16.00 - 22.00</option>
+                        </select>
+                    </div>
+                    <div class="basket__left__teslimat__adresi__kargo">
+                        <div class="basket__left__teslimat__adresi__kargo__title">
+                            KARGO
+                        </div>
+                        <input type="radio" checked="checked" id="basket__left__teslimat__adresi__kargo__checkbox">
+                        <label for="basket__left__teslimat__adresi__kargo__checkbox">
+                            Aras Kargo<span class="kargo-is-gunu">1-3 İş Günü</span><span class="kargo-ucret">10 TL</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="basket__left__fatura__adresi__container">
+                    <div class="basket__left__fatura__adresi">
+                        <div class="basket__left__fatura__adresi__item">
+                            <input type="text" id="input-fatura-adresi">
+                            <label class="float" for="input-fatura-adresi">
+                                Fatura Adresi
+                            </label>
+                        </div>
+                    </div>
+                    <div class="basket__left__fatura__adresi">
+                        <div class="basket__left__fatura__adresi__item">
+                            <input type="text" id="input-fatura-isim">
+                            <label class="float" for="input-fatura-isim">
+                                İsim
+                            </label>
+                        </div>
+                    </div>
+                    <div class="basket__left__fatura__adresi basket__left__fatura__adresi2">
+                        <div class="basket__left__fatura__adresi__item">
+                            <input type="text" id="input-fatura-eposta">
+                            <label class="float" for="input-fatura-eposta">
+                                E-posta
+                            </label>
+                        </div>
+                        <div class="basket__left__fatura__adresi__item">
+                            <input type="text" id="input-fatura-telefon">
+                            <label class="float" for="input-fatura-telefon">
+                                Telefon
+                            </label>
+                        </div>
+                    </div>
+                    <div class="basket__left__fatura__adresi basket__left__fatura__adresi2">
+                        <div class="basket__left__fatura__adresi__item basket__left__fatura__adresi__select">
+                            <label>İl</label>
+                            <select class="wide">
+                                <option value="istanbul">İstanbul</option>
+                                <option value="ankara">Ankara</option>
+                                <option value="izmir">İzmir</option>
+                            </select>
+                        </div>
+                        <div class="basket__left__fatura__adresi__item basket__left__fatura__adresi__select">
+                            <label>İlçe</label>
+                            <select class="wide">
+                                <option value="atasehir">Ataşehir</option>
+                                <option value="kadikoy">Kadıköy</option>
+                                <option value="uskudar">Üsküdar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="basket__left__fatura__adresi">
+                        <div class="basket__left__fatura__adresi__item">
+                            <textarea id="input-detayli-adres"></textarea>
+                            <label class="float" for="input-detayli-adres">
+                                Detaylı Adres
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__right">
+                <ul class="basket__summary-list">
+                    <li>
+                        <div>
+                            Ara Toplam
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                280
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Kargo Ücreti
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                0
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            TOPLAM
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                280
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="basket__buttons">
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="js/all-input.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+            $("#checkbox-teslimat-fatura-ayni").change(function() {
+                if(this.checked) {
+                    $(".basket__left__fatura__adresi__container").show();
+                } else {
+                    $(".basket__left__fatura__adresi__container").hide();
+                }
+            });
+        });
+    </script>
+{% endblock %}
