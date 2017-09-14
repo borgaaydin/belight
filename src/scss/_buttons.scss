@@ -31,6 +31,17 @@
 }
 .button__bordered {
   border: solid 1px $light-gray;
+  color: #4a4a4a !important;
+}
+.button__facebook {
+  background: #3a589a;
+  font-size: 16px;
+  &:before {
+    content: "\f082";
+    margin-right: 12px;
+    font: normal normal normal 20px/1 FontAwesome;
+    display: inline;
+  }
 }
 
 .button-ecommerce {
