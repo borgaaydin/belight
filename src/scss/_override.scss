@@ -67,3 +67,45 @@ a {
   content: "\f053";
   font-family: 'FontAwesome';
 }
+.modal-content {
+  padding: 25px 10px;
+}
+.modal-body {
+  @include make-row();
+  > div {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  label {
+    left: 35px;
+  }
+  input,
+  textarea {
+    &:focus ~ label.float,
+    &.not-empty ~ label.float,
+    label.floating{
+      top:-20px;
+      left: 15px;
+      font-size:16px;
+      color: $dark-gray;
+    }
+  }
+}
+.modal-footer {
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nice-select {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  border: solid 1px #9b9b9b;
+  @include vendorize(border-radius, 0);
+  span.current {
+    color: #54585C;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
