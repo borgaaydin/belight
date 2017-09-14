@@ -27,6 +27,7 @@
                 <a href="#">Biz Kimiz?</a>
                 <a href="#">Etkinlikler</a>
                 <a href="#">Bizimle Hafifleyenler</a>
+                <a href="#">Workshop</a>
                 <a href="#">İletişim</a>
             </div>
             <div class="header-controls">
@@ -113,7 +114,7 @@
                 </a>
             </div>
             <div class="hesabim__adreslerim__button">
-                <a href="#" class="button button__blue button__large">Yeni Adres Ekle</a>
+                <a href="#" class="button button__blue button__large" data-toggle="modal" data-target="#myModal">Yeni Adres Ekle</a>
             </div>
             <div class="hesabim__adreslerim__panel">
                 <div class="hesabim__adreslerim__panel__heading">
@@ -150,6 +151,65 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal__body-fatura-adresi">
+                        <input type="text" id="input-fatura-adresi">
+                        <label class="float" for="input-fatura-adresi">
+                            Fatura Adresi
+                        </label>
+                    </div>
+                    <div class="modal__body-isim">
+                        <input type="text" id="ilinput-isim">
+                        <label class="float" for="input-isim">
+                            İsim
+                        </label>
+                    </div>
+                    <div class="modal__body-eposta">
+                        <input type="text" id="input-eposta">
+                        <label class="float" for="input-eposta">
+                            E-posta
+                        </label>
+                    </div>
+                    <div class="modal__body-telefon">
+                        <input type="text" id="input-telefon">
+                        <label class="float" for="input-telefon">
+                            Telefon
+                        </label>
+                    </div>
+                    <div class="modal__body-il">
+                        <label>İl</label>
+                        <select class="wide">
+                            <option value="istanbul">İstanbul</option>
+                            <option value="ankara">Ankara</option>
+                            <option value="izmir">İzmir</option>
+                        </select>
+                    </div>
+                    <div class="modal__body-ilce">
+                        <label>İlçe</label>
+                        <select class="wide">
+                            <option value="atasehir">Ataşehir</option>
+                            <option value="kadikoy">Kadıköy</option>
+                            <option value="uskudar">Üsküdar</option>
+                        </select>
+                    </div>
+                    <div class="modal__body-detayli-adres">
+                        <textarea id="input-detayli-adres"></textarea>
+                        <label class="float" for="input-detayli-adres">
+                            Detaylı Adres
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="button button__large button__blue">Yeni Adres Ekle</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
@@ -201,6 +261,14 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/corporate-nav.js"></script>
 
+    <script src="js/modal.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+    </script>
 
 </body>
 </html>

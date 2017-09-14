@@ -1,4 +1,5 @@
-input {
+input,
+textarea {
   border: solid 1px #9b9b9b;
   font-size: 16px;
   color: #54585C;
@@ -53,4 +54,8 @@ label {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
+}
+textarea {
+  padding: 12px 24px;
+  height: 100px;
 }

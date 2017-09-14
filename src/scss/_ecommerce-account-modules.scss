@@ -170,3 +170,18 @@
   display: flex;
   margin-bottom: 20px;
 }
+.modal__body-fatura-adresi,
+.modal__body-isim,
+.modal__body-detayli-adres {
+  @include make-md-column(12);
+}
+.modal__body-eposta,
+.modal__body-telefon,
+.modal__body-il,
+.modal__body-ilce {
+  @include make-sm-column(6);
+}
+.modal__body-il,
+.modal__body-ilce {
+  margin-top: -22px;
+}

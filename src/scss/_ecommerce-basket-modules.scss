@@ -73,6 +73,9 @@
     }
     h3 {
       color: $blue;
+      span {
+        color: $blue !important;
+      }
     }
   }
 }
@@ -240,4 +243,65 @@
     margin-bottom: 10px;
     width: 100%;
   }
+}
+.basket__left__fatura__adresi__container {
+  display: none;
+}
+.basket__left__teslimat__adresi__container,
+.basket__left__fatura__adresi__container {
+  @include make-md-column(6);
+  margin-top: 42px;
+  padding-left: 0;
+}
+.basket__left__teslimat__adresi__item,
+.basket__left__fatura__adresi__item{
+  position: relative;
+  margin-bottom: 30px;
+}
+.basket__left__teslimat__adresi2,
+.basket__left__fatura__adresi2{
+  display: flex;
+  flex-direction:row;
+  > div {
+    width: calc(50% - 10px);
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+.basket__left__teslimat__adresi__select,
+.basket__left__fatura__adresi__select{
+  margin-top: -22px;
+}
+.basket__left__checkbox {
+  margin-bottom: 30px;
+}
+.basket__left__teslimat-saati, .basket__left__teslimat__adresi__kargo {
+  border: solid 1px #9b9b9b;
+  padding: 15px 30px;
+  height: 130px;
+  margin-bottom: 30px;
+  .basket__left__teslimat__adresi__kargo__title {
+    margin-bottom: 30px;
+    .basket__left__teslimat__adresi__kargo__checkbox {
+      margin: 0 10px;
+    }
+  }
+  .basket__left__teslimat-saati__title {
+    margin-bottom: 15px;
+  }
+  input, label {
+    display: inline;
+    width: auto;
+  }
+}
+.kargo-is-gunu {
+  color: #54585c;
+  margin: 0 20px;
+}
+.kargo-ucret {
+  font-size: 18px;
+  font-weight: 600;
+  color: $orange;
+  margin-left: 50px;
 }
