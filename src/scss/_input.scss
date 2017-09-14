@@ -15,6 +15,10 @@ input {
     display: inline;
     width: auto;
   }
+  &:read-only {
+    background-color: #efefef;
+    border: solid 1px #e4e4e4;
+  }
   &:focus {
     outline:none;
   }
@@ -43,4 +47,10 @@ label.float{
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
+}
+
+label {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
 }

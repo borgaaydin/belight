@@ -52,3 +52,121 @@
     }
   }
 }
+.hesabim__form {
+  margin-top: 45px;
+  @include make-sm-column(6);
+}
+.hesabim__form__item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.hesabim__form__button__container {
+  display: flex;
+  justify-content: flex-end;
+}
+.hesabim__adreslerim__button {
+  margin-top: 20px;
+}
+.hesabim__adreslerim__panel {
+  @include make-sm-column(6);
+  border: solid 1px #9b9b9b;
+  margin-top: 20px;
+}
+.hesabim__adreslerim__panel__heading {
+  padding: 13px 28px;
+  font-size: 18px;
+  color: $dark-gray;
+}
+.hesabim__adreslerim__panel__separator {
+  height: 1px;
+  background: #9b9b9b;
+  @include make-row();
+}
+.hesabim__adreslerim__panel__body__item {
+  padding: 20px 30px;
+  font-size: 14px;
+  line-height: 1.43;
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: $dark-gray;
+  }
+  &:last-child {
+    .hesabim__panel__buttons {
+      border:none;
+      padding-bottom:0;
+    }
+  }
+}
+.hesabim__panel__buttons {
+  padding: 25px 0;
+  border-bottom: solid 1px #dbdbdb;
+}
+.hesabim__panel__adress__edit {
+  color: $blue;
+  font-size: 13px;
+  margin-right: 25px;
+  &:before {
+    content: "\f044";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+  }
+}
+.hesabim__panel__adress__delete {
+  color: $orange;
+  font-size: 13px;
+  &:before {
+    content: "\f1f8";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+  }
+}
+.hesabim__siparislerim {
+  @include make-row();
+  font-size: 18px;
+  .hesabim__siparislerim__urun {
+    @include make-md-column(3);
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    .hesabim__siparislerim__urun__img {
+      min-width: 70px;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+  .hesabim__siparislerim__siparis-kodu {
+    @include make-md-column(2);
+    color: $blue;
+  }
+  .hesabim__siparislerim__miktar {
+    @include make-md-column(2);
+  }
+  .hesabim__siparislerim__tutar {
+    @include make-md-column(2);
+    font-weight: 600;
+    color: $orange;
+  }
+  .hesabim__siparislerim__durum {
+    @include make-md-column(3);
+    color: #9b9b9b;
+  }
+}
+.hesabim__siparislerim__header {
+  font-size: 18px;
+  color: $blue;
+  margin: 20px 0 10px;
+  font-weight: 400;
+  > div {
+    color: $blue !important;
+    font-weight: 400 !important;
+  }
+}
+.hesabim__siparislerim__item {
+  border: solid 1px #9b9b9b;
+  padding: 15px 0;
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}

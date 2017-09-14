@@ -80,7 +80,7 @@
             <h2>HESABIM</h2>
             <div class="hesabim__navigation">
                 <a href="">
-                    <div class="active">
+                    <div>
                         <h3>Üyelik Bilgilerim</h3>
                         <div class="hesabim__navigation__icon">
                             <i class="fa fa-address-card"></i>
@@ -96,7 +96,7 @@
                     </div>
                 </a>
                 <a href="">
-                    <div>
+                    <div class="active">
                         <h3>Adres Bilgilerim</h3>
                         <div class="hesabim__navigation__icon">
                             <i class="fa fa-address-card"></i>
@@ -112,49 +112,41 @@
                     </div>
                 </a>
             </div>
-            <div class="hesabim__form">
-                <div class="hesabim__form__item">
-                    <input type="text" id="input-isim">
-                    <label class="float" for="input-isim">
-                        İsim
-                    </label>
+            <div class="hesabim__adreslerim__button">
+                <a href="#" class="button button__blue button__large">Yeni Adres Ekle</a>
+            </div>
+            <div class="hesabim__adreslerim__panel">
+                <div class="hesabim__adreslerim__panel__heading">
+                    ADRESLERİM
                 </div>
-                <div class="hesabim__form__item">
-                    <input type="text" id="input-soyisim">
-                    <label class="float" for="input-soyisim">
-                        Soyisim
-                    </label>
-                </div>
-                <div class="hesabim__form__item">
-                    <input type="email" id="input-eposta" readonly="readonly">
-                    <label class="float" for="input-eposta">
-                        E-posta
-                    </label>
-                </div>
-                <div class="hesabim__form__item">
-                    <input type="text" id="input-telefon">
-                    <label class="float" for="input-telefon">
-                        Telefon
-                    </label>
-                </div>
-                <div class="hesabim__form__item form__item__checkbox">
-                    <div>
-                        <input type="checkbox" id="kampanya-eposta">
+                <div class="hesabim__adreslerim__panel__separator"></div>
+                <div class="hesabim__adreslerim__panel__body">
+                    <div class="hesabim__adreslerim__panel__body__item">
+                        <h3>Ev</h3>
+                        <div class="hesabim__panel__adress">
+                            A sokak B Apartmanı No: 12 D:18, Ataşehir, İstanbul
+                        </div>
+                        <div class="hesabim__panel__phone">
+                            0 (535-371-91-99)
+                        </div>
+                        <div class="hesabim__panel__buttons">
+                            <a href="#" class="hesabim__panel__adress__edit">Düzenle</a>
+                            <a href="#" class="hesabim__panel__adress__delete">Sil</a>
+                        </div>
                     </div>
-                    <div>
-                        <label for="kampanya-eposta">Kampanyalardan e-posta yoluyla haberdar olmak istiyorum.</label>
+                    <div class="hesabim__adreslerim__panel__body__item">
+                        <h3>Ev</h3>
+                        <div class="hesabim__panel__adress">
+                            A sokak B Apartmanı No: 12 D:18, Ataşehir, İstanbul
+                        </div>
+                        <div class="hesabim__panel__phone">
+                            0 (535-371-91-99)
+                        </div>
+                        <div class="hesabim__panel__buttons">
+                            <a href="#" class="hesabim__panel__adress__edit">Düzenle</a>
+                            <a href="#" class="hesabim__panel__adress__delete">Sil</a>
+                        </div>
                     </div>
-                </div>
-                <div class="hesabim__form__item form__item__checkbox">
-                    <div>
-                        <input type="checkbox" id="kampanya-sms">
-                    </div>
-                    <div>
-                        <label for="kampanya-sms">Kampanyalardan SMS yoluyla haberdar olmak istiyorum.</label>
-                    </div>
-                </div>
-                <div class="hesabim__form__item hesabim__form__button__container">
-                    <a href="#" class="button button__large button__blue">Güncelle</a>
                 </div>
             </div>
         </div>
