@@ -1,0 +1,83 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h2>HESABIM</h2>
+            <div class="hesabim__navigation">
+                <a href="">
+                    <div>
+                        <h3>Üyelik Bilgilerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-address-card"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="active">
+                        <h3>Şifre İşlemleri</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <h3>Adres Bilgilerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-address-card"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <h3>Siparişlerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-list-ul"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="hesabim__adreslerim__button">
+                <a href="#" class="button button__blue button__large">Yeni Adres Ekle</a>
+            </div>
+            <div class="hesabim__adreslerim__panel">
+                <div class="hesabim__adreslerim__panel__heading">
+                    ADRESLERİM
+                </div>
+                <div class="hesabim__adreslerim__panel__separator"></div>
+                <div class="hesabim__adreslerim__panel__body">
+                    <div class="hesabim__adreslerim__panel__body__item">
+                        <h3>Ev</h3>
+                        <div class="hesabim__panel__adress">
+                            A sokak B Apartmanı No: 12 D:18, Ataşehir, İstanbul
+                        </div>
+                        <div class="hesabim__panel__phone">
+                            0 (535-371-91-99)
+                        </div>
+                        <div class="hesabim__panel__buttons">
+                            <a href="#" class="hesabim__panel__adress__edit">Düzenle</a>
+                            <a href="#" class="hesabim__panel__adress__delete">Sil</a>
+                        </div>
+                    </div>
+                    <div class="hesabim__adreslerim__panel__body__item">
+                        <h3>Ev</h3>
+                        <div class="hesabim__panel__adress">
+                            A sokak B Apartmanı No: 12 D:18, Ataşehir, İstanbul
+                        </div>
+                        <div class="hesabim__panel__phone">
+                            0 (535-371-91-99)
+                        </div>
+                        <div class="hesabim__panel__buttons">
+                            <a href="#" class="hesabim__panel__adress__edit">Düzenle</a>
+                            <a href="#" class="hesabim__panel__adress__delete">Sil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
