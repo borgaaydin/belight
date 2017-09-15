@@ -1,0 +1,68 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="product-top">
+                <div class="product-left">
+                    <div class="product-image-showroom">
+                        <div class="product-img-slider">
+                            <div class="slider-for">
+                                <div>
+                                    <img src="img/product/productSliderImage.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/product/productSliderImage.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/product/productSliderImage.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-nav-slider">
+                            <div class="slider-nav">
+                                <div>
+                                    <img src="img/product/productSliderImageThumb.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/product/productSliderImageThumb.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/product/productSliderImageThumb.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-right">
+                    <h1>
+                        6'lı Juice Detox
+                    </h1>
+                    <p>
+                        Günlük hayat hızla akıp giderken aynı hızla hafiflemek istiyorsan 6’lı Juice Detox’u yanından ayırma. İçerdiği doğal vitamin ve mineraller sayesinde vücudun  fazlalıklarından arındıkça ruhunun da hafifleyeceğini unutma!
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-bottom">
+                <div class="product-content__bottle">
+                    <h2>
+                        İçerik
+                    </h2>
+                    <div class="product-content__bottle__item">
+                        <img src="img/juice-variants/GreenJuice.png" alt="Green Juice">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="js/slick.min.js"></script>
+    <script src="js/ecommerce-product.js"></script>
+{% endblock %}

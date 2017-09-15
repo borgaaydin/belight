@@ -84,15 +84,21 @@
             <div class="container__login">
                 <div class="container__login__form">
                     <div class="container__login__form__item">
-                        <input type="email" placeholder="E-posta">
+                        <input type="email" id="input-email">
+                        <label class="float" for="input-email">
+                            E-posta
+                        </label>
                     </div>
                     <div class="container__login__form__item">
-                        <input type="password" placeholder="Şifrenizi Giriniz">
+                        <input type="password" id="input-password">
+                        <label class="float" for="input-password">
+                            Şifre
+                        </label>
                     </div>
                     <div class="container__login__form__item login__form__remember__reset">
-                        <div>
-                            <input type="checkbox" id="remember-me">
-                            <label for="remember-me">Beni Hatırla</label>
+                        <div class="pretty">
+                            <input type="checkbox" id="remember-me"/>
+                            <label for="remember-me"><i class="fa fa-check"></i>Beni Hatırla</label>
                         </div>
                         <div>
                             <a href="">Şifremi Unuttum</a>
@@ -162,6 +168,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/corporate-nav.js"></script>
 
+    <script src="js/all-input.js"></script>
 
 </body>
 </html>
