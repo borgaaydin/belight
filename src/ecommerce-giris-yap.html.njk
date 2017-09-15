@@ -13,10 +13,16 @@
             <div class="container__login">
                 <div class="container__login__form">
                     <div class="container__login__form__item">
-                        <input type="email" placeholder="E-posta">
+                        <input type="email" id="input-email">
+                        <label class="float" for="input-email">
+                            E-posta
+                        </label>
                     </div>
                     <div class="container__login__form__item">
-                        <input type="password" placeholder="Şifrenizi Giriniz">
+                        <input type="password" id="input-password">
+                        <label class="float" for="input-password">
+                            Şifre
+                        </label>
                     </div>
                     <div class="container__login__form__item login__form__remember__reset">
                         <div class="pretty">
@@ -39,4 +45,8 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block script %}
+    <script src="js/all-input.js"></script>
 {% endblock %}
