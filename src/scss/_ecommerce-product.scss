@@ -1,0 +1,28 @@
+.product-top {
+  margin: 20px 0;
+}
+
+.product-image-showroom {
+  width: 500px;
+  img {
+    @include img-responsive();
+  }
+
+  .slick-slide {
+    padding: 0;
+  }
+
+  .slider-nav {
+    .slick-slide {
+      padding: 12px;
+    }
+    .slick-active {
+      padding-left: 0;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+}
