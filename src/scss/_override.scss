@@ -69,6 +69,7 @@ a {
 }
 .modal-content {
   padding: 25px 10px;
+  border-radius: 0;
 }
 .modal-body {
   @include make-row();
