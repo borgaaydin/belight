@@ -42,6 +42,7 @@
       font-size: 30px;
       color: #C0C0C0;
       font-weight: 600;
+      margin-right: 20px;
     }
   }
 
@@ -102,6 +103,37 @@
   display: block;
   width: 100%;
   float: left;
+}
+
+.product__widgets {
+  display: flex;
+  flex-direction: row;
+
+  .product__widgets__item {
+    max-width: 80px;
+    padding: 2px;
+    margin: 0 10px;
+
+    &.soguk-sikma {
+      background-color: $orange;
+    }
+
+    &.glutensiz {
+      background-color: $green;
+    }
+
+    &.katkisiz {
+      background-color: $blue;
+    }
+
+    &.sekersiz {
+      background-color: $pink;
+    }
+
+    &.laktozsuz {
+      background-color: $orange;
+    }
+  }
 }
 
 .product-image-showroom {
