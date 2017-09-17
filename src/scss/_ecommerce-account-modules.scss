@@ -184,3 +184,24 @@
 .modal__body-ilce {
   margin-top: -22px;
 }
+@media (max-width: 991px) {
+  .hesabim__navigation {
+    a {
+      border-bottom: solid 1px #dbdbdb;
+      border-right: none;
+      height: auto;
+      padding: 0 10px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    .hesabim__navigation__icon {
+      width: 30px;
+      height: 30px;
+      i {
+        font-size: 14px;
+      }
+    }
+  }
+}
