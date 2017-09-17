@@ -117,6 +117,20 @@
     }
   }
 }
+@media (max-width: 991px) {
+  .footer__ecommerce {
+    height:auto;
+    padding: 20px 0;
+    .row {
+      flex-direction: column;
+      height:auto;
+      > div {
+        padding: 10px 0;
+      }
+    }
+  }
+
+}
 @media (max-width: 767px) {
   .footer {
     min-height: 140px;
@@ -130,5 +144,12 @@
   .footer__social {
     order: 1;
     justify-content: center;
+  }
+  .footer__ecommerce {
+    .footer__links {
+      a {
+        display: block;
+      }
+    }
   }
 }
