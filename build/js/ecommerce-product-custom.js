@@ -26,7 +26,6 @@ $(document).ready(function(){
         }
     }
 
-
     $(".customjb__select ul.list li").click(function() {
         var bottleType = $(this).index();
         var bottleIndex = $(this).parent().parent().index();
