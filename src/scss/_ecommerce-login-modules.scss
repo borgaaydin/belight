@@ -40,7 +40,21 @@
     color: $blue;
   }
 }
-
+.popover-error {
+  .popover {
+    margin-top: -35px;
+    position: absolute;
+    display: block;
+    right: 10px;
+    left: auto;
+    background: #F8E0E0;
+    border: solid 1px #B40404;
+    color: #8A0808;
+    &.top > .arrow::after {
+      border-top-color: #B40404;
+    }
+  }
+}
 .container__login__image {
   position: absolute;
   bottom: -30px;
