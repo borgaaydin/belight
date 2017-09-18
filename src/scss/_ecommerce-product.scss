@@ -343,3 +343,48 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+
+
+@media (max-width: 992px) {
+  .product-top {
+    margin: 15px 0;
+    margin-left: -15px;
+  }
+
+  .product-left {
+    width: 100%;
+
+    .product-image-showroom {
+      width: calc(100% + 30px);
+    }
+  }
+
+  .product-right {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .product-content__bottle__item {
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      li {
+        margin-right: 4px;
+
+        &::after {
+          content: ", "
+        }
+
+        &:last-child {
+          &::after
+          {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
