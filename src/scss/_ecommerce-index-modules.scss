@@ -113,3 +113,26 @@
     }
   }
 }
+
+.quality-cert {
+  h2 {
+    span {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .sponsors .row {
+    flex-wrap: wrap;
+  }
+
+  .quality-cert {
+    h2 {
+      span {
+        display: inline-block;
+      }
+    }
+  }
+}
+
