@@ -98,6 +98,29 @@ a {
   margin-bottom: 20px;
 }
 
+.videoModal {
+  .modal-dialog {
+    width: 960px;
+    height: 540px;
+    margin: 60px auto;
+  }
+
+  .modal-content {
+    padding: 0;
+
+    .modal-body {
+      width: 960px;
+      height: 540px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .modal-footer {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .corporate-index__slider {
     .slick-slide {
