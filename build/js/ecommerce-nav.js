@@ -8,12 +8,16 @@ $(document).ready(function(){
         $(".bg-overlay").fadeOut(300);
         $(this).addClass("hidden");
         $(".header-ecommerce .mobile-menu__icon .fa-bars").removeClass("hidden");
+        $("html").removeClass("stuck");
+        $("body").removeClass("stuck");
     });
     $(".header-ecommerce .mobile-menu__icon .fa-bars").click(function() {
         $(".header-ecommerce .mobile-menu__list").animate({"margin-left": '0'});
         $(".bg-overlay").fadeIn(300);
         $(this).addClass("hidden");
         $(".header-ecommerce .mobile-menu__icon .corporate-times").removeClass("hidden");
+        $("html").addClass("stuck");
+        $("body").addClass("stuck");
 
         $(".header-ecommerce .mobile-menu-basket__list").animate({"margin-right": '-280px'});
         $(".header-ecommerce .ecommerce-times").addClass("hidden");
@@ -29,6 +33,8 @@ $(document).ready(function(){
         $(".header-ecommerce .mobile-menu-basket__list").animate({"margin-right": '-280px'});
         $(".header-ecommerce .ecommerce-times").addClass("hidden");
         $(".header-ecommerce .mobile-basket").removeClass("hidden");
+        $("html").removeClass("stuck");
+        $("body").removeClass("stuck");
     });
 
     $(".header-ecommerce .mobile-basket").click(function() {
@@ -36,6 +42,8 @@ $(document).ready(function(){
         $(".bg-overlay").fadeIn(300);
         $(this).addClass("hidden");
         $(".header-ecommerce .ecommerce-times").removeClass("hidden");
+        $("html").addClass("stuck");
+        $("body").addClass("stuck");
 
         $(".header-ecommerce .mobile-menu__list").animate({"margin-left": '-280px'});
         $(".header-ecommerce .mobile-menu__icon .corporate-times").addClass("hidden");
@@ -46,5 +54,7 @@ $(document).ready(function(){
         $(".bg-overlay").fadeOut(300);
         $(this).addClass("hidden");
         $(".header-ecommerce .mobile-basket").removeClass("hidden");
+        $("html").removeClass("stuck");
+        $("body").removeClass("stuck");
     });
 });

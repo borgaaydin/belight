@@ -185,6 +185,9 @@
   justify-content: center;
   @include vendorize(border-radius, 50%);
 }
+html.stuck, body.stuck {
+  overflow-y: hidden;
+}
 
 @media (max-width: 1200px) {
   .header-nav {
