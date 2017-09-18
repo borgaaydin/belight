@@ -66,7 +66,9 @@
             </div>
             <div class="mobile-logo">
                 <div class="mobile-phone">
-                    <i class="fa fa-phone"></i> 444 86 65
+                    <a href="tel:+904448665">
+                        <i class="fa fa-phone"></i>444 86 65
+                    </a>
                 </div>
                 <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x,img/logo@3x.png 3x">
             </div>
@@ -181,7 +183,7 @@
                                 </div>
                                 </div>
                                 <div class="kredi-karti__taksit-secenekleri">
-TAKSİT SEÇENEKLERİ
+                                    TAKSİT SEÇENEKLERİ
                                 </div>
                             </div>
                         </div>
@@ -334,38 +336,13 @@ TAKSİT SEÇENEKLERİ
 <script src="js/jquery.min.js"></script>
 <script src="js/corporate-nav.js"></script>
 
-    <script src="js/all-input.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/tab.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            var uncheckMesafeliSatisSozlesmesi = function() {
-                $('#mesafeliSatisSozlesmesi').prop('checked', false);
-            };
-            $('select').niceSelect();
-            $('.odeme-secenkleri-tab-bar ul a').click(function (e) {
-                e.preventDefault()
-                $(this).tab('show')
-            })
-            $("#checkbox-siparis-notu").change(function() {
-                if(this.checked) {
-                    $(".havale__bilgileri__siparis-notu").show();
-                } else {
-                    $(".havale__bilgileri__siparis-notu").hide();
-                }
-            });
-            $('#mesafeliSatisSozlesmesiLabel').click(function() {
-                $('#mesafeliSatisSozlesmesiModal').modal('show');
-                setTimeout(uncheckMesafeliSatisSozlesmesi, 1);
-            });
-            $('#mesafeliSatisSozlesmesiOnay').click(function() {
-                $('#mesafeliSatisSozlesmesiModal').modal('hide');
-                $('#mesafeliSatisSozlesmesi').prop('checked', true);
-            });
-        });
-    </script>
+    <script src="js/ecommerce-payment.js"></script>
+    <script src="js/all-input.js"></script>
+
 
 </body>
 </html>

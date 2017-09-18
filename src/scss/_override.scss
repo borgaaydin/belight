@@ -100,6 +100,7 @@ a {
 
 .nice-select {
   width: 100%;
+  display: block;
   height: 48px;
   line-height: 48px;
   border: solid 1px #9b9b9b;
@@ -109,4 +110,9 @@ a {
     font-size: 16px;
     font-weight: 400;
   }
+}
+
+.nice-select .list {
+  @include vendorize(border-radius, 0);
+  margin-top: 1px;
 }

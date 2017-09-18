@@ -15,4 +15,6 @@ $(document).ready(function(){
         focusOnSelect: true,
         arrows: false
     });
+
+    $('select').niceSelect();
 });

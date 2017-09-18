@@ -42,6 +42,10 @@
   margin: 0 10px;
 }
 
+.mobile-menu {
+  width: 90px;
+}
+
 .mobile-nav {
   z-index: 99;
   .row {
@@ -56,16 +60,19 @@
   .mobile-menu__icon {
     font-size: 28px;
     color: $blue;
-    min-width: 40px;
+    width: 40px;
     &:hover {
       cursor: pointer;
     }
   }
   .mobile-basket {
+    width: 90px;
+
     a {
       font-size: 28px;
       color: $orange;
       margin-left: 15px;
+      float: right;
 
       &:focus,
       &:hover {
@@ -118,8 +125,13 @@
     color: $green;
     font-weight: 700;
     padding: 2px 0;
-    i {
-      margin-right: 4px;
+    a {
+      font-size: 14px;
+      color: $green;
+      font-weight: 600;
+      i {
+        padding-right: 7px;
+      }
     }
   }
 }

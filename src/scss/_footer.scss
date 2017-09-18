@@ -5,6 +5,9 @@
   height: auto;
   width: 100%;
 
+  position: relative;
+  z-index: 15;
+
   margin-top: 20px;
   .row {
     display: flex;

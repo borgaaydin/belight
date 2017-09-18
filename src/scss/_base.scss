@@ -33,6 +33,7 @@ body {
 .content {
   flex: 1 0 auto;
   margin-top: 69px;
+  position: relative;
 }
 .page-title {
   margin-top: 20px;
@@ -91,6 +92,10 @@ a {
       margin-left: 4px;
     }
   }
+}
+
+.container > .row > h2 {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {

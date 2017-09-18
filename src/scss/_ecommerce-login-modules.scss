@@ -40,6 +40,18 @@
     color: $blue;
   }
 }
+
+.container__login__image {
+  position: absolute;
+  bottom: -30px;
+  right: calc(50% - 400px);
+  z-index: 5;
+
+  img {
+    min-width: 200px;
+  }
+}
+
 @media (max-width:767px) {
   .container__login {
     padding:0;
