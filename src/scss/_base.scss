@@ -134,4 +134,56 @@ a {
   .row {
     margin: 0;
   }
+
+  .modal {
+    padding: 15px;
+  }
+
+  .videoModal {
+    .modal-dialog {
+      width: 480px;
+      height: 270px;
+      margin: 60px auto;
+    }
+
+    .modal-content {
+      padding: 0;
+
+      .modal-body {
+        width: 480px;
+        height: 270px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .modal-footer {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .videoModal {
+    .modal-dialog {
+      width: 320px;
+      height: 180px;
+      margin: 60px auto;
+    }
+
+    .modal-content {
+      padding: 0;
+
+      .modal-body {
+        width: 320px;
+        height: 180px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .modal-footer {
+        display: none;
+      }
+    }
+  }
 }
