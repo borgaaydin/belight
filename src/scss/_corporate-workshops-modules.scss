@@ -93,9 +93,10 @@
 .gallery {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   a {
     width: calc(25% - 20px);
+    margin-right: 20px;
   }
   img {
     max-width: 100%;
@@ -122,6 +123,19 @@
     }
     .slick-next {
       right: 20px;
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    a {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      text-align: center;
     }
   }
 }
