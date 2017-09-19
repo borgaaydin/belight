@@ -39,8 +39,7 @@ $(document).ready(function(){
                 settings: {
                     arrows: true,
                     slidesToShow: 2,
-                    slidesToScroll: 1,centerMode: true,
-                    variableWidth: true
+                    slidesToScroll: 1
                 }
             },
             {
