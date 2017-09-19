@@ -157,6 +157,7 @@
   color: $blue;
   margin: 20px 0 10px;
   font-weight: 400;
+  width: 100%;
   > div {
     color: $blue !important;
     font-weight: 400 !important;
@@ -168,6 +169,8 @@
   align-items: center;
   display: flex;
   margin-bottom: 20px;
+  width: 100%;
+
 }
 .modal__body-fatura-adresi,
 .modal__body-isim,

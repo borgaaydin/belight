@@ -131,6 +131,11 @@ a {
   .content {
     margin-top: 40px;
   }
+
+  .ecom-content {
+    margin-top: 56px;
+  }
+
   .row {
     margin: 0;
   }
@@ -160,6 +165,16 @@ a {
         display: none;
       }
     }
+  }
+}
+
+.container__hesabim > .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    align-self: flex-start;
   }
 }
 
