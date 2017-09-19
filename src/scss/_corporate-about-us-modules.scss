@@ -113,8 +113,13 @@
 @media (max-width: 991px) {
   .about-us {
     padding:0;
+    margin: 10px auto;
     .about-us__intro {
-      padding: 0 30px;
+      padding: 0;
+      h2 {
+        text-align: center;
+        width: 100%;
+      }
     }
     .about-us__section {
       display: block;
@@ -125,6 +130,7 @@
       }
       .about-us__section__detail {
         border-left: none;
+        padding: 10px 0;
       }
     }
   }
