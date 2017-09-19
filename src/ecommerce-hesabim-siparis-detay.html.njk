@@ -1,0 +1,141 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container container__hesabim">
+        <div class="row">
+            <h2>HESABIM</h2>
+            <div class="hesabim__navigation">
+                <a href="">
+                    <div>
+                        <h3>Üyelik Bilgilerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-address-card"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <h3>Şifre İşlemleri</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <h3>Adres Bilgilerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-address-card"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="active">
+                        <h3>Siparişlerim</h3>
+                        <div class="hesabim__navigation__icon">
+                            <i class="fa fa-list-ul"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="hesabim__siparislerim hesabim__siparislerim__header">
+                <div class="hesabim__siparislerim__urun">
+                    Ürün
+                </div>
+                <div class="hesabim__siparislerim__siparis-kodu">
+                    Sipariş Kodu
+                </div>
+                <div class="hesabim__siparislerim__miktar">
+                    Miktar
+                </div>
+                <div class="hesabim__siparislerim__tutar">
+                    Tutar
+                </div>
+                <div class="hesabim__siparislerim__durum">
+                    Durum
+                </div>
+            </div>
+            <div class="hesabim__siparislerim hesabim__siparislerim__item">
+                <div class="hesabim__siparislerim__urun">
+                    <div class="hesabim__siparislerim__urun__img">
+                        <img src="img/product-little.png">
+                    </div>
+                    <div class="hesabim__siparislerim__urun__title">
+                        6'lı Juice Detox
+                    </div>
+                </div>
+                <div class="hesabim__siparislerim__siparis-kodu">
+                    176DUQB8
+                </div>
+                <div class="hesabim__siparislerim__miktar">
+                    1 Adet
+                </div>
+                <div class="hesabim__siparislerim__tutar">
+                    280 TL
+                </div>
+                <div class="hesabim__siparislerim__durum">
+                    Kargoya verildi.
+                </div>
+            </div>
+            <div class="hesabim__siparislerim hesabim__siparis__detay">
+                <div class="hesabim__siparis__detay__left">
+                    <div class="hesabim__siparis__detay__left__item">
+                        <h4>Fatura Adresi</h4>
+                        <p>A sokak B Apartmanı No: 12 D:18, Ataşehir, İstanbul</p>
+                    </div>
+                    <div class="hesabim__siparis__detay__left__item">
+                        <h4>Teslimat Adresi</h4>
+                        <p>A sokak B Apartmanı No: 12 D:18, Ataşehir, İstanbul</p>
+                    </div>
+                </div>
+                <div class="hesabim__siparis__detay__right">
+                    <ul class="basket__summary-list">
+                        <li>
+                            <div>
+                                Ara Toplam
+                            </div>
+                            <div class="basket__summary-price">
+                            <span>
+                                280
+                            </span>
+                                <span>
+                                TL
+                            </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                Kargo Ücreti
+                            </div>
+                            <div class="basket__summary-price">
+                            <span>
+                                0
+                            </span>
+                                <span>
+                                TL
+                            </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                TOPLAM
+                            </div>
+                            <div class="basket__summary-price">
+                            <span>
+                                280
+                            </span>
+                                <span>
+                                TL
+                            </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
