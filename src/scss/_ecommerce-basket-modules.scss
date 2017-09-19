@@ -365,6 +365,8 @@
 .odeme-secenkleri__container {
   border: solid 1px #9b9b9b;
   margin-top: 20px;
+  display: flex;
+
   .nav-tabs {
     li {
       background: #eeeeee;
@@ -382,6 +384,7 @@
       &.active {
         a {
           border:none !important;
+          width: 100%;
           @include vendorize(border-radius, 0);
         }
       }
@@ -460,4 +463,16 @@
   overflow: scroll;
   border: solid 1px $gray;
   padding: 10px;
+}
+.odeme-secenkleri__tab-bar {
+  width: 300px;
+  min-width: 300px;
+  ul li a i {
+    margin-left: 10px;
+  }
+}
+.tab-content {
+  min-height: 320px;
+  flex-grow: 1;
+  border-left: 2px solid #ddd;
 }
