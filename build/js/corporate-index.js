@@ -29,11 +29,10 @@ $(document).ready(function(){
         ]
     });
     $(".clients__list").slick({
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         responsive: [
-            {
-                breakpoint: 3000,
-                settings: "unslick"
-            },
             {
                 breakpoint: 992,
                 settings: {
