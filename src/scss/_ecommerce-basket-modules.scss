@@ -528,6 +528,19 @@
 }
 
 @media (max-width: 767px) {
+  .basket-onay {
+    img {
+      display: none;
+    }
+  }
+
+  .basket-onay__text {
+    position: relative;
+    top: inherit;
+    width: inherit;
+    left: inherit;
+  }
+
   .basket__navigation {
     >a {
       flex-direction: column;
