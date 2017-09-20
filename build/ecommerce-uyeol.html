@@ -164,6 +164,21 @@
                             Telefon
                         </label>
                     </div>
+                    <div class="container__login__form__item captcha-container">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Hata
+                            </div>
+                        </div>
+                        <input type="text" id="input-captcha">
+                        <label class="float" for="input-captcha">
+                            Güvenlik Kodu
+                        </label>
+                        <div class="captcha">
+
+                        </div>
+                    </div>
                     <div class="container__login__form__item form__item__checkbox">
                         <div class="pretty">
                             <input type="checkbox" id="kampanya-eposta"/>
@@ -190,7 +205,10 @@
                             <input type="checkbox" id="kampanya-uyelik-sozlesmesi"/>
                             <label for="kampanya-uyelik-sozlesmesi"><i class="fa fa-check"></i>
                                 <span>
-                                    Üyelik sözleşmesi’ni okudum ve kabul ediyorum.
+                                    <a href="#"  data-toggle="modal" data-target="#uyelikSozlesmeModal">
+                                        Üyelik sözleşmesi
+                                    </a>
+                                    ’ni okudum ve kabul ediyorum.
                                 </span>
                             </label>
                         </div>
@@ -205,6 +223,40 @@
 
     <div class="container__login__image">
         <img src="img/login.png">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade contractModal" id="uyelikSozlesmeModal" tabindex="-1" role="dialog" aria-labelledby="Belight Üyelik Sözleşmesi">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>
+                        Üyelik Sözleşmesi
+                    </h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl turpis, dictum non lorem id, dictum euismod elit. In augue mi, venenatis at iaculis vitae, hendrerit at turpis. Nunc pellentesque, lectus nec imperdiet pretium, lectus augue rutrum dui, sit amet imperdiet nisi lacus ac urna. Etiam in risus purus. Maecenas eu lacus odio. Duis aliquam gravida faucibus. In eget egestas lorem. Nam a leo a enim sollicitudin iaculis.
+                    </p>
+                    <p>
+                        Morbi convallis lectus vel ante volutpat sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet malesuada libero id aliquet. Donec vel cursus dui, et fermentum felis. Sed euismod et erat a hendrerit. Cras ullamcorper sollicitudin pretium. Donec pulvinar, mi quis porttitor placerat, dui tellus malesuada magna, sed interdum dui orci a urna. Sed venenatis tellus libero, ac aliquet mi interdum sed. Quisque et turpis purus. Praesent consequat dui eros, eget gravida justo venenatis ut. Sed placerat lectus sit amet auctor cursus.
+                    </p>
+                    <p>
+                        Vivamus finibus dui eget orci fringilla commodo. In scelerisque mollis semper. Aenean bibendum auctor urna, convallis ultricies ligula placerat a. Phasellus dictum erat vel congue vehicula. Suspendisse potenti. Donec euismod enim eget justo mattis venenatis. Nullam accumsan quam id neque pellentesque finibus. Nam nec tortor nisi. Donec ultrices odio diam, sit amet maximus lectus posuere id.
+                    </p>
+                    <p>
+                        Nam suscipit sem non nibh egestas faucibus. Donec tincidunt, magna vel mollis condimentum, arcu risus volutpat tortor, eu hendrerit tortor ante sed erat. Maecenas at enim volutpat, pharetra nisl a, maximus risus. Morbi accumsan odio non pharetra vehicula. Morbi et dapibus enim. Sed fermentum malesuada odio nec dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque suscipit nibh ac sapien pharetra, in rhoncus justo fermentum. Nunc et pulvinar purus, nec scelerisque dui. Nulla pretium viverra felis, et laoreet orci tincidunt in. Phasellus ut velit dui. Donec a odio blandit, interdum nisi non, feugiat nisl. Maecenas ultricies lectus velit.
+                    </p>
+                    <p>
+                        In hac habitasse platea dictumst. Proin tincidunt sapien mauris, nec finibus massa facilisis in. Aliquam erat volutpat. Cras varius pharetra urna, vel lobortis elit tincidunt non. Ut a justo eu augue lacinia maximus. Nunc odio nulla, ullamcorper non maximus a, luctus at nulla. Nam eleifend massa turpis, et feugiat odio varius et.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a id="uyelikSozlesmesiOnay" class="button button__green button__large" href="#">Kabul Ediyorum</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -258,6 +310,9 @@
 <script src="js/ecommerce-nav.js"></script>
 
     <script src="js/all-input.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/ecommerce-contract.js"></script>
+
 
 </body>
 </html>

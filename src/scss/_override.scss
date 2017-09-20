@@ -116,3 +116,14 @@ a {
   @include vendorize(border-radius, 0);
   margin-top: 1px;
 }
+
+.pretty>input[type='checkbox'], .pretty>input[type='radio'] {
+  z-index: 99 !important;
+}
+
+.pretty {
+  a {
+    position: relative;
+    z-index: 100;
+  }
+}
