@@ -526,3 +526,27 @@
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  .basket__navigation {
+    >a {
+      flex-direction: column;
+    }
+
+    i {
+      font-size: 20px;
+      margin: 0 0 6px 0;
+    }
+
+    h3 {
+      font-size: 20px;
+      span {
+        line-height: 16px;
+      }
+
+      span.small {
+        font-size: 14px;
+      }
+    }
+  }
+}
