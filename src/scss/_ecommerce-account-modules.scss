@@ -170,7 +170,22 @@
   display: flex;
   margin-bottom: 20px;
   width: 100%;
-
+}
+.hesabim__siparis__detay {
+  @include make-row();
+  width: 100%;
+  .hesabim__siparis__detay__left {
+    @include make-sm-column(8);
+  }
+  .hesabim__siparis__detay__right {
+    @include make-sm-column(4);
+  }
+  h4 {
+    font-weight: bold;
+  }
+}
+.hesabim__siparis__detay__left__item {
+  margin-bottom: 30px;
 }
 .modal__body-fatura-adresi,
 .modal__body-isim,
