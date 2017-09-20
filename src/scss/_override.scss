@@ -117,7 +117,8 @@ a {
   margin-top: 1px;
 }
 
-.pretty>input[type='checkbox'], .pretty>input[type='radio'] {
+.pretty>input[type='checkbox'], .pretty>input[type='radio'],
+.pretty i:before{
   z-index: 99 !important;
 }
 
