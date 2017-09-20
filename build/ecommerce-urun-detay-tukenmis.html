@@ -1,10 +1,102 @@
-{% extends "partials/ecommerce-base.html.njk" %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block head %}
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://use.fontawesome.com/85a2fb9bec.js"></script>
+    
 
-{% endblock %}
 
-{% block content %}
+</head>
+<body>
+<div class="bg-overlay"></div>
+
+    <div class="header header-ecommerce">
+    <div class="container hidden-xs hidden-sm">
+        <div class="row">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x,img/logo@3x.png 3x">
+                </a>
+            </div>
+            <div class="header-nav">
+                <a href="#">Biz Kimiz?</a>
+                <a href="#">Etkinlikler</a>
+                <a href="#">Bizimle Hafifleyenler</a>
+                <a href="#">Workshop</a>
+                <a href="#">İletişim</a>
+            </div>
+            <div class="header-controls">
+                <div class="header-controls__phone">
+                    <a href="tel:+904448665">
+                        <i class="fa fa-phone"></i>444 86 65
+                    </a>
+                </div>
+                <div class="header-controls__user">
+                    <a href="#"><i class="fa fa-user-plus"></i>Üye ol</a><span>•</span>
+                    <a href="#"><i class="fa fa-sign-in"></i>Giriş yap</a><span>•</span>
+                    <a href="#"><i class="fa fa-shopping-basket"></i>Sepetim</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mobile-nav visible-xs-block visible-sm-block">
+        <div class="row">
+            <div class="mobile-menu">
+                <div class="mobile-menu__icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times corporate-times hidden"></i>
+                </div>
+                <div class="mobile-menu__list">
+                    <div class="header-controls">
+                        <a href="#">EN</a><span class="header-separator">•</span><a href="#" class="lang-active">TR</a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Biz Kimiz?</a></li>
+                        <li><a href="#">Etkinlikler</a></li>
+                        <li><a href="#">Bizimle Hafifleyenler</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-logo">
+                <div class="mobile-phone">
+                    <a href="tel:+904448665">
+                        <i class="fa fa-phone"></i>444 86 65
+                    </a>
+                </div>
+                <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x,img/logo@3x.png 3x">
+            </div>
+            <div class="mobile-basket">
+                <a href="#"><i class="fa fa-user-o"></i></a>
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <i class="fa fa-times ecommerce-times hidden"></i>
+            <div class="mobile-menu-basket__list" dir="rtl">
+                <ul>
+                    <li><a href="#">Üye Ol</a></li>
+                    <li><a href="#">Giriş Yap</a></li>
+                    <li><a href="#">Sipariş Takip</a></li>
+                </ul>
+                <div class="mobile-menu-basket__list__siparis">
+                    <div class="mobile-menu-basket__list__siparis__adet">
+                        10
+                    </div>
+                    Sepetindeki Ürün Sayısı
+                    <a href="#" class="button button__100 button__orange">Satın Al</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content ecom-content">
+    
     <div class="container">
         <div class="row">
             <div class="product-top">
@@ -50,22 +142,19 @@
                     </p>
                     <div class="product__price">
                         <div class="first-row">
-                            <del>
+                            <del style="display: none;">
                                 240 TL
                             </del>
                             <div class="product__widgets">
-                                <div class="product__widgets__item soguk-sikma">
-                                    <img src="img/widgets/soguk-sikma.png" alt="Soğuk Sıkma">
+                                <div class="product__widgets__item sekersiz">
+                                    <img src="img/widgets/sekersiz.png" alt="Şekersiz">
                                 </div>
-                                <div class="product__widgets__item glutensiz">
-                                    <img src="img/widgets/glutensiz.png" alt="Glutensiz">
-                                </div>
-                                <div class="product__widgets__item katkisiz">
-                                    <img src="img/widgets/katkisiz.png" alt="Katkısız">
+                                <div class="product__widgets__item laktozsuz">
+                                    <img src="img/widgets/laktozsuz.png" alt="Laktozsuz">
                                 </div>
                             </div>
                         </div>
-                        <div class="second-row">
+                        <div class="second-row" style="display: none;">
                             <span class="sum">
                                 140
                             </span>
@@ -78,9 +167,11 @@
                         </div>
                     </div>
                     <div>
-                        <a class="button button__orange button__large" href="#">Satın Al</a>
+                        <p class="out-of-stock">
+                            Bu ürün şu anda temin edilememektedir.
+                        </p>
                     </div>
-                    <div class="product__shipment-info">
+                    <div class="product__shipment-info" style="display: none;">
                         <div>
                             <img src="img/icons/product-delivery1.png" alt="">
                             <p>
@@ -265,10 +356,60 @@
             </div>
         </div>
     </div>
-{% endblock %}
 
-{% block script %}
+</div>
+
+    <div class="footer">
+    <div class="footer__ecommerce">
+        <div class="container">
+            <div class="row">
+                <div class="footer__order">
+                    <img src="img/siparis-hatti.png">
+                </div>
+                <div class="footer__links">
+                    <a href="#">Kullanım Koşulları</a>
+                    <a href="#">Gizlilik ve Kredi Kartı Güvenliği</a>
+                    <a href="#">Sipariş Takip</a>
+                </div>
+                <div class="footer__bank-icons">
+                    <img src="img/bank-icon-visa.png">
+                    <img src="img/bank-icon-mastercard.png">
+                    <img src="img/bank-icon-maestro.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="footer__copyright">
+                <p>
+                    <span>BE LIGHT</span> © 2017
+                </p>
+            </div>
+            <div class="footer__social">
+                <a href="" class="footer__social__icon fsi_facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="" class="footer__social__icon fsi_twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="" class="footer__social__icon fsi_instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="" class="footer__social__icon fsi_youtube">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/ecommerce-nav.js"></script>
+
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/ecommerce-product.js"></script>
-{% endblock %}
+
+</body>
+</html>

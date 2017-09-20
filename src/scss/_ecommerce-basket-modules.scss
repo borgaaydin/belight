@@ -108,7 +108,7 @@
   padding: 0;
   margin: 20px 0;
 
-  li {
+  >li {
     width: 100%;
     padding: 15px 10px;
     margin-bottom: 10px;
@@ -144,6 +144,12 @@
     flex-direction: row;
     align-items: center;
   }
+}
+
+.basket__detailed-list__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .basket__summary-list {
@@ -218,7 +224,24 @@
   }
 }
 
+.yedek-parca {
+  list-style: none;
+  padding: 0;
+  margin: 0 10px;
+  border-left: 1px solid #C0C0C0;
+  padding-left: 10px;
+
+  li {
+    color: #9b9b9b;
+    font-weight: 400;
+  }
+
+}
+
 .basket__product-price {
+  width: 160px;
+  text-align: center;
+
   .basket__product-cost {
     color: $orange;
     font-size: 20px;
@@ -239,7 +262,7 @@
 }
 
 .basket__delete-button {
-  margin: 0 10px;
+  margin: 8px 10px 0;
   a {
     padding-top: 4px;
     i {
