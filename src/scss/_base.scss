@@ -88,6 +88,21 @@ a {
 }
 
 .videoModal {
+  .floatingClose {
+    position: absolute;
+
+    top: -12px;
+    right: -10px;
+    color: white;
+    z-index: 9999;
+    opacity: 1;
+
+    i {
+      font-size: 24px;
+
+    }
+  }
+
   .modal-dialog {
     width: 960px;
     height: 540px;
@@ -96,6 +111,7 @@ a {
 
   .modal-content {
     padding: 0;
+    position: relative;
 
     .modal-body {
       width: 960px;
