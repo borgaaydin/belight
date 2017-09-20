@@ -42,16 +42,30 @@
 }
 .popover-error {
   .popover {
-    margin-top: -35px;
+    bottom: 40px;
     position: absolute;
     display: block;
-    right: 10px;
-    left: auto;
-    background: #F8E0E0;
-    border: solid 1px #B40404;
+    left: 90px;
+    background: rgba(248, 224, 224, 0.95);
+
     color: #8A0808;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: none;
+    font-size: 12px;
+    top: inherit;
+
+    .popover-content {
+      padding: 6px 10px;
+    }
+
+    &>.arrow {
+      border-top-color: rgba(248, 224, 224, 0.95);
+
+    }
+
     &.top > .arrow::after {
-      border-top-color: #B40404;
+      border-top-color: rgba(248, 224, 224, 0.95);
     }
   }
 }
