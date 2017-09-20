@@ -301,6 +301,26 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade infoModal" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="Belight Bilgilendirme">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Ürün Sepetinize Eklendi.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a class="button button__green button__large" href="#">Alışverişe Dön</a>
+                    <a class="button button__orange button__large" href="#">Sepete Git</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
     <div class="footer">
@@ -353,6 +373,12 @@
 
 <script src="js/ecommerce-index.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/modal.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#infoModal').modal('toggle');
+    });
+</script>
 
 </body>
 </html>
