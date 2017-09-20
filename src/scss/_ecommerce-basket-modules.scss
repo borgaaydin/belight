@@ -528,6 +528,10 @@
 }
 
 @media (max-width: 767px) {
+  .basket__detailed-list>li {
+    flex-direction: column;
+  }
+
   .basket-onay {
     img {
       display: none;
