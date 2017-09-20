@@ -2,7 +2,7 @@
 .workshops {
   display: flex;
   margin-top: 18px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -91,12 +91,10 @@
   display: inline;
 }
 .gallery {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   a {
-    width: calc(25% - 20px);
-    margin-right: 20px;
+
+    @include make-sm-column(3, 10px);
+
   }
   img {
     max-width: 100%;
@@ -127,15 +125,8 @@
   }
 
   .gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     a {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-      text-align: center;
+      @include make-xs-column(6, 10px);
     }
   }
 }

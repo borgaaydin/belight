@@ -281,6 +281,7 @@
 
   .clients__short-story {
     padding-left: 20px;
+    color: #54585C;
   }
 
   .clients__readmore {
@@ -294,7 +295,7 @@
     position: relative;
     width: 250px;
     height: 250px;
-
+    margin: 0 auto;
 
     >img {
       z-index: 12;
@@ -386,6 +387,16 @@
 }
 
 @media (max-width: 992px) {
+
+  .video-banner {
+    height: auto;
+    min-height: 200px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .home-products {
     padding:0;
     .home-products__item {
@@ -461,5 +472,9 @@
 @media (max-width: 767px) {
   .client-detail__text {
     padding-left: 0;
+  }
+
+  .video-banner {
+    min-height: 140px;
   }
 }
