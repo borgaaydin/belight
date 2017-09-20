@@ -493,3 +493,13 @@
   flex-grow: 1;
   border-left: 2px solid #ddd;
 }
+
+.basket__coupon {
+  margin-top: 20px;
+
+  .container__login__form__item {
+    max-width: 300px;
+    margin-bottom: 10px;
+    display: none;
+  }
+}
