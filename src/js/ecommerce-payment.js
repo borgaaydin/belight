@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    var uncheckMesafeliSatisSozlesmesi = function() {
-        $('#mesafeliSatisSozlesmesi').prop('checked', false);
-    };
     $('select').niceSelect();
     $('.odeme-secenkleri-tab-bar ul a').click(function (e) {
         e.preventDefault();
@@ -13,10 +10,6 @@ $(document).ready(function() {
         } else {
             $(".havale__bilgileri__siparis-notu").hide();
         }
-    });
-    $('#mesafeliSatisSozlesmesiLabel').click(function() {
-        $('#mesafeliSatisSozlesmesiModal').modal('show');
-        setTimeout(uncheckMesafeliSatisSozlesmesi, 1);
     });
     $('#mesafeliSatisSozlesmesiOnay').click(function() {
         $('#mesafeliSatisSozlesmesiModal').modal('hide');
