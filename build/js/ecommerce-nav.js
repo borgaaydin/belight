@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var h = window.innerHeight;
+    var h = $(window).height();
     $(".header-ecommerce .mobile-menu__list").height(h);
     $(".header-ecommerce .mobile-menu-basket__list").height(h);
 
