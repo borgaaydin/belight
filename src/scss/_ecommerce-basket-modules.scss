@@ -100,7 +100,6 @@
 .basket__right {
   @include make-xs-column(12, 0);
   @include make-sm-column(3, 0);
-  padding-left: 10px;
 }
 
 .basket__detailed-list {
