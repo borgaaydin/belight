@@ -184,6 +184,36 @@
                         E-posta
                     </label>
                 </div>
+                <div class="basket__left__fatura__adresi basket__left__fatura__adresi2">
+                    <div class="basket__left__fatura__adresi__item basket__left__fatura__adresi__select">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Hata
+                            </div>
+                        </div>
+                        <label>İl</label>
+                        <select class="wide">
+                            <option value="istanbul">İstanbul</option>
+                            <option value="ankara">Ankara</option>
+                            <option value="izmir">İzmir</option>
+                        </select>
+                    </div>
+                    <div class="basket__left__fatura__adresi__item basket__left__fatura__adresi__select">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Hata
+                            </div>
+                        </div>
+                        <label>İlçe</label>
+                        <select class="wide">
+                            <option value="atasehir">Ataşehir</option>
+                            <option value="kadikoy">Kadıköy</option>
+                            <option value="uskudar">Üsküdar</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="hesabim__form__item">
                     <div class="popover top">
                         <div class="arrow"></div>
@@ -268,7 +298,12 @@
     <script src="js/jquery.inputmask.bundle.min.js"></script>
     <script src="js/all-input.js"></script>
     <script src="js/inputmask.js"></script>
-
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+    </script>
 
 </body>
 </html>
