@@ -122,6 +122,13 @@
     }
   }
 }
+@media (max-width: 1199px) {
+  .footer__ecommerce .footer__bank-icons img {
+    max-width: 50px;
+  }
+
+}
+
 @media (max-width: 991px) {
   .footer__ecommerce {
     height:auto;
