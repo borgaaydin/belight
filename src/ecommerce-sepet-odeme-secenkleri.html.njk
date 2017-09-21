@@ -41,8 +41,8 @@
         </div>
         <div class="row">
             <div class="basket__left">
-                <div class="odeme-secenkleri__container">
-                    <div class="odeme-secenkleri__tab-bar">
+                <div class="odeme-secenekleri__container">
+                    <div class="odeme-secenekleri__tab-bar">
                         <ul class="nav nav-tabs nav-stacked" role="tablist">
                             <li role="presentation" class="active">
                                 <a href="#kredi-karti" aria-controls="kredi-karti" role="tab" data-toggle="tab"><i class="fa fa-credit-card"></i>Kredi veya Banka Kartı ile Öde</a>
@@ -147,8 +147,10 @@
                     </div>
                 </div>
                 <div class="siparis-notu__checkbox__container">
-                    <input type="checkbox" id="checkbox-siparis-notu">
-                    <label for="checkbox-siparis-notu">Sipariş notu eklemek istiyorum</label>
+                    <div class="pretty">
+                        <input type="checkbox" id="checkbox-siparis-notu" class="not-empty">
+                        <label for="checkbox-siparis-notu"><i class="fa fa-check"></i><span>Sipariş notu eklemek istiyorum</span></label>
+                    </div>
                     <div class="havale__bilgileri__siparis-notu">
                         <textarea id="input-siparis-notu"></textarea>
                         <label class="float" for="input-siparis-notu">
@@ -157,8 +159,15 @@
                     </div>
                     <div>
                         <div class="pretty">
-                            <input type="checkbox" id="mesafeliSatisSozlesmesi" class="not-empty">
-                            <label for="remember-me" class="floating"><i class="fa fa-check"></i><span id="mesafeliSatisSozlesmesiLabel">Mesafeli Satış sözleşmesi</span>'ni okudum ve onaylıyorum.</label>
+                            <input type="checkbox" id="mesafeliSatisSozlesmesi"/>
+                            <label for="mesafeliSatisSozlesmesi"><i class="fa fa-check"></i>
+                                <span>
+                                    <a href="#"  data-toggle="modal" data-target="#mesafeliSatisSozlesmesiModal">
+                                        Mesafeli Satış sözleşmesi
+                                    </a>
+                                    ’ni okudum ve onaylıyorum.
+                                </span>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -215,7 +224,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Üyelik Sözleşmesi</h4>
+                    <h4 class="modal-title">Mesafeli Satış sözleşmesi</h4>
                 </div>
                 <div class="modal-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt lorem vitae orci semper auctor. Mauris finibus a lacus in lacinia. Sed sed pharetra felis. Etiam id ex erat. Nulla a semper nisl, ac rutrum ante.</p>
@@ -225,7 +234,7 @@
                 <div class="modal-footer">
                     <div class="signup-form-footer signup-form-footer-centered">
                         <div class="signup-form-button-container signup-form-uyelik-button-container">
-                            <a href="#" id="mesafeliSatisSozlesmesiOnay">Okudum ve Kabul Ediyorum</a>
+                            <a href="#" id="mesafeliSatisSozlesmesiOnay" class="button button__large button__orange">Okudum ve Onaylıyorum</a>
                         </div>
                     </div>
                 </div>

@@ -92,14 +92,17 @@
 }
 
 .basket__left {
-  @include make-xs-column(12, 0);
-  @include make-sm-column(9, 0);
+  @include make-xs-column(12);
+  @include make-sm-column(9);
+  padding-left: 0;
+  padding-right: 15px;
 }
 
 
 .basket__right {
-  @include make-xs-column(12, 0);
-  @include make-sm-column(3, 0);
+  @include make-xs-column(12);
+  @include make-sm-column(3);
+  padding: 0;
 }
 .row {
   .row {
@@ -406,15 +409,22 @@
     margin: 20px auto;
   }
 }
-.odeme-secenkleri__container {
+.odeme-secenekleri__tab-bar {
+  background: #eeeeee;
+}
+.odeme-secenekleri__container {
   border: solid 1px #9b9b9b;
   margin-top: 20px;
   display: flex;
 
   .nav-tabs {
+    background: #eeeeee;
     li {
+      padding: 0 10px;
+      width: 200px;
       background: #eeeeee;
       a {
+        margin-right: 0;
         border: none;
         padding: 20px 0;
         font-size: 14px;
@@ -426,6 +436,7 @@
         }
       }
       &.active {
+        background: #fff;
         a {
           border:none !important;
           width: 100%;
@@ -508,9 +519,7 @@
   border: solid 1px $gray;
   padding: 10px;
 }
-.odeme-secenkleri__tab-bar {
-  width: 300px;
-  min-width: 300px;
+.odeme-secenekleri__tab-bar {
   ul li a i {
     margin-left: 10px;
   }
@@ -518,7 +527,7 @@
 .tab-content {
   min-height: 320px;
   flex-grow: 1;
-  border-left: 2px solid #ddd;
+  border-left: 1px solid #ddd;
 }
 
 .basket__coupon {
@@ -583,5 +592,30 @@
         font-size: 14px;
       }
     }
+  }
+  .odeme-secenekleri__container {
+    flex-direction:column;
+  }
+  .odeme-secenekleri__tab-bar {
+    width: 100%;
+    .nav-tabs {
+      display: flex;
+      li {
+        width: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.active {
+          background: #fff;
+        }
+      }
+    }
+  }
+  .nav-stacked>li+li {
+    margin-top: 0;
+  }
+  .tab-content {
+    border: none;
   }
 }
