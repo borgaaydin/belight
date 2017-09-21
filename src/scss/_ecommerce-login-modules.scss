@@ -16,7 +16,10 @@
 .container__login__form__item {
   margin-bottom: 30px;
   position: relative;
-  width:100%;
+
+  span {
+    width: 272px;
+  }
 }
 .form__item__checkbox {
   display: flex;
