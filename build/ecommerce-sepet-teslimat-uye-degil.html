@@ -135,48 +135,599 @@
             <div class="basket__left">
                 <div class="row">
                     <div class="basket__left__teslimat__adresi__container">
-                        <div class="basket__left__teslimat__adresi__selectList">
-                            TESLİMAT ADRESİ
-                            <select class="wide">
-                                <option value="Ev">Ev</option>
-                                <option value="İş">İş</option>
-                            </select>
+                        <div class="row">
+                            <div class="basket__left__teslimat__adresi__full">
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-adresi">
+                                        <label class="float" for="input-teslimat-adresi">
+                                            Teslimat Adresi
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="basket__left__teslimat__adresi__detay">
-                            <h4>Ev</h4>
-                            <p>
-                                Ad Soyad
-                            </p>
-                            <p>
-                                A sokak B Apartmanı No: 12 D:18, Ataşehir, İstanbul
-                            </p>
-                            <p>
-                                <a class="button button__orange button__small" href="#">Düzenle</a>
-                            </p>
-                            <p>
-                                <a class="button button__orange button__small" href="#" data-toggle="modal" data-target="#myModal">Yeni Adres Ekle</a>
-                            </p>
+                        <div class="row">
+                            <div class="basket__left__teslimat__adresi__bireysel-kurumsal">
+                                <form>
+                                    <input type="radio" checked="checked" id="basket__left__teslimat__adresi__bireysel" value="bireysel" name="teslimatBireyselKurumsalRadio">
+                                    <label for="basket__left__teslimat__adresi__bireysel">
+                                        Bireysel
+                                    </label>
+                                    <input type="radio" id="basket__left__teslimat__adresi__kurumsal"  value="kurumsal" name="teslimatBireyselKurumsalRadio">
+                                    <label for="basket__left__teslimat__adresi__kurumsal">
+                                        Kurumsal
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row teslimatBireyselSelected">
+                            <div class="basket__left__teslimat__adresi__left">
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-bireysel-ad">
+                                        <label class="float" for="input-teslimat-bireysel-ad">
+                                            Ad
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-bireysel-soyad">
+                                        <label class="float" for="input-teslimat-bireysel-soyad">
+                                            Soyad
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__left__teslimat__adresi__right">
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-tckn">
+                                        <label class="float" for="input-teslimat-tckn">
+                                            T.C. Kimlik No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__teslimat__adresi basket__left__teslimat__adresi2">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-bireysel-ev-telefonu">
+                                        <label class="float" for="input-teslimat-bireysel-ev-telefonu">
+                                            Ev Telefonu
+                                        </label>
+                                    </div>
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-bireysel-cep-telefonu">
+                                        <label class="float" for="input-teslimat-bireysel-cep-telefonu">
+                                            Cep Telefonu
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row teslimatKurumsalSelected">
+                            <div class="basket__left__teslimat__adresi__left">
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-kurumsal-ad">
+                                        <label class="float" for="input-teslimat-kurumsal-ad">
+                                            Ad
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-kurumsal-soyad">
+                                        <label class="float" for="input-teslimat-kurumsal-soyad">
+                                            Soyad
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__teslimat__adresi basket__left__teslimat__adresi2">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-kurumsal-ev-telefonu">
+                                        <label class="float" for="input-teslimat-kurumsal-ev-telefonu">
+                                            Ev Telefonu
+                                        </label>
+                                    </div>
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-kurumsal-cep-telefonu">
+                                        <label class="float" for="input-teslimat-kurumsal-cep-telefonu">
+                                            Cep Telefonu
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__left__teslimat__adresi__right">
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-vergi-no">
+                                        <label class="float" for="input-teslimat-vergi-no">
+                                            Vergi No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-firma-adi">
+                                        <label class="float" for="input-teslimat-firma-adi">
+                                            Firma Adı
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item basket__left__teslimat__adresi__select">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <label>Vergi Dairesi</label>
+                                        <select class="wide">
+                                            <option value="atasehir">Ataşehir</option>
+                                            <option value="kadikoy">Kadıköy</option>
+                                            <option value="uskudar">Üsküdar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="basket__left__teslimat__adresi__left">
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-eposta">
+                                        <label class="float" for="input-teslimat-eposta">
+                                            E-posta
+                                        </label>
+                                    </div>
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-teslimat-posta-kodu">
+                                        <label class="float" for="input-teslimat-posta-kodu">
+                                            Posta Kodu
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__left__teslimat__adresi__right">
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item basket__left__teslimat__adresi__select">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <label>İl</label>
+                                        <select class="wide">
+                                            <option value="istanbul">İstanbul</option>
+                                            <option value="ankara">Ankara</option>
+                                            <option value="izmir">İzmir</option>
+                                        </select>
+                                    </div>
+                                    <div class="basket__left__teslimat__adresi__item basket__left__teslimat__adresi__select">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <label>İlçe</label>
+                                        <select class="wide">
+                                            <option value="atasehir">Ataşehir</option>
+                                            <option value="kadikoy">Kadıköy</option>
+                                            <option value="uskudar">Üsküdar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="basket__left__teslimat__adresi__full">
+                                <div class="basket__left__teslimat__adresi">
+                                    <div class="basket__left__teslimat__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <textarea id="input-detayli-adres"></textarea>
+                                        <label class="float" for="input-detayli-adres">
+                                            Detaylı Adres
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="basket__left__teslimat__adresi__full">
+                                <div class="basket__left__checkbox">
+                                    <div class="pretty">
+                                        <input type="checkbox" id="checkbox-teslimat-fatura-ayni">
+                                        <label for="checkbox-teslimat-fatura-ayni"><i class="fa fa-check"></i><span>Farklı fatura adresi girmek istiyorum.</span></label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="basket__left__fatura__adresi__container-uye-degil">
-                        <div class="basket__left__fatura__adresi__selectList">
-                            FATURA ADRESİ
-                            <select class="wide">
-                                <option value="Ev">Ev</option>
-                                <option value="İş">İş</option>
-                            </select>
+                    <div class="basket__left__fatura__adresi__container">
+                        <div class="row">
+                            <div class="basket__left__fatura__adresi__full">
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-adresi">
+                                        <label class="float" for="input-fatura-adresi">
+                                            Fatura Adresi
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="basket__left__fatura__adresi__detay">
-                            <h4>Ev</h4>
-                            <p>
-                                Ad Soyad
-                            </p>
-                            <p>
-                                A sokak B Apartmanı No: 12 D:18, Ataşehir, İstanbul
-                            </p>
-                            <p>
-                                <a class="button button__orange button__small" href="#">Düzenle</a>
-                            </p>
+                        <div class="row">
+                            <div class="basket__left__fatura__adresi__bireysel-kurumsal">
+                                <form>
+                                    <input type="radio" id="basket__left__fatura__adresi__bireysel" value="bireysel" name="faturaBireyselKurumsalRadio">
+                                    <label for="basket__left__fatura__adresi__bireysel">
+                                        Bireysel
+                                    </label>
+                                    <input type="radio" id="basket__left__fatura__adresi__kurumsal"  value="kurumsal" name="faturaBireyselKurumsalRadio">
+                                    <label for="basket__left__fatura__adresi__kurumsal">
+                                        Kurumsal
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row faturaBireyselSelected">
+                            <div class="basket__left__fatura__adresi__left">
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-ad">
+                                        <label class="float" for="input-fatura-ad">
+                                            Ad
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-soyad">
+                                        <label class="float" for="input-fatura-soyad">
+                                            Soyad
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__left__fatura__adresi__right">
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-tckn">
+                                        <label class="float" for="input-fatura-tckn">
+                                            T.C. Kimlik No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__fatura__adresi basket__left__fatura__adresi2">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-ev-telefonu">
+                                        <label class="float" for="input-fatura-ev-telefonu">
+                                            Ev Telefonu
+                                        </label>
+                                    </div>
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-cep-telefonu">
+                                        <label class="float" for="input-fatura-cep-telefonu">
+                                            Cep Telefonu
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row faturaKurumsalSelected">
+                            <div class="basket__left__fatura__adresi__left">
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-ad">
+                                        <label class="float" for="input-fatura-ad">
+                                            Ad
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-soyad">
+                                        <label class="float" for="input-fatura-soyad">
+                                            Soyad
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__fatura__adresi basket__left__fatura__adresi2">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-ev-telefonu">
+                                        <label class="float" for="input-fatura-ev-telefonu">
+                                            Ev Telefonu
+                                        </label>
+                                    </div>
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-cep-telefonu">
+                                        <label class="float" for="input-fatura-cep-telefonu">
+                                            Cep Telefonu
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__left__fatura__adresi__right">
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-vergi-no">
+                                        <label class="float" for="input-fatura-vergi-no">
+                                            Vergi No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-firma-adi">
+                                        <label class="float" for="input-fatura-firma-adi">
+                                            Firma Adı
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item basket__left__fatura__adresi__select">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <label>Vergi Dairesi</label>
+                                        <select class="wide">
+                                            <option value="atasehir">Ataşehir</option>
+                                            <option value="kadikoy">Kadıköy</option>
+                                            <option value="uskudar">Üsküdar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="basket__left__fatura__adresi__left">
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-eposta">
+                                        <label class="float" for="input-fatura-eposta">
+                                            E-posta
+                                        </label>
+                                    </div>
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <input type="text" id="input-fatura-posta-kodu">
+                                        <label class="float" for="input-fatura-posta-kodu">
+                                            Posta Kodu
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__left__fatura__adresi__right">
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item basket__left__fatura__adresi__select">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <label>İl</label>
+                                        <select class="wide">
+                                            <option value="istanbul">İstanbul</option>
+                                            <option value="ankara">Ankara</option>
+                                            <option value="izmir">İzmir</option>
+                                        </select>
+                                    </div>
+                                    <div class="basket__left__fatura__adresi__item basket__left__fatura__adresi__select">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <label>İlçe</label>
+                                        <select class="wide">
+                                            <option value="atasehir">Ataşehir</option>
+                                            <option value="kadikoy">Kadıköy</option>
+                                            <option value="uskudar">Üsküdar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="basket__left__fatura__adresi__full">
+                                <div class="basket__left__fatura__adresi">
+                                    <div class="basket__left__fatura__adresi__item">
+                                        <div class="popover top">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content">
+                                                Hata
+                                            </div>
+                                        </div>
+                                        <textarea id="input-detayli-adres"></textarea>
+                                        <label class="float" for="input-detayli-adres">
+                                            Detaylı Adres
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,8 +742,6 @@
                                 <option value="16.00 - 22.00">16.00 - 22.00</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="basket__left__fatura__adresi__container-uye-degil">
                         <div class="basket__left__teslimat__adresi__kargo">
                             <div class="basket__left__teslimat__adresi__kargo__title">
                                 KARGO
@@ -253,106 +802,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="modal__body-fatura-adresi">
-                        <div class="popover top">
-                            <div class="arrow"></div>
-                            <div class="popover-content">
-                                Hata
-                            </div>
-                        </div>
-                        <input type="text" id="input-teslimat-adresi">
-                        <label class="float" for="input-teslimat-adresi">
-                            Teslimat Adresi
-                        </label>
-                    </div>
-                    <div class="modal__body-isim">
-                        <div class="popover top">
-                            <div class="arrow"></div>
-                            <div class="popover-content">
-                                Hata
-                            </div>
-                        </div>
-                        <input type="text" id="ilinput-isim">
-                        <label class="float" for="input-isim">
-                            İsim
-                        </label>
-                    </div>
-                    <div class="modal__body-eposta">
-                        <div class="popover top">
-                            <div class="arrow"></div>
-                            <div class="popover-content">
-                                Hata
-                            </div>
-                        </div>
-                        <input type="text" id="input-eposta">
-                        <label class="float" for="input-eposta">
-                            E-posta
-                        </label>
-                    </div>
-                    <div class="modal__body-telefon">
-                        <div class="popover top">
-                            <div class="arrow"></div>
-                            <div class="popover-content">
-                                Hata
-                            </div>
-                        </div>
-                        <input type="text" id="input-telefon">
-                        <label class="float" for="input-telefon">
-                            Telefon
-                        </label>
-                    </div>
-                    <div class="modal__body-il">
-                        <div class="popover top">
-                            <div class="arrow"></div>
-                            <div class="popover-content">
-                                Hata
-                            </div>
-                        </div>
-                        <label>İl</label>
-                        <select class="wide">
-                            <option value="istanbul">İstanbul</option>
-                            <option value="ankara">Ankara</option>
-                            <option value="izmir">İzmir</option>
-                        </select>
-                    </div>
-                    <div class="modal__body-ilce">
-                        <div class="popover top">
-                            <div class="arrow"></div>
-                            <div class="popover-content">
-                                Hata
-                            </div>
-                        </div>
-                        <label>İlçe</label>
-                        <select class="wide">
-                            <option value="atasehir">Ataşehir</option>
-                            <option value="kadikoy">Kadıköy</option>
-                            <option value="uskudar">Üsküdar</option>
-                        </select>
-                    </div>
-                    <div class="modal__body-detayli-adres">
-                        <div class="popover top">
-                            <div class="arrow"></div>
-                            <div class="popover-content">
-                                Hata
-                            </div>
-                        </div>
-                        <textarea id="input-detayli-adres"></textarea>
-                        <label class="float" for="input-detayli-adres">
-                            Detaylı Adres
-                        </label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="button button__large button__blue">Yeni Adres Ekle</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </div>
 
@@ -405,12 +854,38 @@
 <script src="js/ecommerce-nav.js"></script>
 
     <script src="js/all-input.js"></script>
-    <script src="js/modal.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script>
         $(document).ready(function() {
             $('select').niceSelect();
+            $("#checkbox-teslimat-fatura-ayni").change(function() {
+                if(this.checked) {
+                    $(".basket__left__fatura__adresi__container").show();
+                } else {
+                    $(".basket__left__fatura__adresi__container").hide();
+                }
+            });
+            $('input[type=radio][name=faturaBireyselKurumsalRadio]').change(function() {
+                if (this.value == 'bireysel') {
+                    $(".faturaKurumsalSelected").hide();
+                    $(".faturaBireyselSelected").show();
+                }
+                else if (this.value == 'kurumsal') {
+                    $(".faturaBireyselSelected").hide();
+                    $(".faturaKurumsalSelected").show();
+                }
+            });
+            $('input[type=radio][name=teslimatBireyselKurumsalRadio]').change(function() {
+                if (this.value == 'bireysel') {
+                    $(".teslimatKurumsalSelected").hide();
+                    $(".teslimatBireyselSelected").show();
+                }
+                else if (this.value == 'kurumsal') {
+                    $(".teslimatBireyselSelected").hide();
+                    $(".teslimatKurumsalSelected").show();
+                }
+            });
         });
     </script>
 
