@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    var inputField = $('input');
+    var inputField = $();
+    inputField = inputField.add("input").add("textarea");
+
     inputField.each(function () {
         if( $(this).val() ) {
             $(this).addClass("not-empty");

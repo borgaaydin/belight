@@ -42,15 +42,15 @@
         <div class="row">
             <div class="basket__left">
                 <div class="row">
-                    <div class="basket__left__teslimat__adresi__container">
-                        <div class="basket__left__teslimat__adresi__selectList">
+                    <div class="teslimat__container half-basket">
+                        <div class="teslimat__selectList">
                             TESLİMAT ADRESİ
                             <select class="wide">
                                 <option value="Ev">Ev</option>
                                 <option value="İş">İş</option>
                             </select>
                         </div>
-                        <div class="basket__left__teslimat__adresi__detay">
+                        <div class="teslimat__detay">
                             <h4>Ev</h4>
                             <p>
                                 Ad Soyad
@@ -66,15 +66,15 @@
                             </p>
                         </div>
                     </div>
-                    <div class="basket__left__fatura__adresi__container-uye-degil">
-                        <div class="basket__left__fatura__adresi__selectList">
+                    <div class="fatura-uye-degil__container half-basket">
+                        <div class="fatura__selectList">
                             FATURA ADRESİ
                             <select class="wide">
                                 <option value="Ev">Ev</option>
                                 <option value="İş">İş</option>
                             </select>
                         </div>
-                        <div class="basket__left__fatura__adresi__detay">
+                        <div class="fatura__detay">
                             <h4>Ev</h4>
                             <p>
                                 Ad Soyad
@@ -89,9 +89,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="basket__left__teslimat__adresi__container">
-                        <div class="basket__left__teslimat-saati">
-                            <div class="basket__left__teslimat-saati__title">
+                    <div class="teslimat__container">
+                        <div class="teslimat-saati">
+                            <div class="teslimat-saati__title">
                                 TESLİMAT SAATİ
                             </div>
                             <select class="wide">
@@ -100,20 +100,85 @@
                             </select>
                         </div>
                     </div>
-                    <div class="basket__left__fatura__adresi__container-uye-degil">
-                        <div class="basket__left__teslimat__adresi__kargo">
-                            <div class="basket__left__teslimat__adresi__kargo__title">
+                    <div class="fatura-uye-degil__container">
+                        <div class="teslimat__kargo">
+                            <div class="kargo__title">
                                 KARGO
                             </div>
-                            <input type="radio" checked="checked" id="basket__left__teslimat__adresi__kargo__checkbox">
-                            <label for="basket__left__teslimat__adresi__kargo__checkbox">
-                                Aras Kargo<span class="kargo-is-gunu">1-3 İş Günü</span><span class="kargo-ucret">10 TL</span>
-                            </label>
+                            <form class="input-list" action="">
+                                <div>
+                                    <input type="radio" id="basket-kargo__aras1">
+                                    <label for="basket-kargo__aras1">
+                                        <img src="img/araskargo_161x64.jpg" alt="Aras Kargo">
+                                        <span class="kargo-is-gunu">1-3 İş Günü</span>
+                                        <span class="kargo-ucret">10 TL</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="basket-kargo__ups1">
+                                    <label for="basket-kargo__ups1">
+                                        <img src="img/aras_kapidaodeme_161x64.jpg" alt="Aras Kargo Kapıda Ödeme">
+                                        <span class="kargo-is-gunu">1-3 İş Günü</span>
+                                        <span class="kargo-ucret">10 TL</span>
+                                    </label>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="basket__right">
+                <div class="basket__mini-product-list">
+                    <span class="title">
+                        SİPARİŞ ÖZETİ
+                    </span>
+                    <ul>
+                        <li>
+                            <div class="mpl-img">
+                                <img src="img/product/productSliderImageThumb.png" alt="Ürün İsmi">
+                            </div>
+                            <div class="mpl-desc">
+                                <span class="mpl-quantity">
+                                    1 adet
+                                </span>
+                                <span class="mpl-title">
+                                    6'lı Juice Detox Kendin Yarat
+                                </span>
+                            </div>
+                            <div class="mpl-price">
+                                <span>
+                                    280
+                                </span>
+                                <span>
+                                    TL
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mpl-img">
+                                <img src="img/product/productSliderImageThumb.png" alt="Ürün İsmi">
+                            </div>
+                            <div class="mpl-desc">
+                                <span class="mpl-quantity">
+                                    5 adet
+                                </span>
+                                <span class="mpl-title">
+                                    6'lı Juice Detox
+                                </span>
+                            </div>
+                            <div class="mpl-price">
+                                <span>
+                                    280
+                                </span>
+                                <span>
+                                    TL
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
                 <ul class="basket__summary-list">
                     <li>
                         <div>
@@ -156,7 +221,7 @@
                     </li>
                 </ul>
                 <div class="basket__buttons">
-
+                    <button class="button button__orange button__large" href="#">Devam Et</button>
                 </div>
             </div>
         </div>

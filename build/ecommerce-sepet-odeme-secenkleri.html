@@ -231,7 +231,23 @@
                                 <h3>Havale Yapabileceğiniz Bankalar</h3>
                                 <div class="havale__bilgileri__radio__container">
                                     <input type="radio" checked="checked" id="havale__bilgileri__radio">
-                                    <label for="havale__bilgileri__radio">Garanti Bankası: <span>TR78 0006 2000 2110 0006 2973 45</span>
+                                    <label for="havale__bilgileri__radio">
+                                        <img src="img/is-bank.jpg" alt="İş Bankası Havale">
+                                        <span>TR78 0006 2000 2110 0006 2973 45</span>
+                                    </label>
+                                </div>
+                                <div class="havale__bilgileri__radio__container">
+                                    <input type="radio" id="havale__bilgileri__radio2">
+                                    <label for="havale__bilgileri__radio2">
+                                        <img src="img/is-bank.jpg" alt="İş Bankası Havale">
+                                        <span>TR78 0006 2000 2110 0006 2973 45</span>
+                                    </label>
+                                </div>
+                                <div class="havale__bilgileri__radio__container">
+                                    <input type="radio" id="havale__bilgileri__radio3">
+                                    <label for="havale__bilgileri__radio3">
+                                        <img src="img/is-bank.jpg" alt="İş Bankası Havale">
+                                        <span>TR78 0006 2000 2110 0006 2973 45</span>
                                     </label>
                                 </div>
                             </div>
@@ -248,19 +264,6 @@
                         <label class="float" for="input-siparis-notu">
                             Notunuz
                         </label>
-                    </div>
-                    <div>
-                        <div class="pretty">
-                            <input type="checkbox" id="mesafeliSatisSozlesmesi"/>
-                            <label for="mesafeliSatisSozlesmesi"><i class="fa fa-check"></i>
-                                <span>
-                                    <a href="#"  data-toggle="modal" data-target="#mesafeliSatisSozlesmesiModal">
-                                        Mesafeli Satış sözleşmesi
-                                    </a>
-                                    ’ni okudum ve onaylıyorum.
-                                </span>
-                            </label>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -307,7 +310,20 @@
                     </li>
                 </ul>
                 <div class="basket__buttons">
-
+                    <div class="contractCheck">
+                        <div class="pretty">
+                            <input type="checkbox" id="mesafeliSatisSozlesmesi"/>
+                            <label for="mesafeliSatisSozlesmesi"><i class="fa fa-check"></i>
+                                <span>
+                                    <a href="#"  data-toggle="modal" data-target="#mesafeliSatisSozlesmesiModal">
+                                        Mesafeli Satış sözleşmesi
+                                    </a>
+                                    ’ni okudum ve onaylıyorum.
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="button button__orange button__large" href="#">Alışverişi Tamamla</button>
                 </div>
             </div>
         </div>

@@ -1,3 +1,26 @@
+label.float{
+  color: #999999;
+  font-size:16px;
+  font-weight:400;
+  position:absolute;
+  pointer-events:none;
+  left:25px;
+  top:13px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+label {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+textarea {
+  padding: 12px 24px;
+  height: 100px;
+}
+
 input,
 textarea {
   border: solid 1px #9b9b9b;
@@ -29,7 +52,7 @@ textarea {
 
   &:focus ~ label.float,
   &.not-empty ~ label.float,
-  label.floating{
+  .floating{
     top:-20px;
     left: 2px;
     font-size:16px;
@@ -37,25 +60,9 @@ textarea {
   }
 }
 
-label.float{
-  color: #999999;
+label.floating{
+  top:-20px;
+  left: 2px;
   font-size:16px;
-  font-weight:400;
-  position:absolute;
-  pointer-events:none;
-  left:25px;
-  top:13px;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
-}
-
-label {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-}
-textarea {
-  padding: 12px 24px;
-  height: 100px;
+  color: $dark-gray;
 }

@@ -103,23 +103,43 @@
   @include make-xs-column(12);
   @include make-sm-column(3);
   padding: 0;
+
+  position: sticky;
+  top: 70px;
+  margin-top: 30px;
 }
 .row {
   .row {
     margin: 0;
   }
 }
-.basket__left__teslimat__adresi__full,
-.basket__left__fatura__adresi__full{
-  @include make-md-column(12);
+
+.half-basket {
+  @include make-sm-column(6,0);
+  padding-right: 15px;
 }
-.basket__left__teslimat__adresi__left,
-.basket__left__teslimat__adresi__right,
-.basket__left__fatura__adresi__left,
-.basket__left__fatura__adresi__right {
+
+.teslimat__full,
+.fatura__full{
+  @include make-md-column(12);
+  padding: 0;
+}
+.teslimat__left,
+.teslimat__right,
+.fatura__left,
+.fatura__right {
   @include make-md-column(6);
 }
 
+.teslimat__left,
+.fatura__left {
+  padding-left: 0;
+}
+
+.teslimat__right,
+.fatura__right {
+  padding-right: 0;
+}
 
 .basket__detailed-list {
   list-style: none;
@@ -174,7 +194,7 @@
 .basket__summary-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0 10px 0;
+  margin: 0 0 10px 0;
 
   border: 1px solid #dbdbdb;
 
@@ -296,42 +316,50 @@
     margin-bottom: 10px;
     width: 100%;
   }
+
+  .contractCheck {
+    margin: 10px 0;
+  }
+
+  a {
+    color: $blue;
+  }
 }
-#basket__left__teslimat__adresi__kurumsal,
-#basket__left__teslimat__adresi__bireysel,
-#basket__left__fatura__adresi__kurumsal,
-#basket__left__fatura__adresi__bireysel {
+#teslimat__kurumsal,
+#teslimat__bireysel,
+#fatura__kurumsal,
+#fatura__bireysel {
   width: auto;
   margin-right: 5px;
   margin-bottom: 30px;
 }
-#basket__left__teslimat__adresi__bireysel + label,
-#basket__left__fatura__adresi__bireysel + label {
+#teslimat__bireysel + label,
+#fatura__bireysel + label {
    margin-right: 30px;
 }
 .faturaKurumsalSelected,
 .teslimatKurumsalSelected {
   display: none;
 }
-.basket__left__teslimat__adresi__bireysel-kurumsal,
-.basket__left__fatura__adresi__bireysel-kurumsal{
+.teslimat__bireysel-kurumsal,
+.fatura__bireysel-kurumsal{
   @include make-md-column(12);
 }
-.basket__left__fatura__adresi__container {
+.fatura__container {
   display: none;
 }
-.basket__left__teslimat__adresi__container,
-.basket__left__fatura__adresi__container,
-.basket__left__fatura__adresi__container-uye-degil {
-  margin-top: 42px;
+.teslimat__container,
+.fatura__container,
+.fatura-uye-degil__container {
+  margin-top: 30px;
   padding-left: 0;
 }
-.basket__left__teslimat__adresi__detay,
-.basket__left__fatura__adresi__detay {
+.teslimat__detay,
+.fatura__detay {
   min-height: 200px;
 }
-.basket__left__teslimat__adresi__selectList,
-.basket__left__fatura__adresi__selectList {
+.teslimat__selectList,
+.fatura__selectList {
   display: block;
   min-height: 93px;
   margin-bottom: 30px;
@@ -342,13 +370,13 @@
     width: calc(100% + 26px);
   }
 }
-.basket__left__teslimat__adresi__item,
-.basket__left__fatura__adresi__item{
+.teslimat__item,
+.fatura__item{
   position: relative;
   margin-bottom: 30px;
 }
-.basket__left__teslimat__adresi2,
-.basket__left__fatura__adresi2{
+.teslimat__adresi2,
+.fatura__adresi2{
   display: flex;
   flex-direction:row;
   > div {
@@ -358,23 +386,35 @@
     }
   }
 }
-.basket__left__teslimat__adresi__select,
-.basket__left__fatura__adresi__select{
-  margin-top: -22px;
-  margin-bottom: 78px;
+.basket__left__teslimat__adresi {
+  .teslimat__item {
+    margin-bottom: 20px;
+  }
 }
-.basket__left__teslimat-saati, .basket__left__teslimat__adresi__kargo {
+
+.teslimat__select,
+.fatura__select{
+  @include clearfix();
+}
+
+.teslimat-saati,
+.teslimat__kargo {
   border: solid 1px #9b9b9b;
   padding: 15px 30px;
-  height: 130px;
+  min-height: 130px;
   margin-bottom: 30px;
-  .basket__left__teslimat__adresi__kargo__title {
-    margin-bottom: 30px;
-    .basket__left__teslimat__adresi__kargo__checkbox {
+
+  img {
+    margin-left: 20px;
+  }
+
+  .kargo__title {
+    margin-bottom: 10px;
+    .kargo__checkbox {
       margin: 0 10px;
     }
   }
-  .basket__left__teslimat-saati__title {
+  .teslimat-saati__title {
     margin-bottom: 15px;
   }
   input, label {
@@ -520,6 +560,10 @@
   }
 }
 .havale__bilgileri__radio__container {
+  padding: 16px 0;
+  border-bottom: 1px solid $light-gray;
+  @include clearfix();
+
   label,
   input {
     display: inline;
@@ -533,6 +577,10 @@
     padding-left: 20px;
     font-weight: 700;
   }
+
+  img {
+    margin-left: 10px;
+  }
 }
 .siparis-notu__checkbox__container {
   margin: 20px 0;
@@ -541,6 +589,10 @@
   display: none;
   margin: 20px 0;
   position: relative;
+
+  textarea {
+    resize: none;
+  }
 }
 .havale__bilgileri__sozlesme {
   height: 100px;
@@ -556,7 +608,6 @@
 .tab-content {
   min-height: 320px;
   flex-grow: 1;
-  border-left: 1px solid #ddd;
 }
 
 .basket__coupon {
@@ -568,19 +619,85 @@
     display: none;
   }
 }
+
+.basket__mini-product-list {
+  border: 1px solid #9B9B9B;
+  margin-bottom: 10px;
+
+  .title {
+    border-bottom: 1px solid #9B9B9B;
+    width: 100%;
+    display: block;
+    padding: 13px 10px;
+  }
+
+  ul {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    max-height: 132px;
+    overflow-y: scroll;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 6px;
+      justify-content: space-between;
+    }
+  }
+
+  .mpl-img {
+    @include img-responsive();
+    max-width: 70px;
+    margin-right: -10px;
+  }
+
+  .mpl-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mpl-price {
+    span:first-child {
+      font-size: 18px;
+      color: $orange;
+      font-weight: 600;
+    }
+
+    span:last-child {
+      font-size: 14px;
+      color: $orange;
+      font-weight: 600;
+    }
+  }
+
+  .mpl-quantity {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .mpl-title {
+    font-size: 16px;
+    max-width: 110px;
+  }
+}
+
 @media (max-width: 1199px) {
   .basket__navigation .hidden-check {
     bottom: 5px;
     margin-right: 0;
   }
 }
+
 @media (max-width: 767px) {
   .basket__detailed-list>li {
     flex-direction: column;
   }
-  .basket__left__teslimat__adresi__container,
-  .basket__left__fatura__adresi__container,
-  .basket__left__fatura__adresi__container-uye-degil {
+
+  .teslimat__container,
+  .fatura__container,
+  .fatura-uye-degil__container {
     padding: 0;
   }
 
@@ -589,15 +706,22 @@
       display: none;
     }
   }
-  .basket__left__teslimat__adresi__detay, .basket__left__fatura__adresi__detay {
-    min-height: auto;
+
+  .teslimat__detay,
+  .fatura__detay {
+
   }
-  .basket__left__teslimat__adresi__container, .basket__left__fatura__adresi__container-uye-degil {
+
+  .teslimat__container,
+  .fatura-uye-degil__container {
     margin-top: 10px
   }
-  .basket__left__teslimat__adresi__selectList, .basket__left__fatura__adresi__selectList {
+
+  .teslimat__selectList,
+  .fatura__selectList {
     margin-bottom: 10px;
   }
+
   .basket-onay__text {
     position: relative;
     top: inherit;
@@ -630,6 +754,7 @@
   .odeme-secenekleri__container {
     flex-direction:column;
   }
+
   .odeme-secenekleri__tab-bar {
     width: 100%;
     .nav-tabs {
