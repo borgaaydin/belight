@@ -189,6 +189,43 @@ html.stuck, body.stuck {
   overflow-y: hidden;
 }
 
+.nav-username {
+  display: flex;
+
+  span {
+    @include vendorize(transition, all .5s);
+  }
+
+  span:first-child {
+    max-width: 90px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  span:last-child {
+    width: 90px;
+    display: none;
+  }
+
+  &:hover {
+    span:first-child {
+      display: none;
+    }
+
+    span:last-child {
+      display: inline-block;
+    }
+  }
+
+}
+
+.mobile-username {
+  @extend .nav-username;
+  max-width: 200px;
+}
+
 @media (max-width: 1200px) {
   .header-nav {
     display: flex;
