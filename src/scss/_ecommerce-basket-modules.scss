@@ -103,9 +103,6 @@
   @include make-xs-column(12);
   @include make-sm-column(3);
   padding: 0;
-
-  position: sticky;
-  top: 70px;
   margin-top: 30px;
 }
 .row {
@@ -650,7 +647,6 @@
   .mpl-img {
     @include img-responsive();
     max-width: 70px;
-    margin-right: -10px;
   }
 
   .mpl-desc {
