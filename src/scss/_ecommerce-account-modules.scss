@@ -123,66 +123,8 @@
 }
 .hesabim__siparislerim {
   font-size: 18px;
-  .hesabim__siparislerim__urun {
-    @include make-md-column(3);
-    display: flex;
-    justify-content: flex-start;
-    align-items:center;
-  }
-  .hesabim__siparislerim__urun__img {
-    min-width: 70px;
-    padding-left: 15px;
-    img {
-    }
-  }
-  .hesabim__siparislerim__urun__title__container {
-    width: auto;
-  }
-  .hesabim__siparislerim__urun__title {
-    width: 190px;
-    max-width: 100%;
-    margin-left: 15px;
-  }
-  .hesabim__siparislerim__siparis-kodu {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline-block;
-    width: 165px;
-    max-width:100%;
-    color: $blue;
-  }
-  .hesabim__siparislerim__miktar {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline-block;
-    max-width:100%;
-    width: 165px;
-  }
-  .hesabim__siparislerim__tutar {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline-block;
-    width: 165px;
-    max-width:100%;
-    font-weight: 600;
-    color: $orange;
-  }
-  .hesabim__siparislerim__durum {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline-block;
-    width: 165px;
-    max-width:100%;
-    color: #9b9b9b;
-  }
+
+
 }
 .hesabim__siparislerim__header {
   font-size: 18px;

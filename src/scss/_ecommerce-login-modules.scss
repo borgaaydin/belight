@@ -16,6 +16,7 @@
 .container__login__form__item {
   margin-bottom: 30px;
   position: relative;
+  @include clearfix();
 
   span {
     width: 272px;

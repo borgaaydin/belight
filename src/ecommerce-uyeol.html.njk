@@ -73,6 +73,24 @@
                             Telefon
                         </label>
                     </div>
+
+                    <div class="container__login__form__item">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Hata
+                            </div>
+                        </div>
+                        <select id="select-cinsiyet" class="wide">
+                            <option value="1">Kadın</option>
+                            <option value="2">Erkek</option>
+                        </select>
+                        <label class="float floating" for="select-cinsiyet">
+                            Cinsiyet
+                        </label>
+                    </div>
+
+
                     <div class="container__login__form__item">
                         <div class="popover top">
                             <div class="arrow"></div>
@@ -184,9 +202,13 @@
 
 {% block script %}
     <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/all-input.js"></script>
     <script src="js/inputmask.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/ecommerce-contract.js"></script>
+    <script>
+        $('select').niceSelect();
+    </script>
 
 {% endblock %}
