@@ -2,15 +2,16 @@
 .workshops {
   display: flex;
   margin-top: 18px;
-  justify-content: space-between;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
+  padding: 0 20px;
+
   .workshops__workshop__item {
     background-color: #f5f5f5;
     min-height: 475px;
-    margin-bottom: 60px;
+    margin: 0 30px 30px 30px;
     width: 315px;
     img {
       width: 315px;
