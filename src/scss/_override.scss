@@ -77,20 +77,6 @@ a {
     position: relative;
     margin-bottom: 30px;
   }
-  label {
-    left: 35px;
-  }
-  input,
-  textarea {
-    &:focus ~ label.float,
-    &.not-empty ~ label.float,
-    label.floating{
-      top:-20px;
-      left: 15px;
-      font-size:16px;
-      color: $dark-gray;
-    }
-  }
 }
 .modal-footer {
   border: none;
