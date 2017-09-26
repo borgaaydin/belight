@@ -62,7 +62,7 @@ textarea {
 
 label.floating{
   top:-20px;
-  left: 2px;
+  left: 2px !important;
   font-size:16px;
   color: $dark-gray;
 }
