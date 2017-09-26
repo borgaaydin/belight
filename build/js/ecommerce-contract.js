@@ -3,8 +3,6 @@ function contractClick() {
 }
 
 $(document).ready(function(){
-
-
     $("#lol").click(function() {
         alert("lol");
 

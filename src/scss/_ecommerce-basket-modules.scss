@@ -480,14 +480,14 @@
 }
 .odeme-secenekleri__container {
   border: solid 1px #9b9b9b;
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
 
   .nav-tabs {
     background: #eeeeee;
     li {
       padding: 0 10px;
-      width: 200px;
+      width: 160px;
       background: #eeeeee;
       a {
         margin-right: 0;
@@ -517,14 +517,14 @@
   padding: 0 25px;
 }
 .kredi-karti__bilgileri__item__container {
-  @include make-md-column(7);
+  @include make-md-column(6);
 }
 .kredi-karti__bilgileri__item {
   position: relative;
   margin-top: 30px;
 }
 .kredi-karti__taksit-secenekleri {
-  @include make-md-column(5);
+  @include make-md-column(6);
 }
 .kredi-karti__bilgileri__item-row {
   @include make-row();
@@ -676,6 +676,102 @@
   .mpl-title {
     font-size: 16px;
     max-width: 110px;
+  }
+}
+
+.kredi-karti__taksit-secenekleri {
+  margin-top:30px;
+}
+
+.installment-title {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  border: 1px solid #9b9b9b;
+}
+
+.installmentList-empty {
+  border: 1px solid #9b9b9b;
+  border-top: 0;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.installmentList {
+  .col0,
+  .col1,
+  .col2,
+  .col3 {
+  }
+
+  .head {
+    padding: 10px;
+    border: 1px solid #9b9b9b;
+    border-top: 0;
+    border-bottom: 0;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+
+  .col0 {
+    @include make-xs-column(2,0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col1 {
+    @include make-xs-column(2,0);
+    text-align: center;
+  }
+  .col2 {
+    @include make-xs-column(4,0);
+    text-align: right;
+    span:last-child {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+  .col3 {
+    @include make-xs-column(4,0);
+    text-align: right;
+
+    span:last-child {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  ul {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    border: 1px solid #9b9b9b;
+    border-top: 0;
+    li{
+      border-bottom: 1px solid $light-gray;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      >label {
+        height: 36px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+      }
+    }
   }
 }
 
