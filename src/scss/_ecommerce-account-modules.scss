@@ -123,27 +123,62 @@
 }
 .hesabim__siparislerim {
   font-size: 18px;
+  width:100%;
+  margin-top: 30px;
 
-
-}
-.hesabim__siparislerim__header {
-  font-size: 18px;
-  color: $blue;
-  margin: 20px 0 0;
-  font-weight: 400;
-  width: 100%;
-  > div {
-    color: $blue !important;
-    font-weight: 400 !important;
+  .hsip__header {
+    font-weight: 600;
+    color: $blue;
+    padding-left: 20px;
+    @include clearfix();
   }
+
+  .hsip__no {
+    @include make-sm-column(2,0);
+  }
+
+  .hsip__tarih {
+    @include make-sm-column(2,0);
+  }
+  .hsip__teslim {
+    @include make-sm-column(3,0);
+  }
+  .hsip__tutar {
+    @include make-sm-column(1,0);
+  }
+  .hsip__durum {
+    @include make-sm-column(2,0);
+  }
+
+  .hsip__button {
+    @include make-sm-column(2,0);
+
+    .button {
+      width: calc(100% - 40px);
+      margin: 0 20px;
+    }
+  }
+
+
 }
-.hesabim__siparislerim__item {
+
+.hsip__item {
   border: solid 1px #9b9b9b;
-  padding: 15px 0;
+  padding: 15px 0 15px 20px;
   align-items: center;
   display: flex;
   margin-top: 20px;
   width: 100%;
+
+
+  .hsip__tutar {
+    color: $orange;
+    font-weight: 600;
+  }
+
+  .hsip__durum {
+    color: $blue;
+  }
 }
 .hesabim__siparis__detay {
   @include make-row();
