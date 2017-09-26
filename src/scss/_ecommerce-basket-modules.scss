@@ -316,6 +316,11 @@
 
   .contractCheck {
     margin: 10px 0;
+    width: 100%;
+
+    .pretty {
+      width: 100%;
+    }
   }
 
   a {
@@ -647,6 +652,7 @@
   .mpl-img {
     @include img-responsive();
     max-width: 70px;
+    margin-right: 4px;
   }
 
   .mpl-desc {
