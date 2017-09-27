@@ -314,7 +314,7 @@
 
                     </button>
 
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KDGf0-Z4rLc?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="belightTanitim" width="100%" height="100%" src="https://www.youtube.com/embed/KDGf0-Z4rLc?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
 
@@ -328,6 +328,16 @@
 <script src="js/slick.min.js"></script>
 <script src="js/corporate-index.js"></script>
 <script src="js/modal.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#indexVideo').on('hidden.bs.modal', function (e) {
+            var uFrame
+            var url = $('#belightTanitim').attr('src');
+            $('#belightTanitim').attr('src', '');
+            $('#belightTanitim').attr('src', url);
+        })
+    });
+</script>
 
 
 {% endblock %}
