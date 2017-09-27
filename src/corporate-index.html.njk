@@ -331,10 +331,10 @@
 <script>
     $(document).ready(function() {
         $('#indexVideo').on('hidden.bs.modal', function (e) {
-            var uFrame
-            var url = $('#belightTanitim').attr('src');
-            $('#belightTanitim').attr('src', '');
-            $('#belightTanitim').attr('src', url);
+            var youFrame =  $('#belightTanitim');
+            var url = youFrame.attr('src');
+            youFrame.attr('src', '');
+            youFrame.attr('src', url);
         })
     });
 </script>
