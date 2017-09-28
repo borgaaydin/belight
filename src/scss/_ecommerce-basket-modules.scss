@@ -788,7 +788,18 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .addressModal .modal-body>div {
+    margin-bottom: 0;
+  }
+
+  .teslimat__left,
+  .teslimat__right,
+  .fatura__left,
+  .fatura__right {
+    padding: 0;
+  }
+
   .basket__detailed-list>li {
     flex-direction: column;
   }
