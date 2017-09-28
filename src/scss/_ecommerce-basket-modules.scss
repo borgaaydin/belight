@@ -792,6 +792,41 @@
 }
 
 @media (max-width: 768px) {
+  .basket__detailed-list {
+    .basket__product {
+      flex-wrap: wrap;
+    }
+
+    .basket__product-title {
+      width: calc(100% - 90px);
+    }
+  }
+
+  .yedek-parca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4px 0;
+    padding: 0;
+    border:0;
+
+
+    li {
+      white-space: nowrap;
+
+      &:after {
+        content: ',';
+        margin: 0 4px 0 -2px;
+      }
+
+      &:last-child {
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }
+
   .basket__delete-button {
     margin: 8px 0 0;
   }
@@ -818,12 +853,6 @@
 
   .basket__left {
     padding-right: 0;
-  }
-
-  .basket__detailed-list {
-    .basket__product-title {
-      width: 100%;
-    }
   }
 
   .addressModal .modal-body>div {

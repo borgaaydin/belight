@@ -97,118 +97,47 @@
 
 <div class="content ecom-content">
     
-    <div class="container container__hesabim">
+    <div class="container">
         <div class="row">
-            <h2>HESABIM</h2>
-            <div class="hesabim__navigation">
-                <a href="">
-                    <div>
-                        <h3>Üyelik Bilgilerim</h3>
-                        <div class="hesabim__navigation__icon">
-                            <i class="fa fa-address-card"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <h3>Şifre İşlemleri</h3>
-                        <div class="hesabim__navigation__icon">
-                            <i class="fa fa-lock"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <h3>Adres Bilgilerim</h3>
-                        <div class="hesabim__navigation__icon">
-                            <i class="fa fa-address-card"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="active">
-                        <h3>Siparişlerim</h3>
-                        <div class="hesabim__navigation__icon">
-                            <i class="fa fa-list-ul"></i>
-                        </div>
-                    </div>
-                </a>
+            <div class="container__login">
+                <h2>ŞİPARİŞ TAKİP</h2>
             </div>
-            <div class="hesabim__siparislerim">
-                <div class="hsip__header">
-                    <div class="hsip__no">
-                        Sipariş No
+            <div class="container__login">
+                <div class="container__login__form">
+                    <div class="container__login__form__item">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Hata
+                            </div>
+                        </div>
+                        <input type="email" id="input-sifre-email">
+                        <label class="float" for="input-sifre-email">
+                            E-posta
+                        </label>
                     </div>
-                    <div class="hsip__tarih">
-                        Sipariş Tarihi
+                    <div class="container__login__form__item">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Hata
+                            </div>
+                        </div>
+                        <input type="text" id="input-sip-no">
+                        <label class="float" for="input-sip-no">
+                            Sipariş Numarası
+                        </label>
                     </div>
-                    <div class="hsip__teslim">
-                        Tahmin Teslim Tarihi
-                    </div>
-                    <div class="hsip__tutar">
-                        Tutar
-                    </div>
-                    <div class="hsip__durum">
-                        Durum
-                    </div>
-                </div>
-                <div class="hsip__item">
-                    <div class="hsip__no">
-                        <span class="visible-xs">
-                            Sipariş No.
-                        </span>
-                        <span>12341234</span>
-                    </div>
-                    <div class="hsip__tarih">
-                        <span class="visible-xs">
-                            Sipariş Tarihi
-                        </span>
-                        <span>
-                            22.09.2017
-                        </span>
-                    </div>
-                    <div class="hsip__teslim">
-                        <span class="visible-xs">
-                            Teslim Tarihi
-                        </span>
-                        <span>22.09.2017 - 22.09.2017</span>
-                    </div>
-                    <div class="hsip__tutar">
-                        <span class="visible-xs">
-                            Tutar
-                        </span>
-                        <span>100 TL</span>
-                    </div>
-                    <div class="hsip__durum">
-                        Sipariş Onaylandı
-                    </div>
-                    <div class="hsip__button">
-                        <a class="button button__orange button__small" href="#">Görüntüle</a>
-                    </div>
-                </div>
-
-                <div class="hsip__item">
-                    <div class="hsip__no">
-                        12341234
-                    </div>
-                    <div class="hsip__tarih">
-                        22.09.2017
-                    </div>
-                    <div class="hsip__teslim">
-                        22.09.2017 - 22.09.2017
-                    </div>
-                    <div class="hsip__tutar">
-                        100 TL
-                    </div>
-                    <div class="hsip__durum">
-                        Sipariş Onaylandı
-                    </div>
-                    <div class="hsip__button">
-                        <a class="button button__orange button__small" href="#">Görüntüle</a>
+                    <div class="container__login__form__item">
+                        <a class="button button__blue button__large" href="#">Siparişimi Bul</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container__login__image">
+        <img src="img/login.png">
     </div>
 
 </div>
@@ -261,6 +190,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/ecommerce-nav.js"></script>
 
+    <script src="js/all-input.js"></script>
 
 </body>
 </html>

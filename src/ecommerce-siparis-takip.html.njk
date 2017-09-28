@@ -1,0 +1,54 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="container__login">
+                <h2>ŞİPARİŞ TAKİP</h2>
+            </div>
+            <div class="container__login">
+                <div class="container__login__form">
+                    <div class="container__login__form__item">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Hata
+                            </div>
+                        </div>
+                        <input type="email" id="input-sifre-email">
+                        <label class="float" for="input-sifre-email">
+                            E-posta
+                        </label>
+                    </div>
+                    <div class="container__login__form__item">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                Hata
+                            </div>
+                        </div>
+                        <input type="text" id="input-sip-no">
+                        <label class="float" for="input-sip-no">
+                            Sipariş Numarası
+                        </label>
+                    </div>
+                    <div class="container__login__form__item">
+                        <a class="button button__blue button__large" href="#">Siparişimi Bul</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container__login__image">
+        <img src="img/login.png">
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="js/all-input.js"></script>
+{% endblock %}

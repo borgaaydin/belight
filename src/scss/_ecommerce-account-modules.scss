@@ -156,6 +156,7 @@
     .button {
       width: calc(100% - 40px);
       margin: 0 20px;
+      padding: 0 20px;
     }
   }
 }
@@ -252,6 +253,25 @@
 }
 
 @media (max-width: 767px) {
+  .hsip__header {
+    display: none;
+  }
+
+  .hsip__item {
+    flex-direction: column;
+    padding: 10px;
+    >div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .visible-xs {
+        color: $blue;
+      }
+    }
+  }
+
+
   .hesabim__form__button__container {
     justify-content: center;
   }
