@@ -54,6 +54,17 @@
     background: #f8f8f8;
     font-size: 18px;
     line-height: 1.17;
+
+    .product__widgets .product__widgets__item {
+      max-width: 48px;
+      margin: 0 4px;
+    }
+
+    .not-available {
+      font-size: 28px;
+      color: #C0C0C0;
+      font-weight: 600;
+    }
   }
 
   .ecommerce-home-products_item_image {

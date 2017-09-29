@@ -53,7 +53,7 @@
   }
 
   .second-row {
-    margin-top: -20px;
+    margin-top: -10px;
 
     .sum {
       font-size: 48px;
@@ -314,10 +314,22 @@
   border-radius: 3px;
   cursor: pointer;
 
+  .green {
+    display: none;
+  }
+
   &:hover,
   &.chosen{
     border-color: $green;
     color: $green;
+
+    .grayscale {
+      display: none;
+    }
+
+    .green {
+      display: block;
+    }
   }
 }
 

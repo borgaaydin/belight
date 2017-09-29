@@ -24,7 +24,38 @@
         <div class="row">
             <h2>ÜRÜNLERİMİZ</h2>
             <div class="ecommerce-home-products">
-            {% for i in [1,2,3,4,5,6,7,8,9] %}
+            <a href="#">
+                <div class="ecommerce-home-products__item">
+                    <div class="ecommerce-home-products_item_image">
+                        <img src="img/product/productSliderImage.png">
+                    </div>
+                    <div class="ecommerce-home-products__item__content">
+                        <h3>6'lı Juice Detox</h3>
+                        Her yudumda arınarak ve hızla hafiflemek elinde.
+                    </div>
+                    <div class="ecommerce-home-products__item__meta">
+                        <div class="ecommerce-home-products__item__icons">
+                            <div class="product__widgets">
+                                <div class="product__widgets__item soguk-sikma">
+                                    <img src="img/widgets/soguk-sikma.png" alt="Soğuk Sıkma">
+                                </div>
+                                <div class="product__widgets__item glutensiz">
+                                    <img src="img/widgets/glutensiz.png" alt="Glutensiz">
+                                </div>
+                                <div class="product__widgets__item katkisiz">
+                                    <img src="img/widgets/katkisiz.png" alt="Katkısız">
+                                </div>
+                            </div>
+                            <div class="ecommerce-home-products__item__icons__price">
+                                <span class="not-available">
+                                    Tükendi
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% for i in [1,2,3,4,5,6,7,8] %}
                 {% include "partials/ecommerce-index__product.html.njk" %}
             {% endfor %}
             </div>
