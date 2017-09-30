@@ -64,6 +64,8 @@
       font-size: 28px;
       color: #C0C0C0;
       font-weight: 600;
+      padding-bottom: 6px;
+      display: block;
     }
   }
 
@@ -91,6 +93,9 @@
     justify-content: flex-start;
     align-items: flex-end;
     width: 100%;
+    .product__widgets{
+      margin-bottom: 6px;
+    }
   }
 }
 .ecommerce-home-products__item__icons__item {
@@ -113,6 +118,8 @@
 .ecommerce-home-products__item__icons__price {
   flex-grow: 1;
   text-align: right;
+  min-width: 160px;
+
   .ecommerce-home-products__item__icons__price-old {
     color: #c1c1c1;
     text-decoration: line-through;
