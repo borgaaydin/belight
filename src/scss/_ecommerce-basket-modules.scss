@@ -171,12 +171,15 @@
 .basket-adres__buttons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+
 
   a {
     i {
       margin-right: 4px;
     }
     margin-right: 10px;
+    margin-bottom: 10px;
     max-width: 120px;
   }
 }
@@ -222,6 +225,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &:last-child {
       margin-bottom: 0;
@@ -605,6 +609,7 @@
   @include make-row();
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 .kredi-karti__bilgileri__skt {
   @include make-md-column(8);
@@ -858,14 +863,47 @@
   }
 }
 
+@media (max-width: 992px) {
+  .teslimat__left,
+  .teslimat__right,
+  .fatura__left,
+  .fatura__right {
+    padding: 0;
+  }
+
+}
+
 @media (max-width: 768px) {
+  .basket-adres__head {
+    padding: 0 15px;
+  }
+
+  .basket-adres__content {
+    height: auto;
+    min-height: 120px;
+    padding-bottom: 10px;
+  }
+
+  .basket-adres__content {
+    flex-wrap: wrap;
+  }
+
+  .basket-adres__checkbox .pretty label {
+    width: 32px;
+  }
+
+  .teslimat__selectList,
+  .fatura__selectList{
+    padding: 15px 0;
+  }
+
   .basket__detailed-list {
     .basket__product {
       flex-wrap: wrap;
     }
 
     .basket__product-title {
-      width: calc(100% - 90px);
+      width: calc(100% - 82px);
     }
   }
 
