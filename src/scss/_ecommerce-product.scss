@@ -22,7 +22,7 @@
   }
 
   p {
-    margin: 6px 0;
+    margin: 10px 0;
     font-size: 16px;
     line-height: 20px;
     color: #54585C;
@@ -46,9 +46,9 @@
     margin-top: 10px;
 
     del {
-      font-size: 30px;
+      font-size: 28px;
       color: #C0C0C0;
-      font-weight: 600;
+      font-weight: 500;
       margin-right: 20px;
     }
   }
@@ -57,14 +57,14 @@
     margin-top: -10px;
 
     .sum {
-      font-size: 48px;
-      font-weight: 600;
+      font-size: 40px;
+      font-weight: 400;
       color: $orange;
     }
     
     .currency {
       font-size: 36px;
-      font-weight: 600;
+      font-weight: 500;
       color: $orange;
     }
     
@@ -76,7 +76,7 @@
 }
 
 .product__shipment-info {
-  margin: 10px 0;
+  margin: 20px 0;
   >div {
     display: flex;
     flex-direction: row;

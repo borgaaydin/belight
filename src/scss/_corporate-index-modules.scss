@@ -10,6 +10,9 @@
   a {
     h3 {
       color: $blue;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
     }
     &:hover,
     &:focus{
@@ -33,6 +36,8 @@
     padding: 8px 12px;
     height: 90px;
     color: $dark-gray;
+    text-align: center;
+    font-size: 16px;
   }
 }
 
@@ -144,6 +149,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  outline: 0;
 
   img {
     @include img-responsive();
@@ -282,6 +288,7 @@
   .clients__short-story {
     padding-left: 20px;
     color: #54585C;
+    font-size: 16px;
   }
 
   .clients__readmore {
@@ -384,6 +391,7 @@
   align-items: center;
   justify-content: flex-start;
   text-align: left;
+  font-size: 18px;
 }
 
 @media (max-width: 992px) {
