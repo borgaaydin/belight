@@ -50,17 +50,13 @@ var autoprefixerOptions = {
 
 gulp.task('sass', function () {
     return gulp.src('scss/style.scss')
-        .pipe(sourcemaps.init())
         .pipe(sass.sync(sassOptions).on('error', sass.logError))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest('css'));
 });
 
 gulp.task('css', ['nunjucks'], function() {
     return gulp.src('scss/style.scss')
-        .pipe(sourcemaps.init())
         .pipe(sass.sync(sassOptions).on('error', sass.logError))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest('../build/css'));
 });
 
