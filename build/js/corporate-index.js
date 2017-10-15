@@ -1,8 +1,9 @@
 $(document).ready(function(){
     $(".slider").slick({
-        arrows: false,
+        arrows: true,
         dots: true,
-        autoplay: true
+        autoplay: true,
+        autoplaySpeed: 5000
     });
     $(".home-products").slick({
         responsive: [

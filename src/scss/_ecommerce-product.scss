@@ -29,6 +29,10 @@
   }
 }
 
+#productTitle { // Override omicron style
+  font-size: 16px;
+}
+
 .product-code {
   color: $blue;
   font-weight: 400;
@@ -63,9 +67,16 @@
       font-weight: 400;
       color: $orange;
     }
+
+    .sum-cents {
+      font-size: 28px;
+      font-weight: 400;
+      color: $orange;
+      margin-left: -10px;
+    }
     
     .currency {
-      font-size: 36px;
+      font-size: 28px;
       font-weight: 500;
       color: $orange;
     }
@@ -154,6 +165,10 @@
     z-index: 2;
     cursor: pointer;
 
+    img {
+      max-width: 48px;
+    }
+
     /* Hide the tooltip content by default */
     &:before,
     &:after {
@@ -212,7 +227,7 @@
       background-color: $orange;
 
       &:before {
-        content: "Soğuk Sıkma"
+        content: "Soğuk Sıkım"
       }
     }
 

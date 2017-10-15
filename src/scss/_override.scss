@@ -147,3 +147,18 @@ textarea {
     color: $blue;
   }
 }
+
+.with-video-icon {
+  position: relative;
+
+  a {
+    color: white;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 53px);
+    font-size: 72px;
+
+    @include vendorize(text-shadow, rgba(0, 0, 0, 0.69) 0px 3px 12px)
+
+  }
+}
