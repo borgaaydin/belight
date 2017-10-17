@@ -2,7 +2,6 @@
  * Created by borga on 12/07/2017.
  */
 $(window).load(function(){
-    console.log('hola');
     $(".nice-select").keypress(function(e) {
         console.log("hola");
         var list = $(this).find("ul.list");
