@@ -19,6 +19,9 @@
   color: $orange;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  width: 320px;
+
   i {
     padding-right: 3px;
     font-size: 18px;
@@ -27,7 +30,7 @@
     color: $orange;
   }
   span {
-    margin: 0 10px;
+    margin: 0 5px;
   }
 }
 
