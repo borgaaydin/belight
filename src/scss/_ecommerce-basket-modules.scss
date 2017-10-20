@@ -708,19 +708,21 @@
     padding: 13px 10px;
   }
 
-  ul {
+  >ul {
     padding: 10px;
     margin: 0;
     list-style: none;
-    max-height: 132px;
+    max-height: 200px;
     overflow-y: scroll;
 
-    li {
+    >li {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin-bottom: 6px;
       justify-content: space-between;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #9B9B9B;
     }
   }
 
@@ -757,6 +759,38 @@
   .mpl-title {
     font-size: 16px;
     max-width: 110px;
+  }
+
+  .mpl-yedek-parca {
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      border:0;
+      list-style: none;
+      max-width: 160px;
+
+      li {
+        white-space: nowrap;
+        color: #9b9b9b;
+        font-weight: 400;
+        font-size: 12px;
+
+        &:after {
+          content: ',';
+          margin: 0 4px 0 -2px;
+        }
+
+        &:last-child {
+          &:after {
+            content: '';
+          }
+        }
+      }
+    }
   }
 }
 
