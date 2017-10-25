@@ -6,6 +6,8 @@ $(document).ready(function(){
         autoplaySpeed: 5000
     });
     $(".home-products").slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
             {
                 breakpoint: 3000,
