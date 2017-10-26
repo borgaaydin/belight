@@ -48,6 +48,7 @@ a {
   height: 32px;
   width: 32px;
   z-index: 2;
+  @include vendorize(opacity, 0.6);
 }
 .slick-next {
   text-shadow: 0 2px 12px rgba(0,0,0,.32);

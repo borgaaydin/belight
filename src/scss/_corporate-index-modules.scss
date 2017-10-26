@@ -494,3 +494,12 @@
     height: 60px;
   }
 }
+
+
+
+@media (max-width: 375px) {
+
+  .video-banner {
+    min-height: 100px;
+  }
+}
