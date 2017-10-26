@@ -173,3 +173,14 @@ textarea {
     cursor: pointer;
   }
 }
+
+
+@media (max-width:767px) {
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+}

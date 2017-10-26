@@ -336,6 +336,12 @@
             youFrame.attr('src', '');
             youFrame.attr('src', url);
         })
+
+        $('#index-video-modal').on('click', function(ev) {
+            $("#indexVideo")[0].src += "&autoplay=1";
+            ev.preventDefault();
+        });
+
     });
 </script>
 

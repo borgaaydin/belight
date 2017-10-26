@@ -952,7 +952,8 @@
   .basket__detailed-list {
     .basket__product {
       flex-wrap: wrap;
-      max-width: 219px;
+      max-width: 300px;
+      min-width: 300px;
     }
 
     .basket__product-title {
@@ -1002,6 +1003,7 @@
     margin-top: 4px;
     input {
       width: 50px;
+      opacity: 1 !important;
     }
   }
 
