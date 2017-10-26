@@ -60,10 +60,11 @@
     border: 0;
     box-shadow: none;
     font-size: 12px;
-    top: -16px;
+    top: auto;
     z-index: 12;
-    left: inherit;
-    right: 10px;
+    right: auto;
+    left: auto;
+    bottom: 47px;
 
     .popover-content {
       padding: 6px 10px;

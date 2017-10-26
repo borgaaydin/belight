@@ -209,10 +209,6 @@
                     item.src = item.o.src;
                     item.w = item.o.w;
                     item.h = item.o.h;
-                } else {
-                    item.src = item.m.src;
-                    item.w = item.m.w;
-                    item.h = item.m.h;
                 }
             });
             gallery.init();
