@@ -407,6 +407,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a {
+      pointer-events: none;
+    }
   }
 
   .home-products {

@@ -183,4 +183,10 @@ textarea {
   .slick-prev {
     left: 0;
   }
+
+  .home-products {
+    .slick-slide {
+      padding: 0;
+    }
+  }
 }

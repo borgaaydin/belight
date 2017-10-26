@@ -526,6 +526,10 @@ p.out-of-stock {
   .product-right {
     width: 400px;
   }
+
+  .product__variant__item {
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 768px) {
