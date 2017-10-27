@@ -69,3 +69,8 @@ label.floating{
   font-size:16px;
   color: $dark-gray;
 }
+@media (max-width: 375px) {
+  .modal-open {
+    position: fixed !important;
+  }
+}
