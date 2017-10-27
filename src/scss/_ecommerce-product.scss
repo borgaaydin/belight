@@ -455,7 +455,6 @@
     display: none;
   }
 
-  &:hover,
   &.chosen{
     border-color: $green;
     color: $green;
@@ -527,9 +526,6 @@ p.out-of-stock {
     width: 400px;
   }
 
-  .product__variant__item {
-    pointer-events: none;
-  }
 }
 
 @media (max-width: 768px) {
