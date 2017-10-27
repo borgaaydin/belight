@@ -32,12 +32,9 @@
   align-items: flex-end;
   text-align: right;
   color: $light-gray;
-  margin-bottom: 20px;
   a {
     text-decoration: none;
     color: $light-gray;
-    font-size: 24px;
-    margin-right: 20px;
   }
 }
 
@@ -119,6 +116,9 @@
     text-align: left;
     a {
       display: inline;
+
+      font-size: 24px;
+      margin-right: 20px;
     }
   }
 }

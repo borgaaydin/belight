@@ -73,6 +73,7 @@ a {
   border-radius: 0;
 }
 .modal-body {
+  padding: 15px !important;
   @include make-row();
   > div {
     position: relative;
