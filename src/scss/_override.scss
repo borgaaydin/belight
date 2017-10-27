@@ -73,6 +73,7 @@ a {
   border-radius: 0;
 }
 .modal-body {
+  padding: 15px !important;
   @include make-row();
   > div {
     position: relative;
@@ -171,5 +172,22 @@ textarea {
 .slider-nav {
   .slick-slide {
     cursor: pointer;
+  }
+}
+
+
+@media (max-width:767px) {
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .home-products {
+    .slick-slide {
+      padding: 0;
+    }
   }
 }

@@ -335,7 +335,13 @@
             var url = youFrame.attr('src');
             youFrame.attr('src', '');
             youFrame.attr('src', url);
-        })
+        });
+
+        $('#index-video-modal').on('click', function(ev) {
+            $("#belightTanitim")[0].src += "&autoplay=1";
+            ev.preventDefault();
+        });
+
     });
 </script>
 

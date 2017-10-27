@@ -107,6 +107,8 @@
       a {
         display: block;
         color: $blue;
+        font-size: 20px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -114,6 +116,9 @@
     text-align: left;
     a {
       display: inline;
+
+      font-size: 24px;
+      margin-right: 20px;
     }
   }
 }
@@ -158,6 +163,8 @@
     a {
       display: block;
       color: $blue;
+      font-size: 24px;
+      margin-bottom: 20px;
     }
   }
 }

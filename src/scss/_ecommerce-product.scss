@@ -455,7 +455,6 @@
     display: none;
   }
 
-  &:hover,
   &.chosen{
     border-color: $green;
     color: $green;
@@ -526,6 +525,7 @@ p.out-of-stock {
   .product-right {
     width: 400px;
   }
+
 }
 
 @media (max-width: 768px) {

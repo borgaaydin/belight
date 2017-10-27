@@ -420,7 +420,7 @@
 .teslimat__bireysel-kurumsal,
 .fatura__bireysel-kurumsal{
   @include make-md-column(12);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .fatura__container {
   display: none;
@@ -952,7 +952,8 @@
   .basket__detailed-list {
     .basket__product {
       flex-wrap: wrap;
-      max-width: 219px;
+      max-width: 300px;
+      min-width: 300px;
     }
 
     .basket__product-title {
@@ -1002,6 +1003,7 @@
     margin-top: 4px;
     input {
       width: 50px;
+      opacity: 1 !important;
     }
   }
 
