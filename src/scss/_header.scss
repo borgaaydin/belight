@@ -32,9 +32,12 @@
   align-items: flex-end;
   text-align: right;
   color: $light-gray;
+  margin-bottom: 20px;
   a {
     text-decoration: none;
     color: $light-gray;
+    font-size: 24px;
+    margin-right: 20px;
   }
 }
 
@@ -107,6 +110,8 @@
       a {
         display: block;
         color: $blue;
+        font-size: 20px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -158,6 +163,8 @@
     a {
       display: block;
       color: $blue;
+      font-size: 24px;
+      margin-bottom: 20px;
     }
   }
 }
