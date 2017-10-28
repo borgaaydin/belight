@@ -36,7 +36,9 @@ textarea {
   }
   &[type="text"],
   &[type="email"],
-  &[type="password"]{
+  &[type="password"],
+  &[type="tel"],
+  &[type="number"] {
     padding: 12px 24px;
   }
   &[type="checkbox"] {
