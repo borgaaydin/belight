@@ -8,11 +8,10 @@ $(document).ready(function(){
     $(".home-products").slick({
         autoplay: true,
         autoplaySpeed: 5000,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         responsive: [
-            {
-                breakpoint: 3000,
-                settings: "unslick"
-            },
             {
                 breakpoint: 992,
                 settings: {
