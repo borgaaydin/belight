@@ -907,6 +907,10 @@
     padding: 0;
   }
 
+  .basket-onay__text {
+    top: 10px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1036,7 +1040,10 @@
 
   .basket-onay {
     img {
-      display: none;
+      position: absolute;
+      bottom: 0;
+      opacity: 0.5;
+      margin-bottom: -30px;
     }
   }
 

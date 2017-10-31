@@ -482,7 +482,7 @@
   }
 
   .video-banner {
-    min-height: 100px;
+    min-height: 140px;
   }
 
   .video-banner a img {
@@ -492,8 +492,7 @@
 
 
 
-@media (max-width: 375px) {
-
+@media (max-width: 400px) {
   .video-banner {
     min-height: 100px;
   }

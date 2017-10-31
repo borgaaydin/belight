@@ -337,11 +337,9 @@
             youFrame.attr('src', url);
         });
 
-        $('#index-video-modal').on('click', function(ev) {
+        $('#indexVideo').on('shown.bs.modal', function (e) {
             $("#belightTanitim")[0].src += "&autoplay=1";
-            ev.preventDefault();
         });
-
     });
 </script>
 
