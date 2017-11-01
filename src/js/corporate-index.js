@@ -61,6 +61,10 @@ $(document).ready(function(){
         slidesToScroll: 1,
         responsive: [
             {
+                breakpoint: 3000,
+                settings: "unslick"
+            },
+            {
                 breakpoint: 992,
                 settings: {
                     arrows: true,
