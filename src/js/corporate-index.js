@@ -21,7 +21,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 630,
+                breakpoint: 768,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
@@ -44,7 +44,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 630,
+                breakpoint: 768,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
@@ -54,11 +54,12 @@ $(document).ready(function(){
         ]
     });
     $(".steps-showcase__list").slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         responsive: [
-            {
-                breakpoint: 3000,
-                settings: "unslick"
-            },
             {
                 breakpoint: 992,
                 settings: {
@@ -68,7 +69,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 630,
+                breakpoint: 768,
                 settings: {
                     arrows: true,
                     slidesToShow: 1,
