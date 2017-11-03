@@ -512,9 +512,9 @@
 <script src="js/modal.js"></script>
 <script>
     $(document).ready(function() {
+        var youFrame =  $('#belightTanitim');
+        var url = youFrame.attr('src');
         $('#indexVideo').on('hidden.bs.modal', function (e) {
-            var youFrame =  $('#belightTanitim');
-            var url = youFrame.attr('src');
             youFrame.attr('src', '');
             youFrame.attr('src', url);
         });
