@@ -85,7 +85,7 @@ $(document).ready(function(){
 
     var youFrame =  $('#belightTanitim');
     var url = youFrame.attr('src');
-    $('#tanitimVideo').on('hiddexn.bs.modal', function (e) {
+    $('#tanitimVideo').on('hidden.bs.modal', function (e) {
         youFrame.attr('src', '');
         youFrame.attr('src', url);
     });
