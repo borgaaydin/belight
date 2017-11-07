@@ -83,16 +83,14 @@ $(document).ready(function(){
         ]
     });
 
-    $(document).ready(function() {
-        var youFrame =  $('#belightTanitim');
-        var url = youFrame.attr('src');
-        $('#tanitimVideo').on('hiddexn.bs.modal', function (e) {
-            youFrame.attr('src', '');
-            youFrame.attr('src', url);
-        });
+    var youFrame =  $('#belightTanitim');
+    var url = youFrame.attr('src');
+    $('#tanitimVideo').on('hiddexn.bs.modal', function (e) {
+        youFrame.attr('src', '');
+        youFrame.attr('src', url);
+    });
 
-        $('#tanitimVideo').on('shown.bs.modal', function (e) {
-            $("#belightTanitim")[0].src += "&autoplay=1";
-        });
+    $('#tanitimVideo').on('shown.bs.modal', function (e) {
+        $("#belightTanitim")[0].src += "&autoplay=1";
     });
 });
