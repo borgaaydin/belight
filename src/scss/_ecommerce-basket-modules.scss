@@ -715,9 +715,12 @@
 
 .basket__coupon-select {
   margin-top: 10px;
+  @include clearfix();
 
   .nice-select {
     margin-bottom: 10px;
+    max-width: 300px;
+    display: block;
   }
 
 }
