@@ -10,4 +10,6 @@ $(document).ready(function() {
             $(".havale__bilgileri__siparis-notu").hide();
         }
     });
+
+    $('select').niceSelect();
 });
