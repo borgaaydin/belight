@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://use.fontawesome.com/85a2fb9bec.js"></script>
+    
+
+
+</head>
+<body>
+<div class="bg-overlay"></div>
+
+    <div class="header header-ecommerce">
+    <div class="container hidden-xs hidden-sm">
+        <div class="row">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x,img/logo@3x.png 3x">
+                </a>
+            </div>
+            <div class="header-nav">
+                <a href="#">Biz Kimiz?</a>
+                <a href="#">Etkinlikler</a>
+                <a href="#">Bizimle Hafifleyenler</a>
+                <a href="#">Workshop</a>
+                <a href="#">İletişim</a>
+            </div>
+            <div class="header-controls">
+                <div class="header-controls__phone">
+                    <a href="tel:+904448665">
+                        <i class="fa fa-phone"></i>444 86 65
+                    </a>
+                </div>
+                <div class="header-controls__user">
+                    <a href="#"><i class="fa fa-user-plus"></i>Üye ol</a><span>•</span>
+                    <a href="#"><i class="fa fa-sign-in"></i>Giriş yap</a><span>•</span>
+                    <a href="#">
+                        <i class="fa fa-shopping-basket">
+                        </i>Sepetim
+                        <span class="basket-nav-counter">10</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mobile-nav visible-xs-block visible-sm-block">
+        <div class="row">
+            <div class="mobile-menu">
+                <div class="mobile-menu__icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times corporate-times hidden"></i>
+                </div>
+                <div class="mobile-menu__list">
+                    <div class="header-controls">
+                        <a href="#">EN</a><span class="header-separator">•</span><a href="#" class="lang-active">TR</a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Biz Kimiz?</a></li>
+                        <li><a href="#">Etkinlikler</a></li>
+                        <li><a href="#">Bizimle Hafifleyenler</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-logo">
+                <div class="mobile-phone">
+                    <a href="tel:+904448665">
+                        <i class="fa fa-phone"></i>444 86 65
+                    </a>
+                </div>
+                <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x,img/logo@3x.png 3x">
+            </div>
+            <div class="mobile-basket">
+                <a href="#"><i class="fa fa-user-o"></i></a>
+                <a href="#"><i class="fa fa-shopping-basket"></i></a>
+            </div>
+            <i class="fa fa-times ecommerce-times hidden"></i>
+            <div class="mobile-menu-basket__list" dir="rtl">
+                <ul>
+                    <li><a href="#">Üye Ol</a></li>
+                    <li><a href="#">Giriş Yap</a></li>
+                    <li><a href="#">Sipariş Takip</a></li>
+                </ul>
+                <div class="mobile-menu-basket__list__siparis">
+                    <div class="mobile-menu-basket__list__siparis__adet">
+                        10
+                    </div>
+                    Sepetindeki Ürün Sayısı
+                    <a href="#" class="button button__100 button__orange">Satın Al</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content ecom-content">
+    
+    <div class="container">
+        <div class="row">
+            <div class="basket__navigation sepetim">
+                <a href="" class="active">
+                    <i class="fa fa-shopping-basket"></i>
+                    <h3>Sepetim</h3>
+                </a>
+                <a href="">
+                    <i class="fa fa-truck"></i>
+                    <h3>
+                        <span>Teslimat</span>
+                        <span class="small">Bilgilerim</span>
+                    </h3>
+                </a>
+                <a href="">
+                    <i class="fa fa-credit-card"></i>
+                    <h3>
+                        <span>Ödeme</span>
+                        <span class="small">Seçenekleri</span>
+                    </h3>
+                </a>
+                <a href="">
+                    <i class="fa fa-check"></i>
+                    <h3>
+                        <span>Sipariş</span>
+                        <span class="small">Onayı</span>
+                    </h3>
+                </a>
+            </div>
+            <div class="basket__left">
+                <ul class="basket__detailed-list">
+                    <li>
+                        <div class="basket__product">
+                            <img src="img/juicedetox1.png" alt="Ürün">
+                            <p class="basket__product-title">
+                                Haftalık Hafifleme Paketi
+                            </p>
+                        </div>
+                        <div class="product-counter">
+                            <a class="product-counter-minus">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                            <div class="product-count">
+                                <input type="text" class="quantity" id="quantity" value="1" maxlength="4">
+                            </div>
+                            <a class="product-counter-plus">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="basket__product-price">
+                            <span class="basket__product-cost">
+                                140
+                            </span>
+                            <span class="basket__product-currency">
+                                TL
+                            </span>
+                            <span class="basket__product-kdv">
+                                (KDV Dahil)
+                            </span>
+                        </div>
+                        <div class="basket__delete-button">
+                            <a href="#">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="basket__product">
+                            <img src="img/juicedetox1.png" alt="Ürün">
+                            <p class="basket__product-title">
+                                Haftalık Hafifleme Paketi
+                            </p>
+                        </div>
+                        <div class="product-counter">
+                            <a class="product-counter-minus">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                            <div class="product-count">
+                                <input type="text" class="quantity" id="quantity" value="1" maxlength="4">
+                            </div>
+                            <a class="product-counter-plus">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="basket__product-price">
+                            <span class="basket__product-cost">
+                                140
+                            </span>
+                            <span class="basket__product-currency">
+                                TL
+                            </span>
+                            <span class="basket__product-kdv">
+                                (KDV Dahil)
+                            </span>
+                        </div>
+                        <div class="basket__delete-button">
+                            <a href="#">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="basket__product">
+                            <img src="img/juicedetox1.png" alt="Ürün">
+                            <p class="basket__product-title">
+                                Haftalık Hafifleme Paketi
+                            </p>
+                        </div>
+                        <div class="product-counter">
+                            <a class="product-counter-minus">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                            <div class="product-count">
+                                <input type="text" class="quantity" id="quantity" value="1" maxlength="4">
+                            </div>
+                            <a class="product-counter-plus">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="basket__product-price">
+                            <span class="basket__product-cost" >
+                                140
+                            </span>
+                            <span class="basket__product-currency">
+                                TL
+                            </span>
+                            <span class="basket__product-kdv">
+                                (KDV Dahil)
+                            </span>
+                        </div>
+                        <div class="basket__delete-button">
+                            <a href="#">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="siparis-notu__checkbox__container">
+                    <div class="pretty">
+                        <input type="checkbox" id="checkbox-siparis-notu" class="not-empty">
+                        <label for="checkbox-siparis-notu"><i class="fa fa-check"></i><span>Sipariş notu eklemek istiyorum</span></label>
+                    </div>
+                    <div class="havale__bilgileri__siparis-notu">
+                        <textarea id="input-siparis-notu"></textarea>
+                        <label class="float" for="input-siparis-notu">
+                            Notunuz
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__right">
+                <ul class="basket__summary-list">
+                    <li>
+                        <div>
+                            Ara Toplam
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                280
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            Kargo Ücreti
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                0
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            İndirim
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                10
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>TOPLAM</strong>
+                        </div>
+                        <div class="basket__summary-price">
+                            <span>
+                                270
+                            </span>
+                            <span>
+                                TL
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="basket__buttons">
+
+                    <div class="basket__coupon">
+                        <ul class="basket__coupon-list">
+                            <li>
+                                <span>
+                                    Ekim Hafifleme İndirimi
+                                </span>
+                                <a href="#">
+                                    KALDIR
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="basket__coupon">
+                        <div class="container__login__form__item">
+                            <div class="popover top">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    Geçerli bir kupon kodu giriniz!
+                                </div>
+                            </div>
+                            <input type="text" id="input-coupon">
+                            <label class="float" for="input-coupon">
+                                İndirim Kodu
+                            </label>
+                        </div>
+                        <a class="button button__blue button__large" href="#">İndirim Kodum Var</a>
+                    </div>
+
+                    <div class="basket__coupon basket__coupon-select">
+                        <p>
+                            Size özel indirimimizi seçin!
+                        </p>
+                        <select id="ozel-kampanya" class="wide">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <a class="button button__orange button__large" href="#">Devam Et</a>
+                    <a class="button button__green button__large" href="#">Alışverişe Dön</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="footer">
+    <div class="footer__ecommerce">
+        <div class="container">
+            <div class="row">
+                <div class="footer__order">
+                    <img src="img/siparis-hatti.png">
+                </div>
+                <div class="footer__links">
+                    <a href="#">Kullanım Koşulları</a>
+                    <a href="#">Gizlilik ve Kredi Kartı Güvenliği</a>
+                    <a href="#">Sipariş Takip</a>
+                </div>
+                <div class="footer__bank-icons">
+                    <img src="img/bank-icon-visa.png">
+                    <img src="img/bank-icon-mastercard.png">
+                    <img src="img/bank-icon-maestro.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="footer__copyright">
+                <p>
+                    <span>BE LIGHT</span> © 2017
+                </p>
+            </div>
+            <div class="footer__social">
+                <a href="" class="footer__social__icon fsi_facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="" class="footer__social__icon fsi_twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="" class="footer__social__icon fsi_instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="" class="footer__social__icon fsi_youtube">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/ecommerce-nav.js"></script>
+
+    <script src="js/all-input.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/ecommerce-basket.js"></script>
+
+</body>
+</html>
