@@ -83,7 +83,7 @@ a {
   }
 }
 
-.container > .row > h2 {
+.container > .row > .title-blue {
   margin-bottom: 20px;
 }
 
@@ -174,7 +174,7 @@ a {
 
 .contractModal {
   text-align: center;
-  h2 {
+  .title-blue {
     float: left;
   }
 
@@ -217,7 +217,7 @@ a {
   flex-direction: column;
   align-items: center;
 
-  h2 {
+  .title-blue {
     align-self: flex-start;
   }
 }
@@ -276,7 +276,7 @@ a {
     }
   }
 
-  .container > .row > h2 {
+  .container > .row > .title-blue {
     margin-bottom: 10px;
   }
 

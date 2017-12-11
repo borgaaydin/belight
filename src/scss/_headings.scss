@@ -28,10 +28,10 @@ h3 {
   line-height: 1.4;
 }
 @media (max-width: 768px) {
-  h2 {
+  .title-blue {
     font-size: 24px;
   }
-  h2:after {
+  .title-blue:after {
     width: 90%;
   }
 }
