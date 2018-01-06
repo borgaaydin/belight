@@ -10,7 +10,6 @@ $(document).ready(function(){
         autoplaySpeed: 5000,
         arrows: true,
         slidesToShow: 3,
-        variableWidth: true,
         slidesToScroll: 1,
         responsive: [
             {
