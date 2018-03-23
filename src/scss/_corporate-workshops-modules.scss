@@ -39,7 +39,54 @@
   }
 }
 
+.workshops__banner {
+  height: 300px;
+  .workshops__banner__text {
+    margin-top: -200px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 2px 10px rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 50px;
+  }
 
+  .workshops__banner__image {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.workshops__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .workshops__item {
+    width: calc((100% / 3) - 30px);
+    margin: 30px 15px 0;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .workshops__list__text {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-shadow: 0 2px 6px rgba(0,0,0,.85);
+    font-size: 32px;
+    color: #fff;
+  }
+}
+
+.workshops__sponsors {
+  margin-bottom: 0;
+}
 
 // Workshop Details
 .workshop {
@@ -100,8 +147,7 @@
 }
 .gallery {
   a {
-
-    @include make-sm-column(3, 10px);
+    @include make-sm-column(3, 30px);
 
   }
   img {
