@@ -40,6 +40,7 @@
 }
 
 .workshops__banner {
+  margin-top: 20px;
   height: 300px;
   .workshops__banner__text {
     margin-top: -200px;
@@ -70,6 +71,13 @@
 
     img {
       width: 100%;
+    }
+
+    a {
+      @include vendorize(transition, all .3s);
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 
@@ -157,6 +165,22 @@
 .pswp__counter {
   color: #fff;
 }
+
+@media (max-width: 991px) {
+  .workshops__list {
+    .workshops__item {
+      width: calc((100% / 2) - 30px);
+    }
+  }
+  .workshops__banner__image {
+    img {
+      height: 300px;
+      width: auto;
+      max-width: none;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .workshop {
     .workshop__info {
@@ -177,6 +201,12 @@
     }
     .slick-next {
       right: 20px;
+    }
+  }
+
+  .workshops__list {
+    .workshops__item {
+      width: 100%;
     }
   }
 
