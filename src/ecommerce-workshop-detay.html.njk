@@ -1,0 +1,124 @@
+{% extends "partials/ecommerce-base.html.njk" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="product-top">
+                <div class="product-left">
+                    <div class="product-image-showroom">
+                        <div>
+                            <img src="img/product/productSliderImage.png" alt="">
+                        </div>
+                        <div class="workshop__suggest-box">
+                            <h4>
+                                Paket içeriğinin verimli olması için:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Açık havada hergün 1 saat yürüyüş yapılması
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Çay, kahve ve asitli içecekler  tüketilmemesi
+                                        önerilmektedir.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-right">
+                    <h1>
+                        6'lı Juice Detox
+                    </h1>
+                    <p>
+                        Günlük hayat hızla akıp giderken aynı hızla hafiflemek istiyorsan 6’lı Juice Detox’u yanından ayırma. İçerdiği doğal vitamin ve mineraller sayesinde vücudun  fazlalıklarından arındıkça ruhunun da hafifleyeceğini unutma!
+                    </p>
+                    <div class="product__price">
+                        <div class="first-row">
+                            <del>
+                                240 TL
+                            </del>
+
+                        </div>
+                        <div class="second-row">
+                            <span class="sum">
+                                140
+                            </span>
+                            <span class="sum-cents">
+                                ,00
+                            </span>
+                            <span class="currency">
+                                TL
+                            </span>
+                            <span class="tax">
+                                (KDV Dahil)
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="button button__orange button__large" href="#">Satın Al</a>
+                    </div>
+                    <div class="workshop__date">
+                        24 Ağustos 2017 Pazartesi<br />
+                        10.00 - 15.00
+                    </div>
+                    <div class="workshop__detail">
+                        <h3>Menü</h3>
+                        <div>
+                            Fırında bebek patatesler, taze ot salsa ile<br/>
+                            Sherry sirkeli karidesler, biberiyeli mayonez ile<br/>
+                            Lime ve sarımsaklı tavuk kanatları, acılı domates sos ile<br/>
+                            Mini et quesadilla, guacamole sos ile<br/>
+                            Sangria ikramımızdır.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade videoModal" id="indexVideo" tabindex="-1" role="dialog" aria-labelledby="Belight Tanıtım">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="floatingClose close" data-dismiss="modal" aria-label="Close">
+
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+
+                    </button>
+
+                    <iframe id="belightTanitim" width="100%" height="100%" src="https://www.youtube.com/embed/KDGf0-Z4rLc?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/ecommerce-product.js"></script>
+
+    <script src="js/modal.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#indexVideo').on('hidden.bs.modal', function (e) {
+                var youFrame =  $('#belightTanitim');
+                var url = youFrame.attr('src');
+                youFrame.attr('src', '');
+                youFrame.attr('src', url);
+            })
+        });
+    </script>
+{% endblock %}

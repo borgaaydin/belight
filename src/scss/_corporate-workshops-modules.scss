@@ -140,61 +140,56 @@
 
 
 // Workshop Details
-.workshop {
+
+.workshop__date {
+  font-size: 24px;
+  color: #54585C;
+  margin-top: 15px;
+}
+
+.workshop__detail {
+  color: #676B6F;
+  margin-top: 25px;
+
   h3 {
-    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.workshop__suggest-box {
+  margin-top: 20px;
+  padding: 10px 40px;
+  min-height: 160px;
+  max-width: 570px;
+  background-color: #FFFBFB;
+  border: 1px solid #EEEEEE;
+
+  background-image: url("../img/product/suggest-back1.png"), url("../img/product/suggest-back2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, bottom right;
+
+  h4 {
+    color: #676B6F;
     font-weight: 600;
-    color: $blue;
-    margin: 20px 0 10px;
   }
-  .workshop__info {
-    margin-left: 25px;
-    font-size: 36px;
-    color: $dark-gray;
-    display: flex;
-    justify-content: flex-start;
-    .workshop__info__item {
-      margin-right: 60px;
-    }
-    .workshop__info__item-right {
-      display: flex;
-      align-items:center;
-      justify-content:flex-start;
-      height: 51px;
-    }
-  }
-  .workshop__buy {
-    text-align: center;
-    .workshop__buy__price {
-      font-size: 32px;
-      font-weight: 500;
-      color: $orange;
-      span {
-        font-size: 24px;
+
+  ul {
+    padding-left: 16px;
+    color: #676B6F;
+    max-width: 340px;
+
+    li {
+      color: $green;
+
+      p {
+        color: #676B6F;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
       }
     }
+
   }
-  .workshop__body {
-    margin-top: 50px;
-    font-size: 18px;
-    color: $dark-gray;
-    p {
-      text-indent:20px;
-      margin-bottom: 10px;
-    }
-  }
-}
-.workshop__info__item-left-item {
-  display: flex;
-  align-items: center;
-  justify-content:flex-start;
-  margin-bottom: 18px;
-}
-.workshop__info__item__text {
-  font-size: 24px;
-  font-weight: 500;
-  margin-left: 20px;
-  display: inline;
 }
 .gallery {
   a {
