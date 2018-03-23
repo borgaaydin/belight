@@ -96,6 +96,49 @@
   margin-bottom: 0;
 }
 
+
+// Workshops Category List
+.workshops__category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .workshops__category__item {
+    background: #F4F4F4;
+    width: 315px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .workshop__title {
+    padding: 10px 15px;
+    color: $blue;
+    font-size: 24px;
+  }
+
+  .workshop__date {
+    padding: 0 15px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #54585C;
+  }
+
+  .workshop__button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 120px;
+    text-align: center;
+    background: $blue;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 0;
+    @include vendorize(border-radius, 3px);
+  }
+}
+
+
 // Workshop Details
 .workshop {
   h3 {
