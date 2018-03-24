@@ -74,6 +74,7 @@
     }
 
     a {
+      opacity: .8;
       @include vendorize(transition, all .3s);
       &:hover {
         opacity: 0.6;
