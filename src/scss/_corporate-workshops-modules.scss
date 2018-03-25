@@ -71,7 +71,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+
+  .page-title {
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
 
   .workshops__item {
     width: calc((100% / 3) - 30px);
@@ -243,17 +248,17 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .workshop {
     .workshop__info {
       display: block;
     }
   }
-  .workshops {
-    .workshops__workshop__item {
+  .workshops__list {
+    .workshops__item {
       width: 100%;
 
-      margin: 0 0 30px 0;
+      margin: 0 0 10px 0;
       img {
         width: 100%;
       }
@@ -266,6 +271,26 @@
     }
   }
 
+  .workshops__banner {
+    height: 200px;
+    .workshops__banner__image {
+      height: 200px;
+      img {
+        height: auto;
+        min-height: 200px;
+        min-width: 100%;
+        max-width: 200%;
+      }
+    }
+    .workshops__banner__text {
+      margin-top: -150px;
+    }
+  }
+
+  .workshop__banner__overlay {
+    height: 200px;
+  }
+
   .workshops__list {
     .workshops__item {
       width: 100%;
@@ -275,6 +300,13 @@
   .gallery {
     a {
       @include make-xs-column(6, 10px);
+    }
+  }
+
+  .workshops__banner {
+    margin-top: 0;
+    .workshops__banner__text {
+      font-size: 32px;
     }
   }
 }
