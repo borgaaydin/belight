@@ -393,6 +393,60 @@
   font-size: 18px;
 }
 
+.home-workshops__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .workshops__item {
+    width: calc((100% / 3) - 10px);
+    margin: 0 15px;
+    position: relative;
+
+    &:last-child {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      &:hover {
+        .workshops__item__overlay {
+          background: rgba(255,255,255,0.4);
+        }
+      }
+    }
+  }
+
+  .workshops__item__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(255,255,255,0.2);
+    @include vendorize(transition, all .3s);
+  }
+
+  .workshops__list__text {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-shadow: 0 2px 6px rgba(0,0,0,.85);
+    font-size: 32px;
+    color: #fff;
+  }
+}
+
 @media (max-width: 992px) {
 
   .video-banner {
@@ -402,7 +456,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
 
+  .home-workshops__list {
+    .workshops__item {
+      width: calc((100% / 2) - 30px);
+      margin-bottom: 15px;
+    }
   }
 
   .home-products {
@@ -488,6 +548,17 @@
 
   .video-banner a img {
     height: 60px;
+  }
+
+  .home-workshops__list {
+    .workshops__item {
+      width: 100%;
+
+      margin: 0 0 30px 0;
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
