@@ -197,3 +197,37 @@
   }
 }
 
+@media (max-width: 768px) {
+  .ecommerce-home-products {
+    padding: 0;
+    .ecommerce-home-products__item {
+      width: 100%;
+    }
+  }
+  .ecommerce-home-products a h3 {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .ecommerce-home-products .ecommerce-home-products__item__content {
+    font-size: 10px;
+    height: 44px;
+  }
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new span {
+    font-size: 20px;
+  }
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .sum-cents,
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .currency {
+    font-size: 16px;
+  }
+  .ecommerce-home-products__item__meta .ecommerce-home-products__item__icons .product__widgets {
+    display: none;
+  }
+  .ecommerce-home-products__item__icons__price {
+    min-width: 0;
+  }
+  .ecommerce-home-products a {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+  }
+}
