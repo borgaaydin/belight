@@ -197,9 +197,9 @@
   background-color: #FFFBFB;
   border: 1px solid #EEEEEE;
 
-  background-image: url("../img/product/suggest-back1.png"), url("../img/product/suggest-back2.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom left, bottom right;
+  background-image: url("../img/vg-01.png");
+  background-repeat: no-repeat;
+  background-position: center;
 
   h4 {
     color: #676B6F;
@@ -235,6 +235,10 @@
 }
 .pswp__counter {
   color: #fff;
+}
+
+.workshops__button {
+  margin: 20px 0 0 0;
 }
 
 @media (max-width: 991px) {
