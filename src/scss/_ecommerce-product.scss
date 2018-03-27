@@ -89,7 +89,7 @@
 }
 
 .new-product__price {
-  display: flex;
+  display: none;
   flex-direction: row;
 
   .first-col {
@@ -655,6 +655,14 @@ p.out-of-stock {
 }
 
 @media (max-width: 768px) {
+
+  .new-product__price {
+    display:flex;
+  }
+
+  .product__price {
+    display:none;
+  }
 
   .product__sample__list {
 

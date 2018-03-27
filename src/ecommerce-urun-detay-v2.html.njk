@@ -35,6 +35,41 @@
                     <p>
                         Günlük hayat hızla akıp giderken aynı hızla hafiflemek istiyorsan 6’lı Juice Detox’u yanından ayırma. İçerdiği doğal vitamin ve mineraller sayesinde vücudun  fazlalıklarından arındıkça ruhunun da hafifleyeceğini unutma!
                     </p>
+                    <div class="product__price">
+                        <div class="first-row">
+                            <del>
+                                240 TL
+                            </del>
+                            <div class="product__widgets">
+                                <div class="product__widgets__item soguk-sikma">
+                                    <img src="img/widgets/soguk-sikma.png" alt="Soğuk Sıkma">
+                                </div>
+                                <div class="product__widgets__item glutensiz">
+                                    <img src="img/widgets/glutensiz.png" alt="Glutensiz">
+                                </div>
+                                <div class="product__widgets__item katkisiz">
+                                    <img src="img/widgets/katkisiz.png" alt="Katkısız">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second-row">
+                            <span class="sum">
+                                140
+                            </span>
+                            <span class="sum-cents">
+                                ,00
+                            </span>
+                            <span class="currency">
+                                TL
+                            </span>
+                            <span class="tax">
+                                (KDV Dahil)
+                            </span>
+                        </div>
+                        <div>
+                            <a class="button button__orange button__large" href="#">Satın Al</a>
+                        </div>
+                    </div>
                     <div class="new-product__price">
                         <div class="first-col">
                             <div>
@@ -332,7 +367,17 @@
                 youFrame.attr('src', url);
             });
 
-            $('.second-col .button__orange').on('inview', function(event, isInView) {
+            $('.product__price .button__orange').on('inview', function(event, isInView) {
+                if (isInView) {
+                    $('.sticky-price').hide();
+                    $('.copyright').removeClass("product-copyright");
+                } else {
+                    $('.sticky-price').show();
+                    $('.copyright').addClass("product-copyright");
+                }
+            });
+
+            $('.new-product__price .button__orange').on('inview', function(event, isInView) {
                 if (isInView) {
                     $('.sticky-price').hide();
                     $('.copyright').removeClass("product-copyright");
