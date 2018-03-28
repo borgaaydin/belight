@@ -573,11 +573,14 @@ p.out-of-stock {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .sticky-product-name {
-  font-size: 16px;
+  font-size: 13px;
   color: $blue;
+  overflow: hidden;
+  max-height: 54px;
 }
 
 .sticky-product-prices {
@@ -587,6 +590,7 @@ p.out-of-stock {
   line-height: 1;
   flex-grow: 1;
   margin-right: 10px;
+  min-width: 95px;
 
   del {
     font-size: 16px;

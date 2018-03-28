@@ -129,6 +129,7 @@
 .workshops__category {
   display: flex;
   flex-direction: row;
+  padding:0 25px;
   flex-wrap: wrap;
   justify-content: space-around;
 
@@ -136,7 +137,7 @@
     background: #F4F4F4;
     width: 315px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
 
   .workshop__title {
