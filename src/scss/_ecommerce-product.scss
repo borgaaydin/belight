@@ -567,6 +567,7 @@ p.out-of-stock {
   padding: 8px 0;
   z-index: 133;
   background-color: #ffffff;
+  border-top: 1px solid #dadada;
 }
 
 .sticky-price-controls {
@@ -659,6 +660,12 @@ p.out-of-stock {
 }
 
 @media (max-width: 768px) {
+
+  .sticky-product-button {
+    .button {
+      min-width: 150px;
+    }
+  }
 
   .new-product__price {
     display:flex;
@@ -762,6 +769,15 @@ p.out-of-stock {
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+
+  .sticky-product-button {
+    .button {
+      min-width: 120px;
     }
   }
 }

@@ -31,6 +31,7 @@
       font-weight: 600;
       color: $blue;
       margin-top: 10px;
+      text-align: center;
     }
   }
 
@@ -43,6 +44,7 @@
   margin-top: 20px;
   height: 300px;
   position: relative;
+  padding: 0 60px;
   .workshops__banner__text {
     margin-top: -200px;
     z-index: 15;
@@ -74,6 +76,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: 0 80px;
 
   .page-title {
     margin-left: 15px;
@@ -81,8 +84,8 @@
   }
 
   .workshops__item {
-    width: calc((100% / 3) - 30px);
-    margin: 30px 15px 0;
+    width: calc((100% / 3) - 40px);
+    margin: 30px 20px 0;
     position: relative;
 
     img {
@@ -132,6 +135,7 @@
   padding:0 25px;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 20px;
 
   .workshops__category__item {
     background: #F4F4F4;
@@ -144,6 +148,8 @@
     padding: 10px 15px;
     color: $blue;
     font-size: 24px;
+    font-weight: 600;
+    text-align: center;
   }
 
   .workshop__date {
@@ -242,10 +248,25 @@
   margin: 20px 0 0 0;
 }
 
+
+@media (max-width: 1200px) {
+  .workshops__list {
+    .workshops__list__text {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
+
 @media (max-width: 991px) {
   .workshops__list {
     .workshops__item {
       width: calc((100% / 2) - 30px);
+      margin: 30px 15px 0;
+    }
+    .workshops__list__text {
+
     }
   }
   .workshops__banner__image {
@@ -254,6 +275,11 @@
       width: auto;
       max-width: none;
     }
+  }
+
+  .workshops__banner {
+    margin-top: 0;
+    padding: 0 20px;
   }
 }
 
@@ -264,6 +290,9 @@
     }
   }
   .workshops__list {
+    padding: 0;
+    margin-top: -10px;
+
     .workshops__item {
       width: 100%;
 
@@ -281,23 +310,30 @@
   }
 
   .workshops__banner {
-    height: 200px;
+    height: auto;
+    min-width: 100%;
+
+    padding: 0;
     .workshops__banner__image {
-      height: 200px;
+      height: auto;
+
       img {
         height: auto;
-        min-height: 200px;
         min-width: 100%;
-        max-width: 200%;
+        max-width: 100%;
       }
     }
     .workshops__banner__text {
-      margin-top: -150px;
+      margin-top: 0;
+      line-height: 36px;
+      position: absolute;
+      top: 35px;
+      padding: 0 15px;
     }
   }
 
   .workshop__banner__overlay {
-    height: 200px;
+    height: 100%;
   }
 
   .workshops__list {

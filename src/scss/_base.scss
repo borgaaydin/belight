@@ -284,10 +284,12 @@ a {
   }
 
   .container > .row > .title-blue {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
-  .corporate-index__slider {
+  .corporate-index__slider.slick-slider {
+    margin-bottom: 20px;
+
     .slick-slide {
       padding: 0;
     }
