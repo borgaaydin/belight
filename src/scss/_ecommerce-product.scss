@@ -668,11 +668,11 @@ p.out-of-stock {
   }
 
   .new-product__price {
-    display:flex;
+    display: none;
   }
 
   .product__price {
-    display:none;
+    display: flex;
   }
 
   .product__sample__list {
