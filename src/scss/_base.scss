@@ -282,13 +282,26 @@ a {
       }
     }
   }
+  .ecom-content {
+    .container > .row > .title-blue {
+      margin-bottom: 0;
+    }
 
-  .container > .row > .title-blue {
-    margin-bottom: 0;
+    .corporate-index__slider.slick-slider {
+      margin-bottom: 20px;
+
+      .slick-slide {
+        padding: 0;
+      }
+    }
   }
 
+  .container > .row > .title-blue {
+     margin-bottom: 10px;
+   }
+
   .corporate-index__slider.slick-slider {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     .slick-slide {
       padding: 0;
