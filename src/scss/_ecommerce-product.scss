@@ -669,6 +669,7 @@ p.out-of-stock {
 
   .new-product__price {
     display: flex;
+    align-items: flex-end;
   }
 
   .product__price {
@@ -773,11 +774,58 @@ p.out-of-stock {
   }
 }
 
+@media (max-width: 450px) {
+
+  .new-product__price .first-col del {
+    font-size: 24px;
+  }
+
+  .new-product__price .first-col {
+    .sum {
+      font-size: 32px;
+    }
+
+    .sum-cents {
+      font-size: 28px;
+    }
+
+    .currency {
+      font-size: 28px;
+    }
+
+    .tax {
+      font-size: 16px;
+    }
+  }
+}
+
 @media (max-width: 400px) {
 
   .sticky-product-button {
     .button {
       min-width: 120px;
+    }
+  }
+
+  .new-product__price .first-col del {
+    font-size: 24px;
+  }
+
+  .new-product__price .first-col {
+    .sum {
+      font-size: 28px;
+    }
+
+    .sum-cents {
+      font-size: 18px;
+    }
+
+    .currency {
+      font-size: 18px;
+    }
+
+    .tax {
+      font-size: 14px;
     }
   }
 }
