@@ -43,11 +43,11 @@
 .workshops__banner {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 300px;
   position: relative;
   padding: 0 40px;
   .workshops__banner__text {
-    margin-top: -200px;
+    position: absolute;
+    top: 50px;
     z-index: 15;
     width: 100%;
     text-align: center;
@@ -57,7 +57,7 @@
   }
 
   .workshops__banner__image {
-    height: 300px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
   }
@@ -190,7 +190,7 @@
     margin-top: 10px;
 
     del {
-      font-size: 28px;
+      font-size: 22px;
       color: #C0C0C0;
       font-weight: 500;
       margin-right: 20px;
@@ -203,20 +203,20 @@
     margin-top: -10px;
 
     .sum {
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 400;
       color: $orange;
     }
 
     .sum-cents {
-      font-size: 28px;
+      font-size: 22px;
       font-weight: 400;
       color: $orange;
       margin-left: -10px;
     }
 
     .currency {
-      font-size: 28px;
+      font-size: 22px;
       font-weight: 500;
       color: $orange;
     }
@@ -289,7 +289,7 @@
 .workshop__date {
   font-size: 24px;
   color: #54585C;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .workshop__detail {
@@ -381,7 +381,7 @@
   }
   .workshops__banner__image {
     img {
-      height: 300px;
+      max-height: 300px;
       width: auto;
       max-width: none;
     }
