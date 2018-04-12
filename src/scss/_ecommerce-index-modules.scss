@@ -100,7 +100,7 @@
   }
 
   .ecommerce-home-products__item__content {
-    padding: 4px 12px;
+    padding: 4px 12px 0 12px;
     height: 86px;
     color: $dark-gray;
     overflow: hidden;
@@ -157,20 +157,20 @@
     }
   }
   .ecommerce-home-products__item__icons__price-new {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     color: $orange;
     span {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     .sum-cents {
-      font-size: 24px;
+      font-size: 20px;
       margin-left: -8px;
     }
 
     .currency {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 }
@@ -207,11 +207,12 @@
   .ecommerce-home-products a h3 {
     text-align: left;
     font-size: 14px;
+    line-height: 15px;
   }
 
   .ecommerce-home-products .ecommerce-home-products__item__content {
     font-size: 10px;
-    height: 44px;
+    height: 45px;
   }
   .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .sum-cents,
   .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .currency {
@@ -244,5 +245,11 @@
 
   .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new span {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ecommerce-home-products .ecommerce-home-products__item__content {
+    height: 42px;
   }
 }

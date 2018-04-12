@@ -661,6 +661,13 @@ p.out-of-stock {
 
 @media (max-width: 768px) {
 
+
+  .product-right {
+    h1 {
+      margin-top: 8px;
+    }
+  }
+
   .sticky-product-button {
     .button {
       min-width: 150px;
