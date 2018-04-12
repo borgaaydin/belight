@@ -100,7 +100,7 @@
   }
 
   .ecommerce-home-products__item__content {
-    padding: 4px 12px;
+    padding: 4px 12px 0 12px;
     height: 86px;
     color: $dark-gray;
     overflow: hidden;
@@ -207,6 +207,7 @@
   .ecommerce-home-products a h3 {
     text-align: left;
     font-size: 14px;
+    line-height: 15px;
   }
 
   .ecommerce-home-products .ecommerce-home-products__item__content {
