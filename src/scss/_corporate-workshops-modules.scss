@@ -69,7 +69,6 @@
   position: absolute;
   top: 0;
   z-index: 10;
-  background: rgba(255,255,255,0.2);
 }
 
 .workshops__list {
@@ -96,7 +95,7 @@
     a {
       &:hover {
         .workshops__item__overlay {
-          background: rgba(255,255,255,0.4);
+          background: rgba(255,255,255,0.2);
         }
       }
     }
@@ -107,7 +106,6 @@
     height: 100%;
     position: absolute;
     top: 0;
-    background: rgba(255,255,255,0.2);
     z-index: 10;
     @include vendorize(transition, all .3s);
   }
@@ -146,12 +144,12 @@
   }
 
   .workshop__title {
-    padding: 10px 15px;
+    padding: 10px 15px 0 15px;
     color: $blue;
     font-size: 24px;
     font-weight: 600;
     text-align: center;
-    height: 88px;
+    height: 80px;
     overflow: hidden;
   }
 
@@ -291,7 +289,7 @@
 .workshop__date {
   font-size: 24px;
   color: #54585C;
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .workshop__detail {
@@ -533,4 +531,16 @@
       font-size: 14px;
     }
   }
+
+  .workshops__category {
+    .workshop__date {
+      font-size: 16px;
+    }
+
+    .workshop__button {
+      width: 90px;
+    }
+  }
+
+
 }
