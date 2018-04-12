@@ -212,7 +212,7 @@
   }
 
   .ecommerce-home-products .ecommerce-home-products__item__content {
-    font-size: 10px;
+    font-size: 11px;
     height: 62px;
     padding: 4px 10px 0 10px;
     h3 {
@@ -256,6 +256,7 @@
 
 @media (max-width: 400px) {
   .ecommerce-home-products .ecommerce-home-products__item__content {
+    font-size: 10px;
     height: 62px;
   }
 }
