@@ -213,6 +213,9 @@
   .ecommerce-home-products .ecommerce-home-products__item__content {
     font-size: 10px;
     height: 57px;
+    h3 {
+      margin-bottom: 5px;
+    }
   }
   .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .sum-cents,
   .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .currency {
