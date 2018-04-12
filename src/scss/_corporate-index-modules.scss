@@ -422,7 +422,7 @@
     a {
       &:hover {
         .workshops__item__overlay {
-          background: rgba(255,255,255,0.4);
+          background: rgba(255,255,255,0.2);
         }
       }
     }
@@ -433,7 +433,6 @@
     height: 100%;
     position: absolute;
     top: 0;
-    background: rgba(255,255,255,0.2);
     @include vendorize(transition, all .3s);
   }
 
