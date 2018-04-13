@@ -206,20 +206,32 @@
   }
   .ecommerce-home-products a h3 {
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 15px;
     margin-bottom: 3px;
   }
 
   .ecommerce-home-products .ecommerce-home-products__item__content {
-    font-size: 11px;
-    height: 62px;
+    font-size: 14px;
+    height: 74px;
     padding: 4px 10px 0 10px;
     h3 {
       margin-bottom: 5px;
     }
   }
-  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .sum-cents,
+
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-old {
+    font-size: 14px;
+  }
+
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-old .sum-cents {
+    display: none;
+  }
+
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .sum-cents {
+    font-size: 16px;
+    display: none;
+  }
   .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .currency {
     font-size: 16px;
   }
@@ -228,6 +240,9 @@
   }
   .ecommerce-home-products__item__icons__price {
     min-width: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
   .ecommerce-home-products a {
     width: calc(50% - 10px);
@@ -247,6 +262,7 @@
 
   .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new {
     margin-top: -10px;
+    margin-left: 5px;
   }
 
   .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new span {
@@ -256,7 +272,21 @@
 
 @media (max-width: 400px) {
   .ecommerce-home-products .ecommerce-home-products__item__content {
-    font-size: 10px;
+    font-size: 11px;
     height: 62px;
+  }
+
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new {
+    margin-left: 0;
+  }
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-old {
+    font-size: 12px;
+  }
+
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new span {
+    font-size: 16px;
+  }
+  .ecommerce-home-products__item__icons__price .ecommerce-home-products__item__icons__price-new .currency {
+    font-size: 12px;
   }
 }
