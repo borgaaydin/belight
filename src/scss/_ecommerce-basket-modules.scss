@@ -1151,9 +1151,12 @@
     border: none;
   }
 
+  .teslimat__kargo img {
+    margin-left: 10px;
+  }
+
   .kargo-is-gunu,
   .kargo-ucret {
-    display: block;
-    margin: 0 0 0 35px;
+    margin: 0 0 0 5px;
   }
 }
